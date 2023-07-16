@@ -177,7 +177,7 @@ frame01.style.borderRadius = '35px';
 frame0.appendChild(frame01);
 
 const frame02 = document.createElement('div');
-frame02.style.background = 'url("asl0.png")';
+frame02.style.background = 'url("https://administrati0n.github.io/data-one/asl0.png")';
 frame02.style.height = '100%';
 frame02.style.position = 'absolute';
 frame02.style.backgroundSize = 'contain';
