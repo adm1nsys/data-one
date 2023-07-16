@@ -1399,7 +1399,7 @@ const tracks = [
   {
     title: "The Beach (Instrumental + Slowed + Muffled)",
     duration1: "-4:24",
-    duration1: "4:24",
+    duration2: "24",
     artist: "mxpheebz",
     image: "https://administrati0n.github.io/data-one/player/The Beach.jpg",
     image2: "https://administrati0n.github.io/data-one/player/The Beach.jpg",
