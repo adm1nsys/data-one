@@ -44,12 +44,12 @@ restartPage();
 
 // Home Page
 const HomePage = document.createElement("script");
-HomePage.src = "HomePage.js";
+HomePage.src = "https://administrati0n.github.io/data-one/HomePage.js";
 Container1.appendChild(HomePage);
 
 // data2
 const data2 = document.createElement("script");
-data2.src = "data2.js";
+data2.src = "https://administrati0n.github.io/data-one/data2.js";
 document.body.appendChild(data2);
 
 // // firebase
@@ -58,7 +58,7 @@ document.body.appendChild(data2);
 // document.body.appendChild(firebase);
 
 // Динамическая загрузка модуля Firebase
-import("./firebase.js")
+import("https://administrati0n.github.io/data-one/firebase.js")
   .then((module) => {
     // Используйте экспорты из модуля
     const { initializeApp, getAnalytics, getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } = module;
