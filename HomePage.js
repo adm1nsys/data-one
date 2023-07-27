@@ -1395,12 +1395,12 @@ bgColor1.style.width = '600px';
 bgColor1.style.height = '600px';
 bgBlack1.style.width = '600px';
 bgBlack1.style.height = '600px';
-bgColor1.style.backgroundImage = 'url("IMG_3052.JPG")';
+bgColor1.style.backgroundImage = 'url("https://administrati0n.github.io/data-one/IMG_3052.JPG")';
 
-bgBlack1.style.backgroundImage = 'url("IMG_3052.JPG")';
+bgBlack1.style.backgroundImage = 'url("https://administrati0n.github.io/data-one/IMG_3052.JPG")';
 
-bgColor1.src = 'url("Starter Pack.png")';
-bgBlack1.src = 'url("Starter Pack.png")';
+bgColor1.src = 'url("https://administrati0n.github.io/data-one/Starter Pack.png")';
+bgBlack1.src = 'url("https://administrati0n.github.io/data-one/Starter Pack.png")';
 
 
 frameBg1.style.filter = "blur(10px)";
@@ -1444,7 +1444,7 @@ imageContainer1.className = 'image1';
 frameHeader1.appendChild(imageContainer1);
 
 const image1 = document.createElement('img');
-image1.src = 'url("Starter Pack.png")';
+image1.src = 'url("https://administrati0n.github.io/data-one/Starter Pack.png")';
 image1.style.width = '50px';
 image1.style.borderRadius = '0.5em';
 image1.style.boxShadow = '0 3px 30px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.4)';
