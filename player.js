@@ -261,7 +261,7 @@ phrasl.style.width = "90px";
 phrasl.style.height = "90px";
 phrasl.style.left = "100px";
 phrasl.style.overflow = "hidden";
-phrasl.style.background = "url('asl.png')";
+phrasl.style.background = "url('https://administrati0n.github.io/data-one/asl.png')";
 phrasl.style.transformStyle = 'preserve-3d';
 phrasl.style.backgroundSize = 'contain';
 phrasl.style.backgroundRepeat = 'no-repeat';
@@ -3771,7 +3771,7 @@ frame01.style.position = 'absolute';
 frame01.style.color = 'white';
 frame01.style.inset = '9px';
 // frame01.style.backgroundColor = 'black';
-frame01.style.background = 'url("Bitmap.png")';
+frame01.style.background = 'url("https://administrati0n.github.io/data-one/Bitmap.png")';
 
 frame01.style.backgroundSize = 'cover';
 frame01.style.backgroundPosition = 'center';
@@ -3790,7 +3790,7 @@ svgscreen.appendChild(frame01);
 
 const frame02 = document.createElement('div');
 frame02.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-frame02.style.backgroundImage = 'url("asl0.png")';
+frame02.style.backgroundImage = 'url("https://administrati0n.github.io/data-one/asl0.png")';
 frame02.style.height = '100%';
 frame02.style.width = '100%';
 frame02.style.position = 'absolute';
