@@ -19,7 +19,7 @@ document.head.appendChild(fonts);
 
 // iconLinks
 const iconLinks1 = document.createElement("script");
-iconLinks1.src = "iconLinks.js";
+iconLinks1.src = "https://administrati0n.github.io/data-one/iconLinks.js";
 document.head.appendChild(iconLinks1);
 
 
