@@ -36,7 +36,7 @@ document.body.appendChild(player);
 
 // Content
 const Content = document.createElement("script");
-Content.src = "content.js";
+Content.src = "https://administrati0n.github.io/data-one/content.js";
 document.body.appendChild(Content);
 
 // Pinned
