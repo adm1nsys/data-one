@@ -1,11 +1,11 @@
 // Libreries
 const lib = document.createElement("script");
-lib.src = "untitled folder/lib.js";
+lib.src = "https://administrati0n.github.io/data-one/lib.js";
 document.head.appendChild(lib);
 
 // Variables
 const Stuff1 = document.createElement("script");
-Stuff1.src = "Stuff1.js";
+Stuff1.src = "https://administrati0n.github.io/data-one/Stuff1.js";
 Stuff1.onload = function () {
 //
 };
@@ -14,7 +14,7 @@ document.body.appendChild(Stuff1);
 
 // Fonts
 const fonts = document.createElement("script");
-fonts.src = "fonts.js";
+fonts.src = "https://administrati0n.github.io/data-one/fonts.js";
 document.head.appendChild(fonts);
 
 // iconLinks
@@ -26,12 +26,12 @@ document.head.appendChild(iconLinks1);
 
 // data1
 const data1 = document.createElement("script");
-data1.src = "data1.js";
+data1.src = "https://administrati0n.github.io/data-one/data1.js";
 document.body.appendChild(data1);
 
 // player
 const player = document.createElement("script");
-player.src = "player.js";
+player.src = "https://administrati0n.github.io/data-one/player.js";
 document.body.appendChild(player);
 
 // Content
@@ -41,23 +41,23 @@ document.body.appendChild(Content);
 
 // Pinned
 const Pin = document.createElement("script");
-Pin.src = "Pin.js";
+Pin.src = "https://administrati0n.github.io/data-one/Pin.js";
 document.body.appendChild(Pin);
 
 // Theme
 const Theme = document.createElement("script");
-Theme.src = "Theme.js";
+Theme.src = "https://administrati0n.github.io/data-one/Theme.js";
 document.body.appendChild(Theme);
 
 // WorkScripts
 var body = document.body;
 const WorkScripts = document.createElement("script");
-WorkScripts.src = "WorkScripts.js";
+WorkScripts.src = "https://administrati0n.github.io/data-one/WorkScripts.js";
 body.insertAdjacentElement("afterend", WorkScripts);
 
 
 
 // Device
 const Device = document.createElement("script");
-// Device.src = "Device.js";
+// Device.src = "https://administrati0n.github.io/data-one/Device.js";
 document.body.appendChild(Device);
