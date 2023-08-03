@@ -1,4 +1,12 @@
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
 
+document.addEventListener("mousedown", function (e) {
+  if (e.button === 2) {
+    e.preventDefault();
+  }
+});
 
 
 
