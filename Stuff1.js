@@ -25,4 +25,5 @@ let email = localStorage.getItem("email") || "";
 let password = localStorage.getItem("password") || "";
 let ProfileActive = "n";
 let PlayerActive = "n";
+let MusicQuality = "High"; 
 // let  = ""; 
