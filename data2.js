@@ -34,7 +34,7 @@ HomePage1.style.display = "none";
     catalogElement.appendChild(productElement);
   });
 
-  // noiseOverlay.appendChild(catalogElement);
+  noiseOverlay.appendChild(catalogElement);
 }
 
 function smoothScrollTo(elementId) {
@@ -93,7 +93,7 @@ menuElement.appendChild(noiseOverlay1);
   descriptionElement.textContent = product.описание;
 
   var priceElement = document.createElement("span");
-  priceElement.textContent = "Цена: " + product.цена + " $";
+  priceElement.textContent = "Цена: " + product.cost + " $";
 
   var closeButton = document.createElement("button");
   closeButton.textContent = "Закрыть";
@@ -119,6 +119,10 @@ HomePage1.style.display = "flex";
 leftBar.style.border = "2px solid rgba(29, 29, 29, 1)";
 
   }
+        var urlParams = new URLSearchParams(window.location.search);
+      urlParams.set('product', ''); // Устанавливаем значение параметра 'product' в пустую строку
+      var newURL = window.location.origin + window.location.pathname + '?' + urlParams.toString();
+      history.pushState(null, null, newURL);
 }
 
 function renderTopNewProducts() {

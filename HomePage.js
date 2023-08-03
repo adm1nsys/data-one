@@ -87,7 +87,7 @@ HomePageSlides1.style.display = "flex";
 HomePageSlides1.style.flexDirection = "row";
 HomePageSlides1.style.position = "relative";
 // HomePageSlides1.style.background = "black";
-HomePageSlides1.style.background = "url('https://administrati0n.github.io/data-one/Slidesbg.png')";
+HomePageSlides1.style.background = "url('Slidesbg.png')";
 HomePageSlides1.style.backgroundSize = "cover";
 HomePageSlides1.style.backgroundPosition = "center";
 HomePageSlides1.style.margin = "5px 5px 5vh";
@@ -175,7 +175,7 @@ HomePageSlidesTextC.appendChild(HomePageSlidesGR1);
 const slide1 = document.createElement("div");
 // slide1.textContent = "Слайд 1";
 // slide1.style.backgroundColor = "red";
-slide1.style.background = "url('https://administrati0n.github.io/data-one/MacBook Pro 16_ - 2.png')";
+slide1.style.background = "url('MacBook Pro 16_ - 2.png')";
 slide1.style.backgroundSize = "contain";
 slide1.style.backgroundPosition = "center";
 slide1.style.backgroundRepeat = "no-repeat";
@@ -189,7 +189,7 @@ slide1.style.transition = "left 0.5s";
 const slide2 = document.createElement("div");
 // slide2.textContent = "Слайд 2";
 // slide2.style.backgroundColor = "green";
-slide2.style.background = "url('https://administrati0n.github.io/data-one/MacBook Pro 16_ - 4.png')";
+slide2.style.background = "url('MacBook Pro 16_ - 4.png')";
 slide2.style.backgroundSize = "contain";
 slide2.style.backgroundPosition = "center";
 slide2.style.backgroundRepeat = "no-repeat";
@@ -202,7 +202,7 @@ slide2.style.transition = "left 0.5s";
 const slide3 = document.createElement("div");
 // slide3.textContent = "Слайд 3";
 // slide3.style.backgroundColor = "blue";
-slide3.style.background = "url('https://administrati0n.github.io/data-one/MacBook Pro 16_ - 5.png')";
+slide3.style.background = "url('MacBook Pro 16_ - 5.png')";
 slide3.style.backgroundSize = "contain";
 slide3.style.backgroundPosition = "center";
 slide3.style.backgroundRepeat = "no-repeat";
@@ -265,7 +265,7 @@ prevButton.style.backgroundPosition = "center";
 prevButton.style.backgroundRepeat = "no-repeat";
 prevButton.style.opacity = "0";
 prevButton.style.transition = "0.5s";
-prevButton.style.backgroundImage = "url('https://administrati0n.github.io/data-one/Frame 5.png')";
+prevButton.style.backgroundImage = "url('Frame 5.png')";
 prevButton.addEventListener("click", showPreviousSlide);
 HomePageSlides1.appendChild(prevButton);
 
@@ -285,7 +285,7 @@ nextButton.style.backgroundPosition = "center";
 nextButton.style.backgroundRepeat = "no-repeat";
 nextButton.style.opacity = "0";
 nextButton.style.transition = "0.5s";
-nextButton.style.backgroundImage = "url('https://administrati0n.github.io/data-one/Frame 6.png')";
+nextButton.style.backgroundImage = "url('Frame 6.png')";
 nextButton.addEventListener("click", showNextSlide);
 HomePageSlides1.appendChild(nextButton);
 
@@ -1296,12 +1296,12 @@ const HomePage2ptTitle = document.createElement("div");
 HomePage2ptTitle.style.display = "flex";
 HomePage2ptTitle.style.flexDirection = "row";
 HomePage2ptTitle.style.position = "relative";
-HomePage2ptTitle.textContent = "Links/Social";
+HomePage2ptTitle.textContent = "Categories For:";
 HomePage2ptTitle.style.background = "none";
 HomePage2ptTitle.style.marginLeft = "0px";
 HomePage2ptTitle.style.marginRight = "auto";
-HomePage2ptTitle.style.marginTop = "20px";
-HomePage2ptTitle.style.fontSize = "40px";
+HomePage2ptTitle.style.marginTop = "0px";
+HomePage2ptTitle.style.fontSize = "50px";
 HomePage2ptTitle.style.fontFamily = "Gilroy";
 HomePage2pt.appendChild(HomePage2ptTitle);
 
@@ -1309,325 +1309,1201 @@ HomePage2pt.appendChild(HomePage2ptTitle);
 
 const HomePage2ptl0 = document.createElement("div");
 HomePage2ptl0.style.display = "flex";
-HomePage2ptl0.style.flexDirection = "column";
+HomePage2ptl0.style.flexDirection = "row";
 HomePage2ptl0.style.position = "relative";
-HomePage2ptl0.style.background = "none";
-HomePage2ptl0.style.borderTop = "2px solid rgb(75, 75, 75)";
-HomePage2ptl0.style.borderBottom = "2px solid rgb(75, 75, 75)";
-// HomePage2ptl0.style.marginLeft = "auto";
-// HomePage2ptl0.style.marginRight = "auto";
+HomePage2ptl0.style.background = "rgba(21, 21, 21, 1)";
+HomePage2ptl0.style.border = "2px solid rgba(40, 40, 41, 1)";
+HomePage2ptl0.style.borderRadius = "999px";
+HomePage2ptl0.style.marginLeft = "auto";
+HomePage2ptl0.style.marginRight = "auto";
 HomePage2ptl0.style.marginTop = "40px";
-// HomePage2ptl0.style.marginBottom = "40px";
+HomePage2ptl0.style.whiteSpace = "nowrap";
 HomePage2ptl0.style.height = "70px";
 HomePage2ptl0.style.width = "100%";
+HomePage2ptl0.style.maxWidth = "1037px";
+HomePage2ptl0.style.overflow = "hidden";
+HomePage2ptl0.style.overflowX = "auto";
+HomePage2ptl0.style.justifyContent = "start";
 HomePage2pt.appendChild(HomePage2ptl0);
 
+const HomePage2ptl0p0 = document.createElement("div");
+HomePage2ptl0p0.style.display = "flex";
+HomePage2ptl0p0.style.flexDirection = "column";
+HomePage2ptl0p0.style.position = "absolute";
+HomePage2ptl0p0.style.background = "rgba(47, 45, 47, 1)";
+HomePage2ptl0p0.style.borderRadius = "999px";
+HomePage2ptl0p0.style.height = "100%";
+HomePage2ptl0p0.style.width = "202px";
+HomePage2ptl0p0.style.left = "0px";
+HomePage2ptl0p0.style.zIndex = "777";
+HomePage2ptl0p0.style.transition = "1s";
+HomePage2ptl0p0.style.opacity = "1";
+HomePage2ptl0.appendChild(HomePage2ptl0p0);
 
+function vibrateElement(element) {
+  element.style.transition = "0.1s"; // Применяем продолжительность анимации 0.2 секунды
 
+  const startPosition = parseInt(element.style.left) || 0;
+  let step = 10; // Шаг вибрации в пикселях
 
+  function animateVibration() {
+    let currentPosition = startPosition;
 
+    function animateLeft() {
+      currentPosition -= step;
+      element.style.left = currentPosition + "px";
 
+      setTimeout(function () {
+        element.style.left = startPosition + "px";
+        currentPosition += step * 2;
+        element.style.left = currentPosition + "px";
+      }, 100); // Задержка в 0.1 секунды между шагами
 
+      setTimeout(function () {
+        element.style.left = startPosition + "px";
+        element.style.transition = "0.1s"; // Возвращаем продолжительность анимации на 1 секунду после окончания функции
+      }, 200); // Задержка в 0.4 секунды перед возвращением в изначальное положение
+    }
 
 
 
+    animateLeft();
 
+      setTimeout(function () {
+        element.style.transition = "1s";
+      }, 210); // Задержка в 0.1 секунды между шагами
 
 
 
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const frame1 = document.createElement('div');
-const frameBg1 = document.createElement('div');
-const bgColor1 = document.createElement('div');
-const bgBlack1 = document.createElement('div');
-
-frame1.className = 'frame1';
-frameBg1.className = 'frame-bg';
-bgColor1.className = 'bg-color album-artwork';
-bgBlack1.className = 'bg-black album-artwork';
-
-bgColor1.style.backgroundSize = 'cover'; 
-bgBlack1.style.backgroundSize = 'cover';
-bgColor1.style.width = '600px';
-bgColor1.style.height = '600px';
-bgBlack1.style.width = '600px';
-bgBlack1.style.height = '600px';
-bgColor1.style.backgroundImage = 'url("https://administrati0n.github.io/data-one/IMG_3052.JPG")';
-
-bgBlack1.style.backgroundImage = 'url("https://administrati0n.github.io/data-one/IMG_3052.JPG")';
-
-bgColor1.src = 'url("https://administrati0n.github.io/data-one/Starter Pack.png")';
-bgBlack1.src = 'url("https://administrati0n.github.io/data-one/Starter Pack.png")';
-
-
-frameBg1.style.filter = "blur(10px)";
-frameBg1.style.display = "flex";
-
-frameBg1.appendChild(bgColor1);
-frameBg1.appendChild(bgBlack1);
-
-frame1.appendChild(frameBg1);
-
-frame1.style.display = 'none';
-frame1.style.opacity = '0';
-frame1.style.flexDirection = 'column';
-frame1.style.width = '290px';
-frame1.style.height = '547px';
-frame1.style.left = '120px';
-frame1.style.zIndex = '150';
-
-frame1.style.position = 'fixed';
-
-frame1.style.color = 'white';
-frame1.style.top = '30px';
-
-frame1.style.paddingTop = '50px';
-frame1.style.paddingBottom = '20px';
-frame1.style.borderRadius = '27px';
-
-
-const frameHeader1 = document.createElement('div');
-frameHeader1.className = 'frame1-header';
-frameHeader1.style.position = 'absolute';
-frameHeader1.style.zIndex = '10';
-frameHeader1.style.display = 'flex';
-frameHeader1.style.flexShrink = '0';
-frameHeader1.style.alignItems = 'center';
-frameHeader1.style.padding = '2rem';
-// frame1.insertBefore(frameHeader1, frame1.firstChild);
-
-const imageContainer1 = document.createElement('div');
-imageContainer1.className = 'image1';
-frameHeader1.appendChild(imageContainer1);
-
-const image1 = document.createElement('img');
-image1.src = 'url("https://administrati0n.github.io/data-one/Starter Pack.png")';
-image1.style.width = '50px';
-image1.style.borderRadius = '0.5em';
-image1.style.boxShadow = '0 3px 30px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.4)';
-// imageContainer.appendChild(image1);
-
-// const infoContainer = document.createElement('div');
-// infoContainer.className = 'info';
-// frameHeader1.appendChild(infoContainer);
-
-
-const lyrics1 = document.createElement('div');
-lyrics1.className = 'frame1-lyrics1';
-lyrics1.style.position = 'relative';
-// lyrics1.style.display = 'flex';
-lyrics1.style.zIndex = '10';
-lyrics1.style.flexGrow = '1';
-lyrics1.style.transition = "0.8s"
-// lyrics1.style.padding = '2rem';
-lyrics1.style.paddingTop = '0';
-lyrics1.style.fontSize = '2rem';
-lyrics1.style.overflowY = 'auto';
-
-
-
-const frameBgStyle1 = {
-  position: 'absolute',
-  top: '0',
-  left: '0',
-  width: '100%',
-  height: '100%',
-  pointerEvents: 'none',
-  zIndex: '0',
-  overflow: 'hidden',
-  borderRadius: '27px'
-};
-
-for (const prop in frameBgStyle1) {
-  frameBg1.style[prop] = frameBgStyle1[prop];
+  animateVibration();
 }
 
-const bgColorStyle1 = {
-  width: '200%',
-  left: '-300px',
-  position: 'absolute',
-  filter: 'blur(40px)',
-  // borderRadius: '100em',
-  animation: 'rotate 35s linear infinite'
-};
+function vibrateElement0(element) {
+  element.style.transition = "0.1s"; // Применяем продолжительность анимации 0.2 секунды
 
-for (const prop in bgColorStyle1) {
-  bgColor1.style[prop] = bgColorStyle1[prop];
+  const startPosition = parseInt(element.style.left) || 0;
+  let step = 10; // Шаг вибрации в пикселях
+
+  function animateVibration() {
+    let currentPosition = startPosition;
+
+    function animateLeft() {
+        element.style.left = startPosition + "px";
+        currentPosition += step * 2;
+        element.style.left = currentPosition + "px";
+
+      setTimeout(function () {
+        element.style.left = startPosition + "px";
+        element.style.transition = "0.1s"; // Возвращаем продолжительность анимации на 1 секунду после окончания функции
+      }, 100); // Задержка в 0.4 секунды перед возвращением в изначальное положение
+    }
+
+
+
+    animateLeft();
+
+      setTimeout(function () {
+        element.style.transition = "1s";
+      }, 110); // Задержка в 0.1 секунды между шагами
+
+
+
+  }
+
+  animateVibration();
 }
 
-const bgBlackStyle1 = {
-  position: 'absolute',
-  width: '200%',
-  left: '0',
-  bottom: '0',
-  filter: 'blur(40px)',
-  zIndex: '1',
-  animation: 'rotate1 35s linear infinite'
-  // animationDirection: 'reverse',
-  // animationDelay: '10s'
-};
+function vibrateElement1(element) {
+  element.style.transition = "0.1s"; // Применяем продолжительность анимации 0.2 секунды
 
-for (const prop in bgBlackStyle1) {
-  bgBlack1.style[prop] = bgBlackStyle1[prop];
+  const startPosition = parseInt(element.style.left) || 0;
+  let step = 10; // Шаг вибрации в пикселях
+
+  function animateVibration() {
+    let currentPosition = startPosition;
+
+    function animateLeft() {
+      currentPosition -= step;
+      element.style.left = currentPosition + "px";
+
+      setTimeout(function () {
+        element.style.left = startPosition + "px";
+        element.style.transition = "0.1s"; // Возвращаем продолжительность анимации на 1 секунду после окончания функции
+      }, 100); // Задержка в 0.4 секунды перед возвращением в изначальное положение
+    }
+
+
+
+    animateLeft();
+
+      setTimeout(function () {
+        element.style.transition = "1s";
+      }, 110); // Задержка в 0.1 секунды между шагами
+
+
+
+  }
+
+  animateVibration();
 }
 
-const rotateKeyframes3 = `
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+const HomePage2ptl0p1 = document.createElement("div");
+HomePage2ptl0p1.style.display = "flex";
+HomePage2ptl0p1.style.flexDirection = "column";
+HomePage2ptl0p1.style.position = "relative";
+HomePage2ptl0p1.style.background = "rgba(47, 45, 47, 0)";
+HomePage2ptl0p1.style.paddingLeft = "30px";
+HomePage2ptl0p1.style.paddingRight = "30px";
+HomePage2ptl0p1.style.borderRadius = "999px";
+HomePage2ptl0p1.style.justifyContent = "center";
+HomePage2ptl0p1.style.justifyItems = "center";
+HomePage2ptl0p1.style.textAlign = "center";
+HomePage2ptl0p1.style.fontSize = "20px";
+HomePage2ptl0p1.textContent = "iOS Developers";
+HomePage2ptl0p1.style.height = "100%";
+HomePage2ptl0p1.style.fontFamily = "Gilroy";
+HomePage2ptl0p1.style.color = "white";
+HomePage2ptl0p1.style.zIndex = "999";
+HomePage2ptl0p1.style.transition = "1s";
+HomePage2ptl0.appendChild(HomePage2ptl0p1);
+
+HomePage2ptl0p1.addEventListener("mouseenter", function() {
+if(HomePage2ptl0p0.style.left === "0px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+HomePage2ptl0p1.style.color = "white";
+HomePage2ptl0p1.style.cursor = "pointer";
+} else {
+  HomePage2ptl0p1.style.color = "white";
+HomePage2ptl0p1.style.cursor = "pointer";
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes rotate1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-@keyframes rotate1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-`;
-
-const rotateKeyframes2 = `
-
-`;
-
-
-
-const style1 = document.createElement('style');
-style1.appendChild(document.createTextNode(rotateKeyframes3));
-document.head.appendChild(style1);
-
-const homeBar1 = document.createElement("div");
-homeBar1.style.position = "absolute";
-homeBar1.style.bottom = "10px";
-homeBar1.style.left = "90px";
-homeBar1.style.width = "110px";
-homeBar1.style.borderRadius = "999px";
-homeBar1.style.height = "5px";
-// homeBar1.style.mixBlendMode = "difference";
-// homeBar1.style.backgroundColor = "rgba(255, 255, 255, 1";
-
-
-
-const mdnpc1 = document.createElement("div");
-mdnpc1.style.position = "absolute";
-mdnpc1.style.top = "15px";
-mdnpc1.style.left = "100px";
-mdnpc1.style.width = "100px";
-mdnpc1.style.borderRadius = "999px";
-mdnpc1.style.zIndex = "999";
-mdnpc1.style.height = "30px";
-mdnpc1.style.transition = "0.3s";
-mdnpc1.style.backgroundColor = "rgba(0, 0, 0, 1)";
-
-const alert0 = document.createElement("div");
-alert0.style.position = "absolute";
-alert0.style.top = "15px";
-alert0.style.right = "40px";
-alert0.textContent = "!";
-alert0.style.borderRadius = "999px";
-alert0.style.zIndex = "999";
-alert0.style.background = "orange";
-alert0.style.transition = "0.3s";
-alert0.style.color = "rgba(0, 0, 0, 1)";
-alert0.style.paddingTop = "5px";
-alert0.style.paddingBottom = "5px";
-alert0.style.paddingLeft = "12px";
-alert0.style.paddingRight = "12px";
-alert0.style.fontSize = "15px";
-alert0.style.fontFamily = "Gilroy";
-
-mdnpc1.addEventListener("mouseenter", function() {
-  mdnpc1.style.width = "114px";
-  mdnpc1.style.height = "34px";
-  mdnpc1.style.top = "13px";
-mdnpc1.style.transition = "0.3s";
-  mdnpc1.style.left = "94px";
 });
 
-mdnpc1.addEventListener("mouseleave", function() {
-  mdnpc1.style.width = "100px";
-  mdnpc1.style.height = "30px";
-  mdnpc1.style.top = "15px";
-mdnpc1.style.transition = "0.3s";
-  mdnpc1.style.left = "100px";
+HomePage2ptl0p1.addEventListener("mouseleave", function() {
+    HomePage2ptl0p1.style.cursor = "normal";
+HomePage2ptl0p0.style.opacity = "1";
+
+    if (HomePage2ptl0p1.style.background === "rgba(47, 45, 47, 0)") {
+        HomePage2ptl0p1.style.color = "white";
+    } else if (HomePage2ptl0p1.style.background === "none"){
+        HomePage2ptl0p1.style.color = "rgba(134, 134, 139, 1)";
+    }
 });
 
-document.body.appendChild(frame1);
-frame1.appendChild(lyrics1);
-frame1.appendChild(homeBar1);
-// frame1.appendChild(usertime);
-frame1.appendChild(mdnpc1);
-frame1.appendChild(alert0);
+const HomePage2ptl0p2 = document.createElement("div");
+HomePage2ptl0p2.style.display = "flex";
+HomePage2ptl0p2.style.flexDirection = "column";
+HomePage2ptl0p2.style.position = "relative";
+HomePage2ptl0p2.style.background = "none";
+HomePage2ptl0p2.style.paddingLeft = "30px";
+HomePage2ptl0p2.style.paddingRight = "30px";
+HomePage2ptl0p2.style.borderRadius = "999px";
+HomePage2ptl0p2.style.justifyContent = "center";
+HomePage2ptl0p2.style.justifyItems = "center";
+HomePage2ptl0p2.style.textAlign = "center";
+HomePage2ptl0p2.style.fontSize = "20px";
+HomePage2ptl0p2.textContent = "WEB Developrs";
+HomePage2ptl0p2.style.height = "100%";
+HomePage2ptl0p2.style.fontFamily = "Gilroy";
+HomePage2ptl0p2.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p2.style.zIndex = "999";
+HomePage2ptl0p2.style.transition = "1s";
+HomePage2ptl0.appendChild(HomePage2ptl0p2);
+
+HomePage2ptl0p2.addEventListener("mouseenter", function() {
+if(HomePage2ptl0p0.style.left === "190px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+HomePage2ptl0p2.style.color = "white";
+HomePage2ptl0p2.style.cursor = "pointer";
+} else{
+  HomePage2ptl0p2.style.color = "white";
+HomePage2ptl0p2.style.cursor = "pointer";
+}
+});
+
+HomePage2ptl0p2.addEventListener("mouseleave", function() {
+    HomePage2ptl0p2.style.cursor = "normal";
+HomePage2ptl0p0.style.opacity = "1";
+
+    if (HomePage2ptl0p2.style.background === "rgba(47, 45, 47, 0)") {
+        HomePage2ptl0p2.style.color = "white";
+    } else if (HomePage2ptl0p2.style.background === "none"){
+        HomePage2ptl0p2.style.color = "rgba(134, 134, 139, 1)";
+    }
+});
+
+const HomePage2ptl0p3 = document.createElement("div");
+HomePage2ptl0p3.style.display = "flex";
+HomePage2ptl0p3.style.flexDirection = "column";
+HomePage2ptl0p3.style.position = "relative";
+HomePage2ptl0p3.style.background = "none";
+HomePage2ptl0p3.style.paddingLeft = "30px";
+HomePage2ptl0p3.style.paddingRight = "30px";
+HomePage2ptl0p3.style.borderRadius = "999px";
+HomePage2ptl0p3.style.justifyContent = "center";
+HomePage2ptl0p3.style.justifyItems = "center";
+HomePage2ptl0p3.style.textAlign = "center";
+HomePage2ptl0p3.style.fontSize = "20px";
+HomePage2ptl0p3.textContent = "Scripters";
+HomePage2ptl0p3.style.height = "100%";
+HomePage2ptl0p3.style.fontFamily = "Gilroy";
+HomePage2ptl0p3.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p3.style.zIndex = "999";
+HomePage2ptl0p3.style.transition = "1s";
+HomePage2ptl0.appendChild(HomePage2ptl0p3);
+
+HomePage2ptl0p3.addEventListener("mouseenter", function() {
+  if(HomePage2ptl0p0.style.left === "390px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+HomePage2ptl0p3.style.color = "white";
+HomePage2ptl0p3.style.cursor = "pointer";
+} else {
+HomePage2ptl0p3.style.color = "white";
+HomePage2ptl0p3.style.cursor = "pointer";
+}
+});
+
+HomePage2ptl0p3.addEventListener("mouseleave", function() {
+    HomePage2ptl0p3.style.cursor = "normal";
+HomePage2ptl0p0.style.opacity = "1";
+
+    if (HomePage2ptl0p3.style.background === "rgba(47, 45, 47, 0)") {
+        HomePage2ptl0p3.style.color = "white";
+    } else if (HomePage2ptl0p3.style.background === "none"){
+        HomePage2ptl0p3.style.color = "rgba(134, 134, 139, 1)";
+    }
+});
+
+const HomePage2ptl0p4 = document.createElement("div");
+HomePage2ptl0p4.style.display = "flex";
+HomePage2ptl0p4.style.flexDirection = "column";
+HomePage2ptl0p4.style.position = "relative";
+HomePage2ptl0p4.style.background = "none";
+HomePage2ptl0p4.style.paddingLeft = "30px";
+HomePage2ptl0p4.style.paddingRight = "30px";
+HomePage2ptl0p4.style.borderRadius = "999px";
+HomePage2ptl0p4.style.justifyContent = "center";
+HomePage2ptl0p4.style.justifyItems = "center";
+HomePage2ptl0p4.style.textAlign = "center";
+HomePage2ptl0p4.style.fontSize = "20px";
+HomePage2ptl0p4.textContent = "Designers";
+HomePage2ptl0p4.style.height = "100%";
+HomePage2ptl0p4.style.fontFamily = "Gilroy";
+HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p4.style.zIndex = "999";
+HomePage2ptl0p4.style.transition = "1s";
+HomePage2ptl0.appendChild(HomePage2ptl0p4);
+
+HomePage2ptl0p4.addEventListener("mouseenter", function() {
+    if(HomePage2ptl0p0.style.left === "532px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+HomePage2ptl0p4.style.color = "white";
+HomePage2ptl0p4.style.cursor = "pointer";
+} else {
+  HomePage2ptl0p4.style.color = "white";
+HomePage2ptl0p4.style.cursor = "pointer";
+}
+});
+
+HomePage2ptl0p4.addEventListener("mouseleave", function() {
+    HomePage2ptl0p4.style.cursor = "normal";
+HomePage2ptl0p0.style.opacity = "1";
+
+    if (HomePage2ptl0p4.style.background === "rgba(47, 45, 47, 0)") {
+        HomePage2ptl0p4.style.color = "white";
+    } else if (HomePage2ptl0p4.style.background === "none"){
+        HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
+    }
+});
+
+
+const HomePage2ptl0p5 = document.createElement("div");
+HomePage2ptl0p5.style.display = "flex";
+HomePage2ptl0p5.style.flexDirection = "column";
+HomePage2ptl0p5.style.position = "relative";
+HomePage2ptl0p5.style.background = "none";
+HomePage2ptl0p5.style.paddingLeft = "30px";
+HomePage2ptl0p5.style.paddingRight = "30px";
+HomePage2ptl0p5.style.borderRadius = "999px";
+HomePage2ptl0p5.style.justifyContent = "center";
+HomePage2ptl0p5.style.justifyItems = "center";
+HomePage2ptl0p5.style.textAlign = "center";
+HomePage2ptl0p5.style.fontSize = "20px";
+HomePage2ptl0p5.textContent = "3D Specialists";
+HomePage2ptl0p5.style.height = "100%";
+HomePage2ptl0p5.style.fontFamily = "Gilroy";
+HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p5.style.zIndex = "999";
+HomePage2ptl0p5.style.transition = "1s";
+HomePage2ptl0.appendChild(HomePage2ptl0p5);
+
+HomePage2ptl0p5.addEventListener("mouseenter", function() {
+      if(HomePage2ptl0p0.style.left ==="684px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+HomePage2ptl0p5.style.color = "white";
+HomePage2ptl0p5.style.cursor = "pointer";
+} else {
+  HomePage2ptl0p5.style.color = "white";
+HomePage2ptl0p5.style.cursor = "pointer";
+}
+});
+
+HomePage2ptl0p5.addEventListener("mouseleave", function() {
+    HomePage2ptl0p5.style.cursor = "normal";
+HomePage2ptl0p0.style.opacity = "1";
+
+    if (HomePage2ptl0p5.style.background === "rgba(47, 45, 47, 0)") {
+        HomePage2ptl0p5.style.color = "white";
+    } else if (HomePage2ptl0p5.style.background === "none"){
+        HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
+    }
+});
+
+const HomePage2ptl0p6 = document.createElement("div");
+HomePage2ptl0p6.style.display = "flex";
+HomePage2ptl0p6.style.flexDirection = "column";
+HomePage2ptl0p6.style.position = "relative";
+HomePage2ptl0p6.style.background = "none";
+HomePage2ptl0p6.style.paddingLeft = "30px";
+HomePage2ptl0p6.style.paddingRight = "30px";
+HomePage2ptl0p6.style.borderRadius = "999px";
+HomePage2ptl0p6.style.justifyContent = "center";
+HomePage2ptl0p6.style.justifyItems = "center";
+HomePage2ptl0p6.style.textAlign = "center";
+HomePage2ptl0p6.style.fontSize = "20px";
+HomePage2ptl0p6.textContent = "Beginners";
+HomePage2ptl0p6.style.height = "100%";
+HomePage2ptl0p6.style.fontFamily = "Gilroy";
+HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p6.style.zIndex = "999";
+HomePage2ptl0p6.style.transition = "1s";
+HomePage2ptl0.appendChild(HomePage2ptl0p6);
+
+HomePage2ptl0p6.addEventListener("mouseenter", function() {
+        if(HomePage2ptl0p0.style.left === "871px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+HomePage2ptl0p6.style.color = "white";
+HomePage2ptl0p6.style.cursor = "pointer";
+} else {
+  HomePage2ptl0p6.style.color = "white";
+HomePage2ptl0p6.style.cursor = "pointer";
+}
+});
+
+HomePage2ptl0p6.addEventListener("mouseleave", function() {
+    HomePage2ptl0p6.style.cursor = "normal";
+HomePage2ptl0p0.style.opacity = "1";
+
+    if (HomePage2ptl0p6.style.background === "rgba(47, 45, 47, 0)") {
+        HomePage2ptl0p6.style.color = "white";
+    } else if (HomePage2ptl0p6.style.background === "none"){
+        HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
+    }
+});
 
 
 
 
+
+
+const HomePage2ptl0С1 = document.createElement("div");
+HomePage2ptl0С1.style.display = "flex";
+HomePage2ptl0С1.style.flexDirection = "column";
+HomePage2ptl0С1.style.transition = "1s";
+HomePage2ptl0С1.style.width = "100%";
+HomePage2ptl0С1.style.minHeight = "100px";
+HomePage2ptl0С1.style.height = "auto";
+HomePage2ptl0С1.style.background = "none";
+HomePage2ptl0С1.style.marginTop = "0px";
+HomePage2ptl0С1.style.opacity = "1";
+HomePage2pt.appendChild(HomePage2ptl0С1);
+
+const HomePage2ptl0С1T1 = document.createElement("div");
+HomePage2ptl0С1T1.style.display = "flex";
+HomePage2ptl0С1T1.style.fontSize = "80px";
+HomePage2ptl0С1T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С1T1.style.color = "rgba(0, 0, 0, 0)";
+HomePage2ptl0С1T1.style.marginTop = "40px";
+HomePage2ptl0С1T1.style.marginLeft = "auto";
+HomePage2ptl0С1T1.style.marginRight = "auto";
+HomePage2ptl0С1T1.textContent = "iOS Developers";
+HomePage2ptl0С1T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С1T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С1.appendChild(HomePage2ptl0С1T1);
+
+
+// Функция для анимации фона
+function animateBackground(element) {
+  let hue = 0;
+
+  // Запускаем анимацию
+  function animate() {
+    hue = (hue + 1) % 360; // Изменяем цветовой тон
+
+    // Применяем анимированный градиентный фон к элементу
+    element.style.background = `linear-gradient(45deg, hsl(${hue}, 100%, 50%), hsl(${(hue + 90) % 360}, 100%, 50%), hsl(${(hue + 180) % 360}, 100%, 50%), hsl(${(hue + 270) % 360}, 100%, 50%))`;
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+}
+
+animateBackground(HomePage2ptl0С1T1);
+
+const HomePage2ptl0С1T2 = document.createElement("div");
+HomePage2ptl0С1T2.style.display = "flex";
+HomePage2ptl0С1T2.style.fontSize = "30px";
+HomePage2ptl0С1T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С1T2.style.color = "rgba(255, 255, 255, 1)";
+HomePage2ptl0С1T2.style.marginTop = "40px";
+HomePage2ptl0С1T2.style.marginLeft = "auto";
+HomePage2ptl0С1T2.style.marginRight = "auto";
+HomePage2ptl0С1T2.style.textAlign = "center";
+HomePage2ptl0С1T2.textContent = "Here, you will find a comprehensive list of categories that can assist iOS developers in creating and designing apps, among other useful topics.";
+HomePage2ptl0С1T2.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С1T2.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С1.appendChild(HomePage2ptl0С1T2);
+
+
+const HomePage2ptl0С2 = document.createElement("div");
+HomePage2ptl0С2.style.display = "none";
+HomePage2ptl0С2.style.flexDirection = "column";
+HomePage2ptl0С2.style.transition = "1s";
+HomePage2ptl0С2.style.width = "100%";
+HomePage2ptl0С2.style.minHeight = "100px";
+HomePage2ptl0С2.style.height = "auto";
+HomePage2ptl0С2.style.background = "none";
+HomePage2ptl0С2.style.marginTop = "100px";
+HomePage2ptl0С2.style.opacity = "0";
+HomePage2pt.appendChild(HomePage2ptl0С2);
+
+
+const HomePage2ptl0С2T1 = document.createElement("div");
+HomePage2ptl0С2T1.style.display = "flex";
+HomePage2ptl0С2T1.style.fontSize = "80px";
+HomePage2ptl0С2T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С2T1.style.color = "rgba(0, 0, 0, 0)";
+HomePage2ptl0С2T1.style.marginTop = "40px";
+HomePage2ptl0С2T1.style.marginLeft = "auto";
+HomePage2ptl0С2T1.style.marginRight = "auto";
+HomePage2ptl0С2T1.textContent = "WEB Developers";
+HomePage2ptl0С2T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С2T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С2.appendChild(HomePage2ptl0С2T1);
+
+
+animateBackground(HomePage2ptl0С2T1);
+
+const HomePage2ptl0С2T2 = document.createElement("div");
+HomePage2ptl0С2T2.style.display = "flex";
+HomePage2ptl0С2T2.style.fontSize = "30px";
+HomePage2ptl0С2T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С2T2.style.color = "rgba(255, 255, 255, 1)";
+HomePage2ptl0С2T2.style.marginTop = "40px";
+HomePage2ptl0С2T2.style.marginLeft = "auto";
+HomePage2ptl0С2T2.style.marginRight = "auto";
+HomePage2ptl0С2T2.style.textAlign = "center";
+HomePage2ptl0С2T2.textContent = "Here, you will find all the categories that can help WEB Developers in various aspects of web development, from front-end design to back-end technologies and more.";
+HomePage2ptl0С2T2.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С2T2.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С2.appendChild(HomePage2ptl0С2T2);
+
+const HomePage2ptl0С3 = document.createElement("div");
+HomePage2ptl0С3.style.display = "none";
+HomePage2ptl0С3.style.flexDirection = "column";
+HomePage2ptl0С3.style.transition = "1s";
+HomePage2ptl0С3.style.width = "100%";
+HomePage2ptl0С3.style.minHeight = "100px";
+HomePage2ptl0С3.style.height = "auto";
+HomePage2ptl0С3.style.background = "none";
+HomePage2ptl0С3.style.marginTop = "100px";
+HomePage2ptl0С3.style.opacity = "0";
+HomePage2pt.appendChild(HomePage2ptl0С3);
+
+const HomePage2ptl0С3T1 = document.createElement("div");
+HomePage2ptl0С3T1.style.display = "flex";
+HomePage2ptl0С3T1.style.fontSize = "80px";
+HomePage2ptl0С3T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С3T1.style.color = "rgba(0, 0, 0, 0)";
+HomePage2ptl0С3T1.style.marginTop = "40px";
+HomePage2ptl0С3T1.style.marginLeft = "auto";
+HomePage2ptl0С3T1.style.marginRight = "auto";
+HomePage2ptl0С3T1.textContent = "Scripters";
+HomePage2ptl0С3T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С3T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С3.appendChild(HomePage2ptl0С3T1);
+
+
+animateBackground(HomePage2ptl0С3T1);
+
+const HomePage2ptl0С3T2 = document.createElement("div");
+HomePage2ptl0С3T2.style.display = "flex";
+HomePage2ptl0С3T2.style.fontSize = "30px";
+HomePage2ptl0С3T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С3T2.style.color = "rgba(255, 255, 255, 1)";
+HomePage2ptl0С3T2.style.marginTop = "40px";
+HomePage2ptl0С3T2.style.marginLeft = "auto";
+HomePage2ptl0С3T2.style.marginRight = "auto";
+HomePage2ptl0С3T2.style.textAlign = "center";
+HomePage2ptl0С3T2.textContent = "Here, you will see a diverse range of categories tailored for scripters, encompassing a variety of languages from C to Swift and beyond, to support you in your scripting journey.";
+HomePage2ptl0С3T2.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С3T2.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С3.appendChild(HomePage2ptl0С3T2);
+
+const HomePage2ptl0С4 = document.createElement("div");
+HomePage2ptl0С4.style.display = "none";
+HomePage2ptl0С4.style.flexDirection = "column";
+HomePage2ptl0С4.style.transition = "1s";
+HomePage2ptl0С4.style.width = "100%";
+HomePage2ptl0С4.style.minHeight = "100px";
+HomePage2ptl0С4.style.height = "auto";
+HomePage2ptl0С4.style.background = "none";
+HomePage2ptl0С4.style.marginTop = "100px";
+HomePage2ptl0С4.style.opacity = "0";
+HomePage2pt.appendChild(HomePage2ptl0С4);
+
+const HomePage2ptl0С4T1 = document.createElement("div");
+HomePage2ptl0С4T1.style.display = "flex";
+HomePage2ptl0С4T1.style.fontSize = "80px";
+HomePage2ptl0С4T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С4T1.style.color = "rgba(0, 0, 0, 0)";
+HomePage2ptl0С4T1.style.marginTop = "40px";
+HomePage2ptl0С4T1.style.marginLeft = "auto";
+HomePage2ptl0С4T1.style.marginRight = "auto";
+HomePage2ptl0С4T1.textContent = "Designers";
+HomePage2ptl0С4T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С4T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С4.appendChild(HomePage2ptl0С4T1);
+
+
+animateBackground(HomePage2ptl0С4T1);
+
+const HomePage2ptl0С4T2 = document.createElement("div");
+HomePage2ptl0С4T2.style.display = "flex";
+HomePage2ptl0С4T2.style.fontSize = "30px";
+HomePage2ptl0С4T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С4T2.style.color = "rgba(255, 255, 255, 1)";
+HomePage2ptl0С4T2.style.marginTop = "40px";
+HomePage2ptl0С4T2.style.marginLeft = "auto";
+HomePage2ptl0С4T2.style.marginRight = "auto";
+HomePage2ptl0С4T2.style.textAlign = "center";
+HomePage2ptl0С4T2.textContent = "Here, you will discover a comprehensive list of categories curated to empower designers with valuable insights, tips, and resources for honing their craft and creating exceptional designs.";
+HomePage2ptl0С4T2.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С4T2.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С4.appendChild(HomePage2ptl0С4T2);
+
+const HomePage2ptl0С5 = document.createElement("div");
+HomePage2ptl0С5.style.display = "none";
+HomePage2ptl0С5.style.flexDirection = "column";
+HomePage2ptl0С5.style.transition = "1s";
+HomePage2ptl0С5.style.width = "100%";
+HomePage2ptl0С5.style.minHeight = "100px";
+HomePage2ptl0С5.style.height = "auto";
+HomePage2ptl0С5.style.background = "none";
+HomePage2ptl0С5.style.marginTop = "100px";
+HomePage2ptl0С5.style.opacity = "0";
+HomePage2pt.appendChild(HomePage2ptl0С5);
+
+const HomePage2ptl0С5T1 = document.createElement("div");
+HomePage2ptl0С5T1.style.display = "flex";
+HomePage2ptl0С5T1.style.fontSize = "80px";
+HomePage2ptl0С5T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С5T1.style.color = "rgba(0, 0, 0, 0)";
+HomePage2ptl0С5T1.style.marginTop = "40px";
+HomePage2ptl0С5T1.style.marginLeft = "auto";
+HomePage2ptl0С5T1.style.marginRight = "auto";
+HomePage2ptl0С5T1.textContent = "3D Specialists";
+HomePage2ptl0С5T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С5T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С5.appendChild(HomePage2ptl0С5T1);
+
+
+animateBackground(HomePage2ptl0С5T1);
+
+const HomePage2ptl0С5T2 = document.createElement("div");
+HomePage2ptl0С5T2.style.display = "flex";
+HomePage2ptl0С5T2.style.fontSize = "30px";
+HomePage2ptl0С5T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С5T2.style.color = "rgba(255, 255, 255, 1)";
+HomePage2ptl0С5T2.style.marginTop = "40px";
+HomePage2ptl0С5T2.style.marginLeft = "auto";
+HomePage2ptl0С5T2.style.marginRight = "auto";
+HomePage2ptl0С5T2.style.textAlign = "center";
+HomePage2ptl0С5T2.textContent = "Here, you will explore a specialized selection of categories, catering specifically to 3D specialists, providing them with the tools and knowledge to excel in the realm of 3D graphics and modeling.";
+HomePage2ptl0С5T2.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С5T2.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С5.appendChild(HomePage2ptl0С5T2);
+
+const HomePage2ptl0С6 = document.createElement("div");
+HomePage2ptl0С6.style.display = "none";
+HomePage2ptl0С6.style.flexDirection = "column";
+HomePage2ptl0С6.style.transition = "1s";
+HomePage2ptl0С6.style.width = "100%";
+HomePage2ptl0С6.style.minHeight = "100px";
+HomePage2ptl0С6.style.height = "auto";
+HomePage2ptl0С6.style.background = "none";
+HomePage2ptl0С6.style.marginTop = "100px";
+HomePage2ptl0С6.style.opacity = "0";
+HomePage2pt.appendChild(HomePage2ptl0С6);
+
+const HomePage2ptl0С6T1 = document.createElement("div");
+HomePage2ptl0С6T1.style.display = "flex";
+HomePage2ptl0С6T1.style.fontSize = "80px";
+HomePage2ptl0С6T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С6T1.style.color = "rgba(0, 0, 0, 0)";
+HomePage2ptl0С6T1.style.marginTop = "40px";
+HomePage2ptl0С6T1.style.marginLeft = "auto";
+HomePage2ptl0С6T1.style.marginRight = "auto";
+HomePage2ptl0С6T1.textContent = "Beginners";
+HomePage2ptl0С6T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С6T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С6.appendChild(HomePage2ptl0С6T1);
+
+
+animateBackground(HomePage2ptl0С6T1);
+
+const HomePage2ptl0С6T2 = document.createElement("div");
+HomePage2ptl0С6T2.style.display = "flex";
+HomePage2ptl0С6T2.style.fontSize = "30px";
+HomePage2ptl0С6T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С6T2.style.color = "rgba(255, 255, 255, 1)";
+HomePage2ptl0С6T2.style.marginTop = "40px";
+HomePage2ptl0С6T2.style.marginLeft = "auto";
+HomePage2ptl0С6T2.style.marginRight = "auto";
+HomePage2ptl0С6T2.style.textAlign = "center";
+HomePage2ptl0С6T2.textContent = "Here, you will find a variety of categories which can assist you in acquiring different skills, ranging from iOS Development to Design.";
+HomePage2ptl0С6T2.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
+HomePage2ptl0С6T2.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С6.appendChild(HomePage2ptl0С6T2);
+
+
+
+
+HomePage2ptl0p1.addEventListener("click", function() {
+
+if(HomePage2ptl0С1.style.marginTop === "0px"){
+  vibrateElement0(HomePage2ptl0p0);
+}else if(HomePage2ptl0С1.style.marginTop === "100px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+
+HomePage2ptl0p1.style.background = "rgba(47, 45, 47, 0)";
+HomePage2ptl0p2.style.background = "none";
+HomePage2ptl0p3.style.background = "none";
+HomePage2ptl0p4.style.background = "none";
+HomePage2ptl0p5.style.background = "none";
+HomePage2ptl0p6.style.background = "none";
+
+HomePage2ptl0p1.style.color = "white";
+HomePage2ptl0p2.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p3.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
+
+HomePage2ptl0p0.style.width = "202px";
+HomePage2ptl0p0.style.left = "0px";
+
+HomePage2ptl0С1.style.display = "flex";
+setTimeout(function() {
+HomePage2ptl0С1.style.marginTop = "0px";
+HomePage2ptl0С1.style.opacity = "1";
+}, 100); 
+
+HomePage2ptl0С2.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С2.style.marginTop = "100px";
+HomePage2ptl0С2.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С3.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С3.style.marginTop = "100px";
+HomePage2ptl0С3.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С4.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С4.style.marginTop = "100px";
+HomePage2ptl0С4.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С5.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С5.style.marginTop = "100px";
+HomePage2ptl0С5.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С6.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С6.style.marginTop = "100px";
+HomePage2ptl0С6.style.opacity = "0";
+}, 100); 
+
+}
+
+});
+
+
+HomePage2ptl0p2.addEventListener("click", function() {
+
+if(HomePage2ptl0С2.style.marginTop === "0px"){
+  vibrateElement(HomePage2ptl0p0);
+}else if(HomePage2ptl0С2.style.marginTop === "100px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+
+HomePage2ptl0p1.style.background = "none";
+HomePage2ptl0p2.style.background = "rgba(47, 45, 47, 0)";
+HomePage2ptl0p3.style.background = "none";
+HomePage2ptl0p4.style.background = "none";
+HomePage2ptl0p5.style.background = "none";
+HomePage2ptl0p6.style.background = "none";
+
+HomePage2ptl0p1.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p2.style.color = "white";
+HomePage2ptl0p3.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
+
+HomePage2ptl0p0.style.width = "200px";
+HomePage2ptl0p0.style.left = "202px";
+
+HomePage2ptl0С1.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С1.style.marginTop = "100px";
+HomePage2ptl0С1.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С2.style.display = "flex";
+setTimeout(function() {
+HomePage2ptl0С2.style.marginTop = "0px";
+HomePage2ptl0С2.style.opacity = "1";
+}, 100); 
+
+HomePage2ptl0С3.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С3.style.marginTop = "100px";
+HomePage2ptl0С3.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С4.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С4.style.marginTop = "100px";
+HomePage2ptl0С4.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С5.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С5.style.marginTop = "100px";
+HomePage2ptl0С5.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С6.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С6.style.marginTop = "100px";
+HomePage2ptl0С6.style.opacity = "0";
+}, 100); 
+
+}
+
+});
+
+
+HomePage2ptl0p3.addEventListener("click", function() {
+
+if(HomePage2ptl0С3.style.marginTop === "0px"){
+    vibrateElement(HomePage2ptl0p0);
+}else if(HomePage2ptl0С3.style.marginTop === "100px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+
+HomePage2ptl0p1.style.background = "none";
+HomePage2ptl0p2.style.background = "none";
+HomePage2ptl0p3.style.background = "rgba(47, 45, 47, 0)";
+HomePage2ptl0p4.style.background = "none";
+HomePage2ptl0p5.style.background = "none";
+HomePage2ptl0p6.style.background = "none";
+
+HomePage2ptl0p1.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p2.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p3.style.color = "white";
+HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
+
+HomePage2ptl0p0.style.width = "142px";
+HomePage2ptl0p0.style.left = "402px";
+
+HomePage2ptl0С1.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С1.style.marginTop = "100px";
+HomePage2ptl0С1.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С2.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С2.style.marginTop = "100px";
+HomePage2ptl0С2.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С3.style.display = "flex";
+setTimeout(function() {
+HomePage2ptl0С3.style.marginTop = "0px";
+HomePage2ptl0С3.style.opacity = "1";
+}, 100); 
+
+HomePage2ptl0С4.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С4.style.marginTop = "100px";
+HomePage2ptl0С4.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С5.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С5.style.marginTop = "100px";
+HomePage2ptl0С5.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С6.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С6.style.marginTop = "100px";
+HomePage2ptl0С6.style.opacity = "0";
+}, 100); 
+
+}
+
+});
+
+
+
+HomePage2ptl0p4.addEventListener("click", function() {
+
+if(HomePage2ptl0С4.style.marginTop === "0px"){
+    vibrateElement(HomePage2ptl0p0);
+}else if(HomePage2ptl0С4.style.marginTop === "100px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+
+HomePage2ptl0p1.style.background = "none";
+HomePage2ptl0p2.style.background = "none";
+HomePage2ptl0p3.style.background = "none";
+HomePage2ptl0p4.style.background = "rgba(47, 45, 47, 0)";
+HomePage2ptl0p5.style.background = "none";
+HomePage2ptl0p6.style.background = "none";
+
+HomePage2ptl0p1.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p2.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p3.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p4.style.color = "white";
+HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
+
+HomePage2ptl0p0.style.width = "151px";
+HomePage2ptl0p0.style.left = "544px";
+
+HomePage2ptl0С1.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С1.style.marginTop = "100px";
+HomePage2ptl0С1.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С2.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С2.style.marginTop = "100px";
+HomePage2ptl0С2.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С3.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С3.style.marginTop = "100px";
+HomePage2ptl0С3.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С4.style.display = "flex";
+setTimeout(function() {
+HomePage2ptl0С4.style.marginTop = "0px";
+HomePage2ptl0С4.style.opacity = "1";
+}, 100); 
+
+HomePage2ptl0С5.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С5.style.marginTop = "100px";
+HomePage2ptl0С5.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С6.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С6.style.marginTop = "100px";
+HomePage2ptl0С6.style.opacity = "0";
+}, 100); 
+
+}
+
+});
+
+HomePage2ptl0p5.addEventListener("click", function() {
+
+if(HomePage2ptl0С5.style.marginTop === "0px"){
+  vibrateElement(HomePage2ptl0p0);
+  //
+}else if(HomePage2ptl0С5.style.marginTop === "100px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+
+HomePage2ptl0p1.style.background = "none";
+HomePage2ptl0p2.style.background = "none";
+HomePage2ptl0p3.style.background = "none";
+HomePage2ptl0p4.style.background = "none";
+HomePage2ptl0p5.style.background = "rgba(47, 45, 47, 0)";
+HomePage2ptl0p6.style.background = "none";
+
+HomePage2ptl0p1.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p2.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p3.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p5.style.color = "white";
+HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
+
+HomePage2ptl0p0.style.width = "189px";
+HomePage2ptl0p0.style.left = "696px";
+
+HomePage2ptl0С1.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С1.style.marginTop = "100px";
+HomePage2ptl0С1.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С2.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С2.style.marginTop = "100px";
+HomePage2ptl0С2.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С3.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С3.style.marginTop = "100px";
+HomePage2ptl0С3.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С4.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С4.style.marginTop = "100px";
+HomePage2ptl0С4.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С5.style.display = "flex";
+setTimeout(function() {
+HomePage2ptl0С5.style.marginTop = "0px";
+HomePage2ptl0С5.style.opacity = "1";
+}, 100); 
+
+HomePage2ptl0С6.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С6.style.marginTop = "100px";
+HomePage2ptl0С6.style.opacity = "0";
+}, 100); 
+
+}
+
+});
+
+
+
+HomePage2ptl0p6.addEventListener("click", function() {
+
+if(HomePage2ptl0С6.style.marginTop === "0px"){
+  vibrateElement1(HomePage2ptl0p0);
+  //
+}else if(HomePage2ptl0С6.style.marginTop === "100px"){
+HomePage2ptl0p0.style.opacity = "0.5";
+
+HomePage2ptl0p1.style.background = "none";
+HomePage2ptl0p2.style.background = "none";
+HomePage2ptl0p3.style.background = "none";
+HomePage2ptl0p4.style.background = "none";
+HomePage2ptl0p5.style.background = "none";
+HomePage2ptl0p6.style.background = "rgba(47, 45, 47, 0)";
+
+HomePage2ptl0p1.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p2.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p3.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
+HomePage2ptl0p6.style.color = "white";
+
+HomePage2ptl0p0.style.width = "152px";
+HomePage2ptl0p0.style.left = "885px";
+
+HomePage2ptl0С1.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С1.style.marginTop = "100px";
+HomePage2ptl0С1.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С2.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С2.style.marginTop = "100px";
+HomePage2ptl0С2.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С3.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С3.style.marginTop = "100px";
+HomePage2ptl0С3.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С4.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С4.style.marginTop = "100px";
+HomePage2ptl0С4.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С5.style.display = "none";
+setTimeout(function() {
+HomePage2ptl0С5.style.marginTop = "100px";
+HomePage2ptl0С5.style.opacity = "0";
+}, 100); 
+
+HomePage2ptl0С6.style.display = "flex";
+setTimeout(function() {
+HomePage2ptl0С6.style.marginTop = "0px";
+HomePage2ptl0С6.style.opacity = "1";
+}, 100); 
+
+}
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let typedText = "";
+let isCommandOrCtrlPressed = false;
+let timer = null;
+
+function handleKeyDown(event) {
+  if (event.key === "Meta" || event.key === "Control") {
+    isCommandOrCtrlPressed = true;
+  }
+}
+
+function handleKeyUp(event) {
+  if (event.key === "Meta" || event.key === "Control") {
+    isCommandOrCtrlPressed = false;
+      typedText = "";
+  }
+}
+
+function handleKeyPress(event) {
+  if (!isCommandOrCtrlPressed) {
+    return;
+  }
+
+  typedText += event.key.toLowerCase();
+
+  if (typedText === "hesoyam") {
+    console.log("Вы набрали 'hesoyam'");
+    typedText = "";
+
+    // Запускаем таймер для сброса значения typedText через 1 секунду
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      typedText = "";
+    }, 1000);
+  }
+}
+
+document.addEventListener("keydown", handleKeyDown);
+document.addEventListener("keyup", handleKeyUp);
+document.addEventListener("keypress", handleKeyPress);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const profc = document.createElement("div");
+profc.style.display = "none";
+profc.style.flexDirection = "column";
+profc.style.background = "rgb(33, 33, 33)";
+profc.style.border = "3px solid rgb(60, 60, 60)";
+profc.style.borderRadius = "20px";
+profc.style.position = "fixed";
+profc.style.left = "120px";
+profc.style.top = "120px";
+profc.style.zIndex = "9999999";
+profc.style.width = "250px";
+profc.style.height = "380px";
+profc.style.opacity = "0";
+document.body.appendChild(profc);
 
 
 
@@ -1649,7 +2525,7 @@ formContainer.style.height = "401px";
 formContainer.style.borderRadius = "0px 0px 9px 9px";
 // formContainer.style.background = "color(srgb 0.157 0.157 0.1621)";
 // formContainer.style.borderTop = "2px solid color(srgb 0.157 0.157 0.1621)";
-lyrics1.appendChild(formContainer);
+profc.appendChild(formContainer);
 
 const registerForm = document.createElement("form");
 registerForm.style.display = "flex";
@@ -1657,14 +2533,14 @@ registerForm.style.flexDirection = "column";
 registerForm.style.opacity = "1";
 registerForm.style.transition = "0.5s";
 registerForm.style.position = "absolute";
-registerForm.style.top = "150px";
+registerForm.style.top = "90px";
 registerForm.style.width = "80%";
 registerForm.style.paddingTop = "20px";
 registerForm.style.paddingBottom = "20px";
-registerForm.style.left = "30px";
-registerForm.style.border = "2px solid rgba(40, 40, 40, 0.38)";
-registerForm.style.borderRadius = "10px";
-registerForm.style.background = "rgba(70, 70, 70, 0.42)";
+registerForm.style.left = "10%";
+// registerForm.style.border = "2px solid rgba(40, 40, 40, 0.38)";
+// registerForm.style.borderRadius = "10px";
+// registerForm.style.background = "rgba(70, 70, 70, 0.42)";
 registerForm.id = "register-form";
 registerForm.classList.add("form");
 formContainer.appendChild(registerForm);
@@ -1675,8 +2551,8 @@ registerFormTitleC.style.fontFamily = "Gilroy";
 registerFormTitleC.style.fontSize = "30px";
 registerFormTitleC.style.opacity = "1";
 registerFormTitleC.style.transition = "0.5s";
-registerFormTitleC.style.marginLeft = "90px";
-registerFormTitleC.style.marginTop = "60px";
+// registerFormTitleC.style.marginLeft = "90px";
+registerFormTitleC.style.top = "30px";
 registerFormTitleC.style.position = "absolute";
 formContainer.appendChild(registerFormTitleC);
 
@@ -1685,6 +2561,7 @@ registerFormTitle0.textContent = "Register";
 registerFormTitle0.style.position = "absolute";
 registerFormTitle0.style.color = "white";
 registerFormTitle0.style.filter = "blur(5px)";
+registerFormTitle0.style.left = "70px";
 registerFormTitleC.appendChild(registerFormTitle0);
 
 const registerFormTitle1 = document.createElement("div");
@@ -1692,6 +2569,7 @@ registerFormTitle1.textContent = "Register";
 registerFormTitle1.style.color = "white";
 registerFormTitle1.style.position = "absolute";
 registerFormTitle1.style.filter = "blur(0px)";
+registerFormTitle1.style.left = "70px";
 registerFormTitleC.appendChild(registerFormTitle1);
 
 // Добавление полей формы для регистрации
@@ -1722,7 +2600,7 @@ registerEmailInput.style.fontSize = "15px";
 registerEmailInput.style.padding = "5px";
 registerEmailInput.style.border = "2px solid rgba(0, 0, 0, 0.38)";
 registerEmailInput.style.background = "rgba(70, 70, 70, 0.42)";
-registerEmailInput.style.marginTop = "30px";
+registerEmailInput.style.marginTop = "10px";
 registerEmailInput.style.marginLeft = "auto";
 registerEmailInput.style.marginRight = "auto";
 registerEmailInput.type = "email";
@@ -1740,7 +2618,7 @@ registerPasswordInput.style.fontSize = "15px";
 registerPasswordInput.style.padding = "5px";
 registerPasswordInput.style.border = "2px solid rgba(0, 0, 0, 0.38)";
 registerPasswordInput.style.background = "rgba(70, 70, 70, 0.42)";
-registerPasswordInput.style.marginTop = "30px";
+registerPasswordInput.style.marginTop = "10px";
 registerPasswordInput.style.marginLeft = "auto";
 registerPasswordInput.style.marginRight = "auto";
 registerPasswordInput.type = "password";
@@ -1798,14 +2676,14 @@ loginForm.style.display = "none";
 loginForm.style.opacity = "0";
 loginForm.style.transition = "0.5s";
 loginForm.style.position = "absolute";
-loginForm.style.top = "150px";
+loginForm.style.top = "90px";
 loginForm.style.width = "80%";
 loginForm.style.paddingTop = "20px";
 loginForm.style.paddingBottom = "20px";
-loginForm.style.left = "30px";
-loginForm.style.border = "2px solid rgba(40, 40, 40, 0.38)";
-loginForm.style.borderRadius = "10px";
-loginForm.style.background = "rgba(70, 70, 70, 0.42)";
+loginForm.style.left = "10%";
+// loginForm.style.border = "2px solid rgba(40, 40, 40, 0.38)";
+// loginForm.style.borderRadius = "10px";
+// loginForm.style.background = "rgba(70, 70, 70, 0.42)";
 loginForm.classList.add("form");
 formContainer.appendChild(loginForm);
 
@@ -1815,9 +2693,8 @@ loginFormTitleC.style.fontFamily = "Gilroy";
 loginFormTitleC.style.fontSize = "30px";
 loginFormTitleC.style.opacity = "0";
 loginFormTitleC.style.transition = "0.5s";
-loginFormTitleC.style.width = "200px";
-loginFormTitleC.style.left = "90px";
-loginFormTitleC.style.top = "60px";
+// loginFormTitleC.style.marginLeft = "90px";
+loginFormTitleC.style.top = "30px";
 loginFormTitleC.style.position = "absolute";
 formContainer.appendChild(loginFormTitleC);
 
@@ -1826,6 +2703,8 @@ loginFormTitle0.textContent = "Sign In";
 loginFormTitle0.style.position = "absolute";
 loginFormTitle0.style.color = "white";
 loginFormTitle0.style.filter = "blur(5px)";
+loginFormTitle0.style.left = "75px";
+loginFormTitle0.style.width = "100px";
 loginFormTitleC.appendChild(loginFormTitle0);
 
 const loginFormTitle1 = document.createElement("div");
@@ -1833,6 +2712,8 @@ loginFormTitle1.textContent = "Sign In";
 loginFormTitle1.style.color = "white";
 loginFormTitle1.style.position = "absolute";
 loginFormTitle1.style.filter = "blur(0px)";
+loginFormTitle1.style.left = "75px";
+loginFormTitle1.style.width = "100px";
 loginFormTitleC.appendChild(loginFormTitle1);
 
 
@@ -1847,7 +2728,9 @@ loginEmailInput.name = "email";
 loginEmailInput.placeholder = "Email";
 loginEmailInput.required = true;
 loginEmailInput.style.width = "80%";
-loginEmailInput.style.margin = "0 auto";
+loginEmailInput.style.marginLeft = "auto";
+loginEmailInput.style.marginRight = "auto";
+loginEmailInput.style.marginTop = "40px";
 loginEmailInput.style.borderRadius = "7px";
 loginEmailInput.style.color = "white";
 loginEmailInput.style.fontFamily = "Gilroy";
@@ -1863,7 +2746,7 @@ loginPasswordInput.name = "password";
 loginPasswordInput.placeholder = "Пароль";
 loginPasswordInput.required = true;
 loginPasswordInput.style.width = "80%";
-loginPasswordInput.style.marginTop = "30px";
+loginPasswordInput.style.marginTop = "10px";
 loginPasswordInput.style.marginLeft = "auto";
 loginPasswordInput.style.marginRight = "auto";
 loginPasswordInput.style.borderRadius = "7px";
@@ -1883,7 +2766,7 @@ loginButton.style.borderRadius = "10px";
 loginButton.style.color = "white";
 loginButton.style.background = "rgba(70, 70, 70, 0.42)";
 loginButton.style.border = "2px solid rgba(0, 0, 0, 0.38)";
-loginButton.style.marginTop = "30px";
+loginButton.style.marginTop = "32px";
 loginButton.style.marginLeft = "auto";
 loginButton.style.marginRight = "auto";
 loginButton.style.fontSize = "15px";
@@ -1919,7 +2802,7 @@ const userPassword = document.createElement("p");
 userPassword.textContent = "Пароль: ";
 userInfoContainer.appendChild(userPassword);
 
-lyrics1.appendChild(userInfoContainer);
+profc.appendChild(userInfoContainer);
 
 // let email = localStorage.getItem("email") || "";
 // let password = localStorage.getItem("password") || "";
@@ -2007,35 +2890,440 @@ loginForm.addEventListener("submit", (e) => {
 
 loginLink.addEventListener("click", function() {
 registerForm.style.opacity = "0";
-registerForm.style.transition = "1s";
+registerForm.style.transition = "0.5s";
 registerFormTitleC.style.opacity = "0";
-registerFormTitleC.style.transition = "1s";
+registerFormTitleC.style.transition = "0.5s";
 loginForm.style.display = "flex";
   setTimeout(function() {
 loginForm.style.opacity = "1";
-loginForm.style.transition = "1s";
+loginForm.style.transition = "0.5s";
 loginFormTitleC.style.opacity = "1";
-loginFormTitleC.style.transition = "1s";
-}, 500); 
+loginFormTitleC.style.transition = "0.5s";
+}, 600); 
 registerForm.style.display = "none";
 registerFormTitleC.style.display = "none";
 });
 
 registerLink.addEventListener("click", function() {
 loginForm.style.opacity = "0";
-loginForm.style.transition = "1s";
+loginForm.style.transition = "0.5s";
 loginFormTitleC.style.opacity = "0";
-loginFormTitleC.style.transition = "1s";
+loginFormTitleC.style.transition = "0.5s";
 registerForm.style.display = "flex";
 registerFormTitleC.style.display = "flex";
   setTimeout(function() {
+
+
+
 registerForm.style.opacity = "1";
-registerForm.style.transition = "1s";
+registerForm.style.transition = "0.5s";
 registerFormTitleC.style.opacity = "1";
-registerFormTitleC.style.transition = "1s";
-}, 500); 
+registerFormTitleC.style.transition = "0.5s";
+}, 600); 
 loginForm.style.display = "none";
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var products2 = [
+//   { name: "Account Executive" },
+//   { name: "Application Developer" },
+//   { name: "Account Manager" },
+//   // Добавьте остальные объекты с именами
+// ];
+
+
+
+// Функция для создания тегов из массива products
+function createTagsFromProducts(products) {
+  var tags = [];
+  for (var i = 0; i < products.length; i++) {
+    tags.push(products[i].название);
+  }
+  return tags;
+}
+
+var inputc = document.createElement('div');
+inputc.style.position = 'fixed';
+inputc.style.display = 'flex';
+inputc.style.flexDirection = 'column';
+inputc.style.top = '-200px';
+inputc.style.transition = '0.5s';
+inputc.style.left = '0px';
+inputc.style.width = '100%';
+inputc.style.zIndex = '99999';
+document.body.appendChild(inputc);
+
+
+// Создаем поле ввода для поиска проектов
+var input = document.createElement('span');
+// input.name = 'tags-outside';
+    input.contentEditable = true;
+input.classList.add('tagify--outside');
+input.placeholder = 'write some tags';
+input.style.position = 'relative';
+input.style.display = 'flex';
+input.style.width = '200px';
+input.style.height = '30px';
+input.style.background = 'black';
+input.style.boxShadow = '0px 0px 20px black';
+input.style.border = '3px solid white';
+input.style.borderRadius = '10px';
+input.style.margin = '0 auto';
+input.style.zIndex = '99999';
+input.style.justifyContent = 'start';
+input.style.paddingBottom = '2px';
+input.style.alignItems = 'center';
+input.style.paddingTop = '2px';
+input.style.paddingLeft = '8px';
+input.style.paddingRight = '8px';
+input.style.fontSize = '20px';
+input.style.fontFamily = 'Gilroy';
+input.style.overflow = 'hidden';
+input.style.overflowX = 'auto';
+inputc.appendChild(input);
+
+// Создаем контейнер для тегов
+var tagsContainer = document.createElement('div');
+tagsContainer.id = 'tags-container';
+tagsContainer.style.position = 'relative';
+tagsContainer.style.top = '10px';
+tagsContainer.style.right = '20px';
+tagsContainer.style.zIndex = '99999';
+tagsContainer.style.margin = '0 auto';
+tagsContainer.style.flexDirection = 'column';
+tagsContainer.style.background = 'black';
+tagsContainer.style.color = 'white';
+tagsContainer.style.fontSize = '20px';
+tagsContainer.style.fontFamily = 'Gilroy';
+tagsContainer.style.borderRadius = '20px';
+tagsContainer.style.padding = '10px';
+tagsContainer.style.width = '50%';
+tagsContainer.style.border = '3px solid white';
+tagsContainer.style.boxShadow = 'black 0px 0px 20px';
+tagsContainer.style.display = 'none'; // Скрыть контейнер по умолчанию
+inputc.appendChild(tagsContainer);
+
+
+// Функция для объединения двух массивов в один
+function mergeArrays(array1, array2) {
+  return [...array1, ...array2];
+}
+
+// Объединяем теги из массивов products1 и products2
+var jobTags = mergeArrays(createTagsFromProducts(products1), createTagsFromProducts(products2));
+
+// ... (Ваш предыдущий код)
+
+// Функция для создания div-контейнера с тегами
+// ... предыдущий код ...
+
+
+
+function createTagContainer(tags, showAll) {
+  tagsContainer.innerHTML = '';
+
+  if (!showAll && (tags.length === 0 || input.textContent.trim() === '')) {
+    tagsContainer.style.display = 'none';
+    return;
+  } else {
+    tagsContainer.style.display = 'flex';
+  }
+
+  var tagsToShow = showAll ? tags : tags.slice(0, 5);
+
+  tagsToShow.forEach(function(tag) {
+    var product = findProductByTag(tag);
+
+    var tagDiv = document.createElement('div');
+    // tagDiv.textContent = tag;
+    // tagDiv.style.width = '100%';
+    tagDiv.style.borderRadius = '5px';
+    tagDiv.style.padding = '5px';
+    tagDiv.style.display = 'flex';
+    tagDiv.className = 'tag';
+    tagsContainer.appendChild(tagDiv);
+
+
+
+
+    tagDiv.addEventListener("mouseenter", function() {
+      tagDiv.style.transition = "0.4s";
+      tagDiv.style.background = "white";
+      tagDiv.style.color = "black";
+      tagDiv.style.cursor = "pointer";
+    });
+
+    tagDiv.addEventListener("mouseleave", function() {
+      tagDiv.style.transition = "0.4s";
+      tagDiv.style.background = "black";
+      tagDiv.style.color = "white";
+      tagDiv.style.cursor = "normal";
+    });
+
+    if (product) {
+      var primg = document.createElement('div');
+      primg.style.position = 'relative';
+      primg.style.height = '90px';
+      primg.style.width = '90px';
+      primg.style.borderRadius = '10px';
+      primg.style.marginLeft = '0px';
+      primg.style.marginTop = 'auto';
+      primg.style.marginBottom = 'auto';
+      primg.style.display = 'flex';
+      primg.style.background = product.logoproj;
+      primg.style.backgroundSize = 'contain';
+      tagDiv.appendChild(primg);
+
+    var tagname = document.createElement('div');
+    tagname.textContent = tag;
+    tagname.style.marginRight = "auto";
+    tagname.style.marginTop = "auto";
+    tagname.style.marginBottom = "auto";
+    tagname.style.marginLeft = "20px";
+    tagname.style.fontSize = "30px";
+    tagname.style.lineHeight = "0px";
+    tagDiv.appendChild(tagname);
+
+      var prcost = document.createElement('div');
+      prcost.textContent = product.cost + "$";
+      prcost.style.position = 'relative';
+      prcost.style.right = '10px';
+      prcost.style.marginLeft = 'auto';
+      prcost.style.marginTop = 'auto';
+      prcost.style.marginBottom = 'auto';
+      prcost.style.display = 'flex';
+      prcost.style.fontSize = '20x';
+      prcost.style.lineHeight = '0x';
+      tagDiv.appendChild(prcost);
+
+      tagDiv.addEventListener('click', function() {
+        console.log('Clicked tag:', tag);
+        clearInputField();
+        if (product) {
+          renderProductMenu(product);
+          smoothScrollTo('topscroll0');
+          leftBar.style.borderColor = product.accentcolor2;
+          HomePage1.style.display = 'none';
+
+          var newURL = window.location.origin + '/?product=' + encodeURIComponent(product.название);
+          history.pushState(null, null, newURL);
+        }
+      });
+    }
+  });
+
+  if (!showAll && tags.length > 5) {
+    var showAllButton = document.createElement('button');
+    showAllButton.textContent = 'Show All Products';
+    showAllButton.style.margin = 'auto';
+    showAllButton.style.marginTop = '10px';
+    showAllButton.style.display = 'flex';
+    showAllButton.style.borderRadius = '7px';
+    showAllButton.style.background = 'black';
+    showAllButton.style.border = '3px solid white';
+    showAllButton.style.color = 'white';
+    showAllButton.style.fontSize = '20px';
+    showAllButton.style.fontFamily = 'Gilroy';
+    showAllButton.style.padding = '5px';
+    showAllButton.addEventListener('click', function() {
+      createTagContainer(tags, true);
+    });
+    tagsContainer.appendChild(showAllButton);
+
+
+    showAllButton.addEventListener("mouseenter", function() {
+      showAllButton.style.transition = "0.4s";
+      showAllButton.style.cursor = "pointer";
+      showAllButton.style.background = "white";
+      showAllButton.style.color = "black";
+    });
+
+    showAllButton.addEventListener("mouseleave", function() {
+      showAllButton.style.transition = "0.4s";
+      showAllButton.style.cursor = "normal";
+      showAllButton.style.background = "black";
+      showAllButton.style.color = "white";
+    });
+
+  }
+}
+
+
+
+
+
+
+// Функция для поиска продукта по тегу
+function findProductByTag(tag) {
+  // Здесь вам нужно реализовать логику поиска продукта по тегу в массиве allProducts
+  // Например, можно использовать find или filter
+  // Верните найденный продукт или null, если ничего не найдено
+  return allProducts.find(function(product) {
+    return product.название === tag;
+  });
+}
+
+// ... остальной код ...
+
+
+
+onload = function () {
+//
+versioncontainer.style.right = "10px";
+
+versioncontainer.style.bottom = "10px";
+
+
+    // console.log("1")
+  var productName = getURLParameter('product');
+  if (productName) {
+    var product = findProductByTag(productName);
+    if (product) {
+      renderProductMenu(product);
+      smoothScrollTo('topscroll0');
+      leftBar.style.borderColor = product.accentcolor2;
+      HomePage1.style.display = 'none';
+      window.scrollTo(0, 0); // Прокручиваем страницу вверх
+    }
+  }
+};
+
+
+
+
+
+
+
+    // Получение значения параметра product из URL
+function getURLParameter(product) {
+  var urlParams = new URLSearchParams(window.location.search);
+  // console.log(window.location.search);
+  // console.log(urlParams);
+  return urlParams.get(product);
+}
+
+// // Функция для отображения продукта по его названию (тегу) из URL
+// function showProductFromURL() {
+//   console.log("1")
+//   var productName = getURLParameter('product');
+//   if (productName) {
+//     var product = findProductByTag(productName);
+//     if (product) {
+//       renderProductMenu(product);
+//       smoothScrollTo('topscroll0');
+//       leftBar.style.borderColor = product.accentcolor2;
+//       HomePage1.style.display = 'none';
+//       window.scrollTo(0, 0); // Прокручиваем страницу вверх
+//     }
+//   }
+// }
+// При загрузке страницы
+window.addEventListener('DOMContentLoaded', function() {
+  showProductFromURL();
+});
+
+
+
+// ... (Ваш предыдущий код)
+
+
+// При загрузке страницы создаем контейнер с тегами из products2
+createTagContainer(jobTags, false);
+
+// Обработчик события для ввода в поле поиска тегов
+input.addEventListener('input', function(event) {
+  var searchValue = event.target.textContent.toLowerCase();
+  var filteredTags = jobTags.filter(function(tag) {
+    return tag.toLowerCase().includes(searchValue);
+  });
+
+  // Показываем контейнер с тегами, если введен текст
+  createTagContainer(filteredTags, false);
+});
+
+// Обработчик события для очистки поля ввода
+input.addEventListener('blur', function(event) {
+  if (event.target.textContent.trim() === '') {
+    tagsContainer.style.display = 'none'; // Скрываем контейнер, если поле ввода пустое
+  }
+});
+
+// Обработчик события для проверки поля ввода после потери фокуса
+input.addEventListener('input', function(event) {
+  if (event.target.textContent.trim() === '') {
+    tagsContainer.style.display = 'none'; // Скрываем контейнер, если поле ввода пустое
+  } else {
+    var searchValue = event.target.textContent.toLowerCase();
+    var filteredTags = jobTags.filter(function(tag) {
+      return tag.toLowerCase().includes(searchValue);
+    });
+    // Показываем контейнер с тегами, если введен текст
+    createTagContainer(filteredTags, false);
+  }
+
+
+});
+
+// Флаг, указывающий на то, был ли клик на tagsContainer
+var clickedOnTagsContainer = false;
+
+// Обработчик события для клика на tagsContainer
+tagsContainer.addEventListener('click', function() {
+  clickedOnTagsContainer = true;
+});
+
+
+// Обработчик события для потери фокуса с input
+input.addEventListener('blur', function() {
+
+  if (!clickedOnTagsContainer === true) {
+var clickedOnTagsContainer = false;
+
+  setTimeout(function() {
+      clearInputField();
+
+}, 100); 
+
+
+  }
+
+
+
+  // Сбрасываем значение флага
+  // clickedOnTagsContainer = false;
+});
+
+
+
+
+// Функция для очистки поля ввода
+function clearInputField() {
+  input.textContent = ""; // Очищаем поле ввода
+  tagsContainer.style.display = 'none'; // Скрываем контейнер
+}
+
+
+
+
+
+
 
 
 

@@ -1,58 +1,63 @@
 // Libreries
 const lib = document.createElement("script");
-lib.src = "https://administrati0n.github.io/data-one/untitled folder/lib.js";
+lib.src = "untitled folder/lib.js";
 document.head.appendChild(lib);
+
+// Variables
+const Stuff1 = document.createElement("script");
+Stuff1.src = "Stuff1.js";
+Stuff1.onload = function () {
+//
+};
+document.body.appendChild(Stuff1);
 
 
 // Fonts
 const fonts = document.createElement("script");
-fonts.src = "https://administrati0n.github.io/data-one/fonts.js";
+fonts.src = "fonts.js";
 document.head.appendChild(fonts);
 
 // iconLinks
 const iconLinks1 = document.createElement("script");
-iconLinks1.src = "https://administrati0n.github.io/data-one/iconLinks.js";
+iconLinks1.src = "iconLinks.js";
 document.head.appendChild(iconLinks1);
 
-// Variables
-const Stuff1 = document.createElement("script");
-Stuff1.src = "https://administrati0n.github.io/data-one/Stuff1.js";
-document.body.appendChild(Stuff1);
+
 
 // data1
 const data1 = document.createElement("script");
-data1.src = "https://administrati0n.github.io/data-one/data1.js";
+data1.src = "data1.js";
 document.body.appendChild(data1);
 
 // player
 const player = document.createElement("script");
-player.src = "https://administrati0n.github.io/data-one/player.js";
+player.src = "player.js";
 document.body.appendChild(player);
 
 // Content
 const Content = document.createElement("script");
-Content.src = "https://administrati0n.github.io/data-one/Content.js";
+Content.src = "content.js";
 document.body.appendChild(Content);
 
 // Pinned
 const Pin = document.createElement("script");
-Pin.src = "https://administrati0n.github.io/data-one/Pin.js";
+Pin.src = "Pin.js";
 document.body.appendChild(Pin);
 
 // Theme
 const Theme = document.createElement("script");
-Theme.src = "https://administrati0n.github.io/data-one/Theme.js";
+Theme.src = "Theme.js";
 document.body.appendChild(Theme);
 
 // WorkScripts
 var body = document.body;
 const WorkScripts = document.createElement("script");
-WorkScripts.src = "https://administrati0n.github.io/data-one/WorkScripts.js";
+WorkScripts.src = "WorkScripts.js";
 body.insertAdjacentElement("afterend", WorkScripts);
 
 
 
 // Device
 const Device = document.createElement("script");
-// Device.src = "https://administrati0n.github.io/data-one/Device.js";
+// Device.src = "Device.js";
 document.body.appendChild(Device);

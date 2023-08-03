@@ -131,17 +131,18 @@ leftBarC1.style.height = "22px";
 leftBarC1.style.width = "22px";
 leftBarC1.style.position = "absolute";
 leftBarC1.style.marginLeft = "15px";
-leftBarC1.style.marginTop = "50px";
+leftBarC1.style.marginTop = "100px";
 leftBarC1.style.borderRadius = "3px";
+leftBarC1.style.background = "black";
 leftBarC.appendChild(leftBarC1);
 
 
 
 const svglogo1 = `
 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect y="53" width="47" height="47" rx="7" />
+<rect y="53" width="47" height="47" rx="7" stroke-width="0"/>
 <rect width="47" height="47" rx="7" />
-<rect x="55.5" y="2.5" width="42" height="42" rx="4.5" stroke="white" stroke-width="5" fill="none"/>
+<rect x="55.5" y="2.5" width="42" height="42" rx="4.5" stroke="white" stroke-width="5" transition="5s" fill="none"/>
 <rect x="53" y="53" width="47" height="47" rx="7" />
 </svg>
 `;
@@ -156,11 +157,20 @@ svglogoelement1.style.width = '22px';
 svglogoelement1.style.height = '14px';
 svglogoelement1.style.position = 'absolute';
 // svglogoelement1.style.mixBlendMode = 'difference';
+leftBarC1.style.transition = '1s';
+
+svglogoelement1.style.fill = 'white';
 
 // Добавляем созданный элемент <svg> в контейнер
 leftBarC1.appendChild(svglogoc1);
 
+const svglogorects1 = svglogoelement1.querySelectorAll("rect");
+svglogorects1.forEach((rect) => {
+  rect.style.transition = "1s";
+});
 
+const svglogopath1 = svglogoelement1.querySelector("path");
+// svglogopath1.style.transition = "5s";
 
 
 
@@ -171,7 +181,7 @@ leftBarC2.style.height = "22px";
 leftBarC2.style.width = "22px";
 leftBarC2.style.position = "absolute";
 leftBarC2.style.marginLeft = "15px";
-leftBarC2.style.marginTop = "100px";
+leftBarC2.style.marginTop = "150px";
 leftBarC2.style.borderRadius = "3px";
 leftBarC.appendChild(leftBarC2);
 
@@ -210,7 +220,7 @@ leftBarC3.style.height = "22px";
 leftBarC3.style.width = "22px";
 leftBarC3.style.position = "absolute";
 leftBarC3.style.marginLeft = "15px";
-leftBarC3.style.marginTop = "150px";
+leftBarC3.style.marginTop = "200px";
 leftBarC3.style.borderRadius = "3px";
 leftBarC.appendChild(leftBarC3);
 
@@ -251,7 +261,7 @@ leftBarC4.style.height = "22px";
 leftBarC4.style.width = "22px";
 leftBarC4.style.position = "absolute";
 leftBarC4.style.marginLeft = "15px";
-leftBarC4.style.marginTop = "200px";
+leftBarC4.style.marginTop = "250px";
 leftBarC4.style.borderRadius = "3px";
 leftBarC.appendChild(leftBarC4);
 
@@ -287,7 +297,7 @@ leftBarC5.style.height = "22px";
 leftBarC5.style.width = "22px";
 leftBarC5.style.position = "absolute";
 leftBarC5.style.marginLeft = "15px";
-leftBarC5.style.marginTop = "250px";
+leftBarC5.style.marginTop = "300px";
 leftBarC5.style.borderRadius = "3px";
 leftBarC5.style.transition = "0.5s";
 
@@ -321,6 +331,111 @@ leftBarC5.appendChild(svglogoc5);
 
 
 
+const leftBarC6 = document.createElement("div");
+leftBarC6.style.display = "flex";
+leftBarC6.style.flexDirection = "column";
+leftBarC6.style.height = "22px";
+leftBarC6.style.width = "22px";
+leftBarC6.style.position = "absolute";
+leftBarC6.style.marginLeft = "15px";
+leftBarC6.style.marginTop = "50px";
+leftBarC6.style.borderRadius = "3px";
+leftBarC6.style.transition = "0.5s";
+
+leftBarC.appendChild(leftBarC6);
+
+
+
+const svglogo6 = `
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_305_13)">
+<rect x="37.0107" y="4" width="57.6509" height="57.6509" rx="28.8255" stroke="white" stroke-width="8"/>
+<path d="M5.43826 96.4715C2.23578 93.269 2.23577 88.0767 5.43826 84.8742L43.574 46.7385L55.1712 58.3357L17.0355 96.4715C13.833 99.674 8.64075 99.6739 5.43826 96.4715V96.4715Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_305_13">
+<rect width="100" height="100" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+`;
+
+const svglogoc6 = document.createElement('div');
+svglogoc6.style.transition = "5s";
+svglogoc6.innerHTML = svglogo6;
+
+const svglogoelement6 = svglogoc6.querySelector('svg');
+svglogoelement6.style.marginLeft = '0px';
+svglogoelement6.style.marginTop = '4px';
+svglogoelement6.style.width = '22px';
+svglogoelement6.style.height = '14px';
+svglogoelement6.style.position = 'absolute';
+svglogoelement6.style.transition = '0.5s';
+// svglogoelement5.style.mixBlendMode = 'difference';
+leftBarC6.style.background = "black";
+svglogoelement6.style.fill = 'white';
+// Добавляем созданный элемент <svg> в контейнер
+leftBarC6.appendChild(svglogoc6);
+
+
+
+
+// Функция для обработки события нажатия клавиш
+function handleKeyPress(event) {
+  // Проверяем, нажата ли клавиша "K" и одновременно клавиша "Command" или "Ctrl"
+  if ((event.key === "K" || event.key === "k") && (event.metaKey || event.ctrlKey)) {
+    // Выполняем необходимое действие при нажатии комбинации клавиш
+     if (inputc.style.top === "-200px") {
+    inputc.style.top = "10px";
+    leftBarC6.style.background = "white";
+    svglogoelement6.querySelector("rect").setAttribute("fill", "black");
+    svglogoelement6.querySelector("rect").setAttribute("stroke", "black");
+    svglogoelement6.querySelector("path").setAttribute("fill", "black"); // Обновляем цвет path
+  } else {
+    inputc.style.top = "-200px";
+    leftBarC6.style.background = "black";
+    svglogoelement6.querySelector("rect").setAttribute("fill", "white");
+    svglogoelement6.querySelector("rect").setAttribute("stroke", "white");
+    svglogoelement6.querySelector("path").setAttribute("fill", "white"); // Обновляем цвет path
+  }
+    // Здесь можно вызвать другую функцию или выполнить другие действия
+  }
+}
+
+// Добавляем обработчик события для нажатия клавиш на всем документе
+document.addEventListener("keydown", handleKeyPress);
+
+
+
+// Обработчик события для клика на leftBarC6
+leftBarC6.addEventListener("click", function() {
+  if (inputc.style.top === "-200px") {
+    inputc.style.top = "10px";
+    leftBarC6.style.background = "white";
+    svglogoelement6.querySelector("rect").setAttribute("fill", "black");
+    svglogoelement6.querySelector("rect").setAttribute("stroke", "black");
+    svglogoelement6.querySelector("path").setAttribute("fill", "black"); // Обновляем цвет path
+  } else {
+    inputc.style.top = "-200px";
+    leftBarC6.style.background = "black";
+    svglogoelement6.querySelector("rect").setAttribute("fill", "white");
+    svglogoelement6.querySelector("rect").setAttribute("stroke", "white");
+    svglogoelement6.querySelector("path").setAttribute("fill", "white"); // Обновляем цвет path
+  }
+});
+
+
+const svglogorects6 = svglogoelement6.querySelectorAll("rect");
+svglogorects6.forEach((rect) => {
+  rect.style.transition = "1s";
+});
+
+const svglogopath6 = svglogoelement6.querySelector("path");
+svglogopath6.style.transition = "1s";
+
+
+
 
 
 
@@ -333,6 +448,26 @@ leftBarC5.appendChild(svglogoc5);
 // } else {
 // leftBarMNote.style.display = "none";
 // }
+
+
+// Обработчик события для клика на leftBarC1
+// Обработчик события для клика на leftBarC1
+leftBarC1.addEventListener("click", function() {
+  if (leftBarC1.style.background === "black") {
+    ActivePage = "Home0";
+    leftBarC1.style.background = "white";
+    svglogoelement1.style.fill = "black";
+    svglogoelement1.querySelector("rect").setAttribute("stroke", "black"); // Обновляем цвет рамки
+    svglogoelement1.querySelectorAll("rect")[2].setAttribute("stroke", "black"); // Обновляем цвет рамки у второго rect
+    svglogoelement1.querySelectorAll("rect")[2].setAttribute("transition", "2s"); // Обновляем цвет рамки у второго rect
+  } else {
+    ActivePage = "Home";
+    leftBarC1.style.background = "black";
+    svglogoelement1.style.fill = "white";
+    svglogoelement1.querySelector("rect").setAttribute("stroke", "white"); // Обновляем цвет рамки
+    svglogoelement1.querySelectorAll("rect")[2].setAttribute("stroke", "white"); // Обновляем цвет рамки у второго rect
+  }
+});
 
 
 
@@ -355,24 +490,39 @@ ActivePage = "Home";
 
 
 leftBarC2.addEventListener("click", function() {
-frame1.style.transition = '1s';
+loginFormTitle0.textContent = "Sign In";
+
+loginFormTitle1.textContent = "Sign In";
+profc.style.transition = '1s';
 
     if (ProfileActive === "y"){
 ProfileActive = "n";
-frame1.style.opacity = '0';
+loginFormTitle0.textContent = "Sign In";
+
+loginFormTitle1.textContent = "Sign In";
+profc.style.opacity = '0';
 
   setTimeout(function() {
-frame1.style.display = 'none';
+loginFormTitle0.textContent = "Sign In";
+
+loginFormTitle1.textContent = "Sign In";
+profc.style.display = 'none';
 }, 1000); 
 
 
 
 }else {
 ProfileActive = "y";
-frame1.style.display = 'flex';
+loginFormTitle0.textContent = "Sign In";
+
+loginFormTitle1.textContent = "Sign In";
+profc.style.display = 'flex';
 
   setTimeout(function() {
-frame1.style.opacity = '1';
+loginFormTitle0.textContent = "Sign In";
+
+loginFormTitle1.textContent = "Sign In";
+profc.style.opacity = '1';
 }, 100); 
 
 
@@ -443,7 +593,7 @@ phone.style.bottom = '10px';
 
 
   setTimeout(function() {
-phone.style.transform = 'perspective(1000px) rotateY(-360deg) rotateX(0deg)';
+phone.style.transform = 'perspective(1000px) rotateY(-360deg) rotateX(0deg) rotateZ(0deg)';
 // phone.style.transform = 'perspective(1000px) rotateY(-180deg) rotateX(0deg)';
   setTimeout(function() {
 frame01.style.opacity = '1';
@@ -568,8 +718,6 @@ svglogoelement.style.fill = 'black';
 
 leftBarC1.style.transition = "0.5s";
 leftBarC1.style.background = "black";
-svglogoelement1.style.transition = '0.5s';
-svglogoelement1.style.fill = 'white';
 
 
 leftBarC2.style.transition = "0.5s";

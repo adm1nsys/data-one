@@ -40,7 +40,14 @@ function handleVisibilityChange() {
 
 // Создаем элементы страницы
 // var body = document.body;
+body.style.background = 'rgb(0, 0, 0)';
 
+body.style.webkitTouchCallout = "none";
+body.style.webkitUserSelect = "none";
+body.style.khtmlUserSelect = "none";
+body.style.MozUserSelect = "none";
+body.style.msUserSelect = "none";
+body.style.userSelect = "none";
 // Устанавливаем текст и стили элементов
 body.style.background = 'rgb(0, 0, 0)';
 body.style.margin = '0px';

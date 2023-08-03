@@ -135,7 +135,7 @@ const phcCopy = phc.cloneNode(true);
 phone.appendChild(phcCopy);
 
 // Пример преобразования: вращение по оси Y
-phcCopy.style.transform += 'rotateZ(-90deg) translateX(-295px)  translateY(4.5px) translateZ(0px)';
+phcCopy.style.transform += 'rotateZ(-90deg) translateX(-294.9px) translateY(5px) translateZ(0px)';
 
 const phcCopy2 = phc.cloneNode(true);
 const phcCopy3 = phc.cloneNode(true);
@@ -240,6 +240,242 @@ phr18.style.position = 'absolute';
 phr18.style.transform = 'translateY(521.5px) translateX(138px) translateZ(-14.5px) rotateY(-90deg) rotateX(90deg) perspective(1000px)';
 phone.appendChild(phr18);
 
+const phr018 = document.createElement('div');
+phr018.style.width = "17px";
+phr018.style.height = "50px";
+phr018.style.background = "black";
+phr018.style.position = 'absolute';
+phr018.style.top = '67px';
+phr018.style.left = '7px';
+phr018.style.borderRadius = '999px';
+phr18.appendChild(phr018);
+
+const phr0181 = document.createElement('div');
+phr0181.style.width = "13px";
+phr0181.style.height = "46px";
+phr0181.style.background = "none";
+phr0181.style.border = "1px solid rgb(124, 124, 124)";
+phr0181.style.position = 'absolute';
+phr0181.style.top = '1px';
+phr0181.style.left = '1px';
+phr0181.style.borderRadius = '999px';
+phr018.appendChild(phr0181);
+
+const phr0182 = document.createElement('div');
+phr0182.style.width = "7px";
+phr0182.style.height = "29px";
+phr0182.style.background = "rgb(124, 124, 124)";
+phr0182.style.boxShadow = '1px 1px 1px rgb(0, 0, 0) inset, -1px -1px 1px rgb(0, 0, 0) inset, -1px 1px 1px rgb(0, 0, 0) inset, 1px -1px 1px rgb(0, 0, 0) inset, 2px 2px 1px rgb(106, 106, 106) inset, -2px -2px 1px rgb(68, 68, 68) inset, -2px 2px 1px rgb(93, 93, 93) inset, 2px -2px 1px rgb(68, 68, 68) inset';
+phr0182.style.position = 'absolute';
+phr0182.style.top = '10px';
+phr0182.style.left = '5px';
+phr0182.style.borderRadius = '999px';
+phr018.appendChild(phr0182);
+
+
+const phr00183 = document.createElement('div');
+phr00183.style.position = 'absolute';
+phr00183.style.top = '1px';
+phr00183.style.left = '0px';
+phr18.appendChild(phr00183);
+
+const phr0183 = document.createElement('div');
+phr0183.style.width = "5px";
+phr0183.style.height = "5px";
+phr0183.style.background = "black";
+phr0183.style.position = 'absolute';
+phr0183.style.top = '5px';
+phr0183.style.left = '12px';
+phr0183.style.borderRadius = '999px';
+phr00183.appendChild(phr0183);
+
+const phr0184 = document.createElement('div');
+phr0184.style.width = "5px";
+phr0184.style.height = "5px";
+phr0184.style.background = "black";
+phr0184.style.position = 'absolute';
+phr0184.style.top = '13px';
+phr0184.style.left = '12px';
+phr0184.style.borderRadius = '999px';
+phr00183.appendChild(phr0184);
+
+const phr0185 = document.createElement('div');
+phr0185.style.width = "5px";
+phr0185.style.height = "5px";
+phr0185.style.background = "black";
+phr0185.style.position = 'absolute';
+phr0185.style.top = '21px';
+phr0185.style.left = '12px';
+phr0185.style.borderRadius = '999px';
+phr00183.appendChild(phr0185);
+
+const phr0186 = document.createElement('div');
+phr0186.style.width = "5px";
+phr0186.style.height = "5px";
+phr0186.style.background = "black";
+phr0186.style.position = 'absolute';
+phr0186.style.top = '17px';
+phr0186.style.left = '6px';
+phr0186.style.borderRadius = '999px';
+phr00183.appendChild(phr0186);
+
+const phr0187 = document.createElement('div');
+phr0187.style.width = "5px";
+phr0187.style.height = "5px";
+phr0187.style.background = "black";
+phr0187.style.position = 'absolute';
+phr0187.style.top = '17px';
+phr0187.style.left = '18px';
+phr0187.style.borderRadius = '999px';
+phr00183.appendChild(phr0187);
+
+const phr0188 = document.createElement('div');
+phr0188.style.width = "5px";
+phr0188.style.height = "5px";
+phr0188.style.background = "black";
+phr0188.style.position = 'absolute';
+phr0188.style.top = '9px';
+phr0188.style.left = '6px';
+phr0188.style.borderRadius = '999px';
+phr00183.appendChild(phr0188);
+
+const phr0189 = document.createElement('div');
+phr0189.style.width = "5px";
+phr0189.style.height = "5px";
+phr0189.style.background = "black";
+phr0189.style.position = 'absolute';
+phr0189.style.top = '9px';
+phr0189.style.left = '18px';
+phr0189.style.borderRadius = '999px';
+phr00183.appendChild(phr0189);
+
+const phr01890 = document.createElement('div');
+phr01890.style.width = "5px";
+phr01890.style.height = "5px";
+phr01890.style.background = "black";
+phr01890.style.position = 'absolute';
+phr01890.style.top = '25px';
+phr01890.style.left = '18px';
+phr01890.style.borderRadius = '999px';
+phr00183.appendChild(phr01890);
+
+const phr01891 = document.createElement('div');
+phr01891.style.width = "5px";
+phr01891.style.height = "5px";
+phr01891.style.background = "black";
+phr01891.style.position = 'absolute';
+phr01891.style.top = '33px';
+phr01891.style.left = '18px';
+phr01891.style.borderRadius = '999px';
+phr00183.appendChild(phr01891);
+
+const phr01892 = document.createElement('div');
+phr01892.style.width = "5px";
+phr01892.style.height = "5px";
+phr01892.style.background = "black";
+phr01892.style.position = 'absolute';
+phr01892.style.top = '41px';
+phr01892.style.left = '18px';
+phr01892.style.borderRadius = '999px';
+phr00183.appendChild(phr01892);
+
+const phr01893 = document.createElement('div');
+phr01893.style.width = "5px";
+phr01893.style.height = "5px";
+phr01893.style.background = "black";
+phr01893.style.position = 'absolute';
+phr01893.style.top = '29px';
+phr01893.style.left = '12px';
+phr01893.style.borderRadius = '999px';
+phr00183.appendChild(phr01893);
+
+const phr01894 = document.createElement('div');
+phr01894.style.width = "5px";
+phr01894.style.height = "5px";
+phr01894.style.background = "black";
+phr01894.style.position = 'absolute';
+phr01894.style.top = '37px';
+phr01894.style.left = '12px';
+phr01894.style.borderRadius = '999px';
+phr00183.appendChild(phr01894);
+
+const phr01895 = document.createElement('div');
+phr01895.style.width = "5px";
+phr01895.style.height = "5px";
+phr01895.style.background = "black";
+phr01895.style.position = 'absolute';
+phr01895.style.top = '45px';
+phr01895.style.left = '12px';
+phr01895.style.borderRadius = '999px';
+phr00183.appendChild(phr01895);
+
+const phr01896 = document.createElement('div');
+phr01896.style.width = "5px";
+phr01896.style.height = "5px";
+phr01896.style.background = "black";
+phr01896.style.position = 'absolute';
+phr01896.style.top = '25px';
+phr01896.style.left = '6px';
+phr01896.style.borderRadius = '999px';
+phr00183.appendChild(phr01896);
+
+const phr01897 = document.createElement('div');
+phr01897.style.width = "5px";
+phr01897.style.height = "5px";
+phr01897.style.background = "black";
+phr01897.style.position = 'absolute';
+phr01897.style.top = '33px';
+phr01897.style.left = '6px';
+phr01897.style.borderRadius = '999px';
+phr00183.appendChild(phr01897);
+
+const phr01898 = document.createElement('div');
+phr01898.style.width = "5px";
+phr01898.style.height = "5px";
+phr01898.style.background = "black";
+phr01898.style.position = 'absolute';
+phr01898.style.top = '41px';
+phr01898.style.left = '6px';
+phr01898.style.borderRadius = '999px';
+phr00183.appendChild(phr01898);
+
+const phcCopy00183 = phr00183.cloneNode(true);
+phcCopy00183.style.position = "absolute";
+phcCopy00183.style.top = "128px";
+phcCopy00183.style.left = "0px";
+phr18.appendChild(phcCopy00183);
+
+
+
+const phcCopy0018310 = phr00183.cloneNode(true);
+phcCopy0018310.style.position = "absolute";
+phcCopy0018310.style.top = "120px";
+phcCopy0018310.style.left = "0px";
+phr15.appendChild(phcCopy0018310);
+
+const phcCopy0018311 = phr00183.cloneNode(true);
+phcCopy0018311.style.position = "absolute";
+phcCopy0018311.style.top = "88px";
+phcCopy0018311.style.left = "0px";
+phr15.appendChild(phcCopy0018311);
+
+const phcCopy0018312 = phr00183.cloneNode(true);
+phcCopy0018312.style.position = "absolute";
+phcCopy0018312.style.top = "48px";
+phcCopy0018312.style.left = "0px";
+phr15.appendChild(phcCopy0018312);
+
+const phcCopy0018313 = phr00183.cloneNode(true);
+phcCopy0018313.style.position = "absolute";
+phcCopy0018313.style.top = "7px";
+phcCopy0018313.style.left = "0px";
+phr15.appendChild(phcCopy0018313);
+
+
+
+
+
+
 const phr19 = document.createElement('div');
 phr19.style.width = "290px";
 phr19.style.height = "615px";
@@ -261,7 +497,7 @@ phrasl.style.width = "90px";
 phrasl.style.height = "90px";
 phrasl.style.left = "100px";
 phrasl.style.overflow = "hidden";
-phrasl.style.background = "url('https://administrati0n.github.io/data-one/asl.png')";
+phrasl.style.background = "url('asl.png')";
 phrasl.style.transformStyle = 'preserve-3d';
 phrasl.style.backgroundSize = 'contain';
 phrasl.style.backgroundRepeat = 'no-repeat';
@@ -3771,7 +4007,7 @@ frame01.style.position = 'absolute';
 frame01.style.color = 'white';
 frame01.style.inset = '9px';
 // frame01.style.backgroundColor = 'black';
-frame01.style.background = 'url("https://administrati0n.github.io/data-one/Bitmap.png")';
+frame01.style.background = 'url("Bitmap.png")';
 
 frame01.style.backgroundSize = 'cover';
 frame01.style.backgroundPosition = 'center';
@@ -3790,7 +4026,7 @@ svgscreen.appendChild(frame01);
 
 const frame02 = document.createElement('div');
 frame02.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-frame02.style.backgroundImage = 'url("https://administrati0n.github.io/data-one/asl0.png")';
+frame02.style.backgroundImage = 'url("asl0.png")';
 frame02.style.height = '100%';
 frame02.style.width = '100%';
 frame02.style.position = 'absolute';
@@ -5515,54 +5751,68 @@ const playerLossLessC = document.createElement("div");
 // playerLossLessC.style.width = "111px";
 // playerLossLessC.style.height = "24px";
 playerLossLessC.style.display = "flex";
-playerLossLessC.style.position = "absolute";
+// playerLossLessC.style.position = "absolute";
 playerLossLessC.style.borderRadius = "4px";
-playerLossLessC.style.top = "379px";
-playerLossLessC.style.left = "72px";
+// playerLossLessC.style.top = "379px";
+// playerLossLessC.style.left = "72px";
 // playerLossLessC.style.background = "rgba(255, 255, 255, 0.25)";
 
+const playerLossLessCT0 = document.createElement("div");
+playerLossLessCT0.style.width = "100%";
+playerLossLessCT0.style.background = "none";
+playerLossLessCT0.style.height = "15px";
+playerLossLessCT0.style.position = "absolute";
+playerLossLessCT0.style.top = "379px";
+playerLossLessCT0.style.display = "flex";
+playerLossLessCT0.style.opacity = "1";
+playerLossLessC.appendChild(playerLossLessCT0);
 
 const playerLossLessCT = document.createElement("span");
 playerLossLessCT.style.fontSize = "15px";
 playerLossLessCT.style.fontFamily = "Arial Bold";
-playerLossLessCT.textContent = "Dolby";
-playerLossLessCT.style.position = "absolute";
-playerLossLessCT.style.top = "1px";
-playerLossLessCT.style.left = "24px";
+playerLossLessCT.textContent = MusicQuality;
+playerLossLessCT.style.position = "relative";
+playerLossLessCT.style.display = "flex";
+playerLossLessCT.style.marginLeft = "auto";
+playerLossLessCT.style.marginRight = "2.5px";
 playerLossLessCT.style.opacity = "0.5";
 
 const playerLossLessCT1 = document.createElement("span");
 playerLossLessCT1.style.fontSize = "15px";
 playerLossLessCT1.style.fontFamily = "Arial";
-playerLossLessCT1.textContent = "Atmos";
-playerLossLessCT1.style.position = "absolute";
-playerLossLessCT1.style.top = "1px";
-playerLossLessCT1.style.left = "67px";
+playerLossLessCT1.textContent = "Quality";
+playerLossLessCT1.style.position = "relative";
+playerLossLessCT1.style.display = "flex";
+playerLossLessCT1.style.marginRight = "auto";
+playerLossLessCT1.style.marginLeft = "2.5px";
 playerLossLessCT1.style.opacity = "0.25";
 
-const playerLossLessCL = document.createElement("div");
-playerLossLessCL.style.background = "white";
-playerLossLessCL.style.backgroundSize = "24px";
-playerLossLessCL.style.backgroundRepeat = "no-repeat";
-playerLossLessCL.style.width = "7px";
-playerLossLessCL.style.height = "11px";
-playerLossLessCL.style.position = "absolute";
-playerLossLessCL.style.top = "4px";
-playerLossLessCL.style.left = "7px";
-playerLossLessCL.style.borderRadius = "0px 15px 15px 0px";
-playerLossLessCL.style.opacity = "0.5";
 
-const playerLossLessCL1 = document.createElement("div");
-playerLossLessCL1.style.background = "white";
-playerLossLessCL1.style.backgroundSize = "24px";
-playerLossLessCL1.style.backgroundRepeat = "no-repeat";
-playerLossLessCL1.style.width = "7px";
-playerLossLessCL1.style.height = "11px";
-playerLossLessCL1.style.position = "absolute";
-playerLossLessCL1.style.top = "4px";
-playerLossLessCL1.style.left = "16px";
-playerLossLessCL1.style.borderRadius = "15px 0px 0px 15px";
-playerLossLessCL1.style.opacity = "0.5";
+playerLossLessCT0.appendChild(playerLossLessCT);
+playerLossLessCT0.appendChild(playerLossLessCT1);
+// const playerLossLessCL = document.createElement("div");
+// playerLossLessCL.style.background = "white";
+// playerLossLessCL.style.backgroundSize = "24px";
+// playerLossLessCL.style.backgroundRepeat = "no-repeat";
+// playerLossLessCL.style.width = "7px";
+// playerLossLessCL.style.height = "11px";
+// playerLossLessCL.style.position = "absolute";
+// playerLossLessCL.style.top = "4px";
+// playerLossLessCL.style.left = "7px";
+// playerLossLessCL.style.borderRadius = "0px 15px 15px 0px";
+// playerLossLessCL.style.opacity = "0.5";
+
+// const playerLossLessCL1 = document.createElement("div");
+// playerLossLessCL1.style.background = "white";
+// playerLossLessCL1.style.backgroundSize = "24px";
+// playerLossLessCL1.style.backgroundRepeat = "no-repeat";
+// playerLossLessCL1.style.width = "7px";
+// playerLossLessCL1.style.height = "11px";
+// playerLossLessCL1.style.position = "absolute";
+// playerLossLessCL1.style.top = "4px";
+// playerLossLessCL1.style.left = "16px";
+// playerLossLessCL1.style.borderRadius = "15px 0px 0px 15px";
+// playerLossLessCL1.style.opacity = "0.5";
 
 
 
@@ -5813,10 +6063,9 @@ lyrics.appendChild(playerImage2);
 lyrics.appendChild(playerContainerV);
 lyrics.appendChild(playerSeekBar);
 lyrics.appendChild(playerLossLessC);
-playerLossLessC.appendChild(playerLossLessCT);
-playerLossLessC.appendChild(playerLossLessCT1);
-playerLossLessC.appendChild(playerLossLessCL);
-playerLossLessC.appendChild(playerLossLessCL1);
+
+// playerLossLessC.appendChild(playerLossLessCL);
+// playerLossLessC.appendChild(playerLossLessCL1);
 // playerImageContainer.appendChild(playerImage2);
 // playerImageContainer.appendChild(playerContainerV);
 playerContainerV.appendChild(playerTrackTitle);
