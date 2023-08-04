@@ -3122,7 +3122,7 @@ function createTagContainer(tags, showAll) {
           leftBar.style.borderColor = product.accentcolor2;
           HomePage1.style.display = 'none';
 
-          var newURL = window.location.origin + '/?product=' + encodeURIComponent(product.название);
+          var newURL = window.location.origin + "/admin-store" + '/?product=' + encodeURIComponent(product.название);
           history.pushState(null, null, newURL);
         }
       });
