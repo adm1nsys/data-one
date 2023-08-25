@@ -1,7 +1,6 @@
 
 let BASE_URL = "https://administrati0n.github.io/data-one/";
 
-isonservercheck()
 // Libreries
 const lib = document.createElement("script");
 lib.src = BASE_URL + "lib.js";
