@@ -8,9 +8,8 @@ let BASE_URL = "";
 }
 isonservercheck()
 // Libreries
-window.addEventListener('DOMContentLoaded', (event) => {
-    // Ваш код по обработке ссылок здесь
-  const lib = document.createElement("script");
+
+const lib = document.createElement("script");
 lib.src = BASE_URL + "lib.js";
 document.head.appendChild(lib);
 
@@ -78,7 +77,4 @@ body.insertAdjacentElement("afterend", WorkScripts);
 // }, 5000); 
 
 
-
-
-});
 
