@@ -86,7 +86,39 @@ function adjustLayout() {
 // Вызывать функцию каждую секунду
 setInterval(adjustLayout, 1000);
 
+onload = function () {
+//
+smoothScrollToTop(500);
 
+
+
+
+    // console.log("1")
+  var productName = getURLParameter('product');
+  if (productName) {
+    var product = findProductByTag(productName);
+    if (product) {
+      renderProductMenu(product);
+      smoothScrollTo('topscroll0');
+      leftBar.style.borderColor = product.accentcolor2;
+      HomePage1.style.display = 'none';
+      window.scrollTo(0, 0); // Прокручиваем страницу вверх
+    }
+  }
+if(lscreen === 1){
+    setTimeout(function() {
+lscrenclose()
+}, 2000); 
+} else if (lscreen === 0){
+
+    //
+
+}
+
+
+
+    
+};
 
 
 

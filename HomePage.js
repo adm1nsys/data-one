@@ -2,11 +2,14 @@ const HomePage1 = document.createElement("div");
 HomePage1.style.display = "flex";
 HomePage1.style.flexDirection = "column";
 HomePage1.style.position = "relative";
-HomePage1.style.background = "linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17) 10.92%, rgb(25, 25, 25), rgb(18, 18, 18) 82.35%, rgb(0, 0, 0))";
+HomePage1.style.background = "radial-gradient(rgb(67, 67, 67), rgb(71, 71, 71) 11.76%, rgb(39, 39, 39), rgb(0, 0, 0) 82.77%, rgb(0, 0, 0))";
+// HomePage1.style.background = "linear-gradient(to right, rgb(0, 0, 0), rgb(17, 17, 17) 10.92%, rgb(25, 25, 25), rgb(18, 18, 18) 82.35%, rgb(0, 0, 0))";
 HomePage1.style.margin = "0px 0px 0px 120px";
 HomePage1.style.zIndex = "2";
+HomePage1.style.transition = "0.4s";
+HomePage1.style.opacity = "1";
 // HomePage1.style.width = "100%";
-HomePage1.style.height = "100%";
+HomePage1.style.height = "auto" + 50 + "px";
 HomePage1.style.minHeight = "100vh";
 HomePage1.style.marginBottom = "0px";
 // ContainerForContent1.appendChild(HomePage1);
@@ -87,7 +90,7 @@ HomePageSlides1.style.display = "flex";
 HomePageSlides1.style.flexDirection = "row";
 HomePageSlides1.style.position = "relative";
 // HomePageSlides1.style.background = "black";
-HomePageSlides1.style.background = "url('https://administrati0n.github.io/data-one/Slidesbg.png')";
+HomePageSlides1.style.background = "url('+ BASE_URL + Slidesbg.png')";
 HomePageSlides1.style.backgroundSize = "cover";
 HomePageSlides1.style.backgroundPosition = "center";
 HomePageSlides1.style.margin = "5px 5px 5vh";
@@ -128,18 +131,21 @@ while (true) {
 
 HomePageSlidesText.textContent = repeatedText;
 HomePageSlidesText.style.whiteSpace = "nowrap";
+HomePageSlidesText.style.background = "linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.44), rgb(0, 0, 0))";
+HomePageSlidesText.style.WebkitBackgroundClip = "text";
+HomePageSlidesText.style.backgroundClip = "text";
 
 
+shimmerEffect(HomePageSlidesText);
 
 
-HomePageSlidesText.style.color = "black";
-// HomePageSlidesText.style.background = "blue";
+HomePageSlidesText.style.color = "rgba(0,0,0,0)";
 // HomePageSlidesText.style.backgroundPosition = "center";
 HomePageSlidesText.style.marginTop = "7px";
 HomePageSlidesText.style.marginLeft = "-50px";
 // HomePageSlidesText.style.marginRight = "auto";
 // HomePageSlidesText.style.marginBottom = "7px";
-HomePageSlidesText.style.fontFamily = "Gilroy";
+HomePageSlidesText.style.fontFamily = Font1;
 HomePageSlidesText.style.fontSize = "25px";
 HomePageSlidesText.style.width = "150%";
 HomePageSlidesText.style.overflow = "hidden";
@@ -175,7 +181,7 @@ HomePageSlidesTextC.appendChild(HomePageSlidesGR1);
 const slide1 = document.createElement("div");
 // slide1.textContent = "Слайд 1";
 // slide1.style.backgroundColor = "red";
-slide1.style.background = "url('https://administrati0n.github.io/data-one/MacBook Pro 16_ - 2.png')";
+slide1.style.background = "url('+ BASE_URL + MacBook Pro 16_ - 2.png')";
 slide1.style.backgroundSize = "contain";
 slide1.style.backgroundPosition = "center";
 slide1.style.backgroundRepeat = "no-repeat";
@@ -189,7 +195,7 @@ slide1.style.transition = "left 0.5s";
 const slide2 = document.createElement("div");
 // slide2.textContent = "Слайд 2";
 // slide2.style.backgroundColor = "green";
-slide2.style.background = "url('https://administrati0n.github.io/data-one/MacBook Pro 16_ - 4.png')";
+slide2.style.background = "url(' + BASE_URL + MacBook Pro 16_ - 4.png')";
 slide2.style.backgroundSize = "contain";
 slide2.style.backgroundPosition = "center";
 slide2.style.backgroundRepeat = "no-repeat";
@@ -202,7 +208,7 @@ slide2.style.transition = "left 0.5s";
 const slide3 = document.createElement("div");
 // slide3.textContent = "Слайд 3";
 // slide3.style.backgroundColor = "blue";
-slide3.style.background = "url('https://administrati0n.github.io/data-one/MacBook Pro 16_ - 5.png')";
+slide3.style.background = "url(' + BASE_URL + MacBook Pro 16_ - 5.png')";
 slide3.style.backgroundSize = "contain";
 slide3.style.backgroundPosition = "center";
 slide3.style.backgroundRepeat = "no-repeat";
@@ -265,7 +271,7 @@ prevButton.style.backgroundPosition = "center";
 prevButton.style.backgroundRepeat = "no-repeat";
 prevButton.style.opacity = "0";
 prevButton.style.transition = "0.5s";
-prevButton.style.backgroundImage = "url('https://administrati0n.github.io/data-one/Frame 5.png')";
+prevButton.style.backgroundImage = "url('Frame 5.png')";
 prevButton.addEventListener("click", showPreviousSlide);
 HomePageSlides1.appendChild(prevButton);
 
@@ -285,7 +291,7 @@ nextButton.style.backgroundPosition = "center";
 nextButton.style.backgroundRepeat = "no-repeat";
 nextButton.style.opacity = "0";
 nextButton.style.transition = "0.5s";
-nextButton.style.backgroundImage = "url('https://administrati0n.github.io/data-one/Frame 6.png')";
+nextButton.style.backgroundImage = "url('Frame 6.png')";
 nextButton.addEventListener("click", showNextSlide);
 HomePageSlides1.appendChild(nextButton);
 
@@ -399,7 +405,7 @@ button1.style.borderRadius = "999px";
 button1.style.color = "white";
 button1.style.fontSize = "20px";
 button1.style.padding = "10px";
-button1.style.fontFamily = "Gilroy";
+button1.style.fontFamily = Font2;
 button1.addEventListener("click", () => {
   window.location.href = buttonData[0].link;
 });
@@ -436,7 +442,7 @@ button2.style.borderRadius = "999px";
 button2.style.color = "white";
 button2.style.fontSize = "20px";
 button2.style.padding = "10px";
-button2.style.fontFamily = "Gilroy";
+button2.style.fontFamily = Font2;
 button2.addEventListener("click", () => {
   window.location.href = buttonData[1].link;
 });
@@ -473,7 +479,7 @@ button3.style.borderRadius = "999px";
 button3.style.color = "white";
 button3.style.fontSize = "20px";
 button3.style.padding = "10px";
-button3.style.fontFamily = "Gilroy";
+button3.style.fontFamily = Font2;
 button3.addEventListener("click", () => {
   window.location.href = buttonData[2].link;
 });
@@ -540,12 +546,18 @@ HomePage1ptTitle.style.display = "flex";
 HomePage1ptTitle.style.flexDirection = "row";
 HomePage1ptTitle.style.position = "relative";
 HomePage1ptTitle.textContent = "Top 3 Latest";
-HomePage1ptTitle.style.background = "none";
+shimmerEffect(HomePage1ptTitle);
+HomePage1ptTitle.style.background = "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.43601190476190477) 50%, rgba(255,255,255,1) 100%)";
+
+HomePage1ptTitle.style.WebkitBackgroundClip = "text";
+
 HomePage1ptTitle.style.marginLeft = "0px";
+HomePage1ptTitle.style.color = "rgba(0,0,0,0)";
 HomePage1ptTitle.style.marginRight = "auto";
 HomePage1ptTitle.style.marginTop = "20px";
 HomePage1ptTitle.style.fontSize = "50px";
-HomePage1ptTitle.style.fontFamily = "Gilroy";
+HomePage1ptTitle.style.WebkitBackgroundClip = "text";
+HomePage1ptTitle.style.fontFamily = Font1;
 HomePage1pt.appendChild(HomePage1ptTitle);
 
 const HomePage1ptC0 = document.createElement("div");
@@ -560,9 +572,11 @@ HomePage1ptC0.style.width = "100%";
 HomePage1ptC0.style.height = "770px";
 // HomePage1ptC0.style.marginLeft = "-30px";
 // HomePage1ptC0.style.marginRight = "auto";
+HomePage1ptC0.style.maskImage = 'linear-gradient(to right, transparent 0%, white 10%, white 90%, transparent 100%)';
+// HomePage1ptC0.style.maskImage = 'linear-gradient(transparent 0%, white 10%, white 90%, transparent 100%)';
 HomePage1ptC0.style.marginTop = "20px";
 HomePage1ptC0.style.fontSize = "40px";
-HomePage1ptC0.style.fontFamily = "Gilroy";
+HomePage1ptC0.style.fontFamily = Font2;
 HomePage1pt.appendChild(HomePage1ptC0);
 
 const HomePage1ptC0P1 = document.createElement("div");
@@ -570,8 +584,11 @@ HomePage1ptC0P1.style.display = "inline-block";
 HomePage1ptC0P1.style.borderRadius = "20px";
 // HomePage1ptC0P1.style.flexDirection = "row";
 HomePage1ptC0P1.style.position = "relative";
-HomePage1ptC0P1.style.background = "rgba(21, 21, 21, 1)";
-HomePage1ptC0P1.style.border = "2px solid rgba(40, 40, 41, 1)";
+HomePage1ptC0P1.style.background = "rgba(0, 0, 0, 0.4)";
+HomePage1ptC0P1.style.WebkitBackdropFilter = "blur(70px)";
+HomePage1ptC0P1.style.backdropFilter = "blur(70px)";
+// HomePage1ptC0P1.style.border = "2px solid rgba(40, 40, 41, 1)";
+// HomePage1ptC0P1.style.boxShadow = "black 7px 5px 20px";
 HomePage1ptC0P1.style.marginLeft = "0px";
 HomePage1ptC0P1.style.width = "416px";
 HomePage1ptC0P1.style.height = "700px";
@@ -579,7 +596,7 @@ HomePage1ptC0P1.style.marginRight = "auto";
 HomePage1ptC0P1.style.marginTop = "20px";
 HomePage1ptC0P1.style.marginBottom = "30px";
 HomePage1ptC0P1.style.fontSize = "40px";
-HomePage1ptC0P1.style.fontFamily = "Gilroy";
+HomePage1ptC0P1.style.fontFamily = Font2;
 HomePage1ptC0P1.style.overflow = "hidden";
 HomePage1ptC0.appendChild(HomePage1ptC0P1);
 
@@ -588,8 +605,11 @@ HomePage1ptC0P2.style.display = "inline-block";
 HomePage1ptC0P2.style.borderRadius = "20px";
 // HomePage1ptC0P2.style.flexDirection = "row";
 HomePage1ptC0P2.style.position = "relative";
-HomePage1ptC0P2.style.background = "rgba(21, 21, 21, 1)";
-HomePage1ptC0P2.style.border = "2px solid rgba(40, 40, 41, 1)";
+HomePage1ptC0P2.style.background = "rgba(0, 0, 0, 0.4)";
+HomePage1ptC0P2.style.WebkitBackdropFilter = "blur(70px)";
+HomePage1ptC0P2.style.backdropFilter = "blur(70px)";
+// HomePage1ptC0P2.style.border = "2px solid rgba(40, 40, 41, 1)";
+// HomePage1ptC0P2.style.boxShadow = "black 7px 5px 20px";
 HomePage1ptC0P2.style.marginLeft = "30px";
 HomePage1ptC0P2.style.width = "416px";
 HomePage1ptC0P2.style.height = "700px";
@@ -597,7 +617,7 @@ HomePage1ptC0P2.style.marginRight = "auto";
 HomePage1ptC0P2.style.marginTop = "20px";
 HomePage1ptC0P2.style.marginBottom = "30px";
 HomePage1ptC0P2.style.fontSize = "40px";
-HomePage1ptC0P2.style.fontFamily = "Gilroy";
+HomePage1ptC0P2.style.fontFamily = Font2;
 HomePage1ptC0P2.style.overflow = "hidden";
 HomePage1ptC0.appendChild(HomePage1ptC0P2);
 
@@ -606,8 +626,11 @@ HomePage1ptC0P3.style.display = "inline-block";
 HomePage1ptC0P3.style.borderRadius = "20px";
 // HomePage1ptC0P3.style.flexDirection = "row";
 HomePage1ptC0P3.style.position = "relative";
-HomePage1ptC0P3.style.background = "rgba(21, 21, 21, 1)";
-HomePage1ptC0P3.style.border = "2px solid rgba(40, 40, 41, 1)";
+HomePage1ptC0P3.style.background = "rgba(0, 0, 0, 0.4)";
+HomePage1ptC0P3.style.WebkitBackdropFilter = "blur(70px)";
+HomePage1ptC0P3.style.backdropFilter = "blur(70px)";
+// HomePage1ptC0P3.style.border = "2px solid rgba(40, 40, 41, 1)";
+// HomePage1ptC0P3.style.boxShadow = "black 7px 5px 20px";
 HomePage1ptC0P3.style.marginLeft = "30px";
 HomePage1ptC0P3.style.width = "416px";
 HomePage1ptC0P3.style.height = "700px";
@@ -615,7 +638,7 @@ HomePage1ptC0P3.style.marginRight = "auto";
 HomePage1ptC0P3.style.marginTop = "20px";
 HomePage1ptC0P3.style.marginBottom = "30px";
 HomePage1ptC0P3.style.fontSize = "40px";
-HomePage1ptC0P3.style.fontFamily = "Gilroy";
+HomePage1ptC0P3.style.fontFamily = Font2;
 HomePage1ptC0P3.style.overflow = "hidden";
 HomePage1ptC0.appendChild(HomePage1ptC0P3);
 
@@ -636,7 +659,7 @@ HomePage1ptC0P1gr.style.background = "radial-gradient(35vh at 50% 110%, rgb(94, 
 HomePage1ptC0P1gr.style.width = "416px";
 HomePage1ptC0P1gr.style.height = "700px";
 HomePage1ptC0P1gr.style.fontSize = "40px";
-HomePage1ptC0P1gr.style.fontFamily = "Gilroy";
+HomePage1ptC0P1gr.style.fontFamily = Font2;
 HomePage1ptC0P1.appendChild(HomePage1ptC0P1gr);
 
 const HomePage1ptC0P2gr = document.createElement("div");
@@ -647,7 +670,7 @@ HomePage1ptC0P2gr.style.background = "radial-gradient(35vh at 50% 110%, rgb(94, 
 HomePage1ptC0P2gr.style.width = "416px";
 HomePage1ptC0P2gr.style.height = "700px";
 HomePage1ptC0P2gr.style.fontSize = "40px";
-HomePage1ptC0P2gr.style.fontFamily = "Gilroy";
+HomePage1ptC0P2gr.style.fontFamily = Font2;
 HomePage1ptC0P2.appendChild(HomePage1ptC0P2gr);
 
 const HomePage1ptC0P3gr = document.createElement("div");
@@ -658,7 +681,7 @@ HomePage1ptC0P3gr.style.background = "radial-gradient(35vh at 50% 110%, rgb(94, 
 HomePage1ptC0P3gr.style.width = "416px";
 HomePage1ptC0P3gr.style.height = "700px";
 HomePage1ptC0P3gr.style.fontSize = "40px";
-HomePage1ptC0P3gr.style.fontFamily = "Gilroy";
+HomePage1ptC0P3gr.style.fontFamily = Font2;
 HomePage1ptC0P3.appendChild(HomePage1ptC0P3gr);
 
 const HomePage1ptC0P1forlogo = document.createElement("div");
@@ -747,7 +770,7 @@ HomePage1ptC0P1forlogo.appendChild(HomePage1ptC0P1logoproj);
 const HomePage1ptC0P1title = document.createElement("div");
 HomePage1ptC0P1title.style.display = "flex";
 HomePage1ptC0P1title.style.position = "relative";
-HomePage1ptC0P1title.style.fontFamily = "Gilroy";
+HomePage1ptC0P1title.style.fontFamily = Font1;
 HomePage1ptC0P1title.style.fontSize = "40px";
 HomePage1ptC0P1title.style.width = "100%";
 HomePage1ptC0P1title.style.justifyContent = "center";
@@ -760,7 +783,7 @@ HomePage1ptC0P1.appendChild(HomePage1ptC0P1title);
 const HomePage1ptC0P1data = document.createElement("div");
 HomePage1ptC0P1data.style.display = "flex";
 HomePage1ptC0P1data.style.position = "relative";
-HomePage1ptC0P1data.style.fontFamily = "Gilroy";
+HomePage1ptC0P1data.style.fontFamily = Font2;
 HomePage1ptC0P1data.style.fontSize = "20px";
 HomePage1ptC0P1data.style.width = "100%";
 HomePage1ptC0P1data.style.justifyContent = "center";
@@ -921,7 +944,7 @@ HomePage1ptC0P2forlogo.appendChild(HomePage1ptC0P2logoproj);
 const HomePage1ptC0P2title = document.createElement("div");
 HomePage1ptC0P2title.style.display = "flex";
 HomePage1ptC0P2title.style.position = "relative";
-HomePage1ptC0P2title.style.fontFamily = "Gilroy";
+HomePage1ptC0P2title.style.fontFamily = Font1;
 HomePage1ptC0P2title.style.fontSize = "40px";
 HomePage1ptC0P2title.style.width = "100%";
 HomePage1ptC0P2title.style.justifyContent = "center";
@@ -934,7 +957,7 @@ HomePage1ptC0P2.appendChild(HomePage1ptC0P2title);
 const HomePage1ptC0P2data = document.createElement("div");
 HomePage1ptC0P2data.style.display = "flex";
 HomePage1ptC0P2data.style.position = "relative";
-HomePage1ptC0P2data.style.fontFamily = "Gilroy";
+HomePage1ptC0P2data.style.fontFamily = Font2;
 HomePage1ptC0P2data.style.fontSize = "20px";
 HomePage1ptC0P2data.style.width = "100%";
 HomePage1ptC0P2data.style.justifyContent = "center";
@@ -1088,7 +1111,7 @@ HomePage1ptC0P3forlogo.appendChild(HomePage1ptC0P3logoproj);
 const HomePage1ptC0P3title = document.createElement("div");
 HomePage1ptC0P3title.style.display = "flex";
 HomePage1ptC0P3title.style.position = "relative";
-HomePage1ptC0P3title.style.fontFamily = "Gilroy";
+HomePage1ptC0P3title.style.fontFamily = Font1;
 HomePage1ptC0P3title.style.fontSize = "40px";
 HomePage1ptC0P3title.style.width = "100%";
 HomePage1ptC0P3title.style.justifyContent = "center";
@@ -1101,7 +1124,7 @@ HomePage1ptC0P3.appendChild(HomePage1ptC0P3title);
 const HomePage1ptC0P3data = document.createElement("div");
 HomePage1ptC0P3data.style.display = "flex";
 HomePage1ptC0P3data.style.position = "relative";
-HomePage1ptC0P3data.style.fontFamily = "Gilroy";
+HomePage1ptC0P3data.style.fontFamily = Font2;
 HomePage1ptC0P3data.style.fontSize = "20px";
 HomePage1ptC0P3data.style.width = "100%";
 HomePage1ptC0P3data.style.justifyContent = "center";
@@ -1297,12 +1320,15 @@ HomePage2ptTitle.style.display = "flex";
 HomePage2ptTitle.style.flexDirection = "row";
 HomePage2ptTitle.style.position = "relative";
 HomePage2ptTitle.textContent = "Categories For:";
-HomePage2ptTitle.style.background = "none";
+shimmerEffect(HomePage2ptTitle);
+HomePage2ptTitle.style.background = "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.43601190476190477) 50%, rgba(255,255,255,1) 100%)";
+HomePage2ptTitle.style.color = "rgba(0,0,0,0)";
 HomePage2ptTitle.style.marginLeft = "0px";
+HomePage2ptTitle.style.WebkitBackgroundClip = "text";
 HomePage2ptTitle.style.marginRight = "auto";
 HomePage2ptTitle.style.marginTop = "0px";
 HomePage2ptTitle.style.fontSize = "50px";
-HomePage2ptTitle.style.fontFamily = "Gilroy";
+HomePage2ptTitle.style.fontFamily = Font1;
 HomePage2pt.appendChild(HomePage2ptTitle);
 
 
@@ -1319,8 +1345,7 @@ HomePage2ptl0.style.marginRight = "auto";
 HomePage2ptl0.style.marginTop = "40px";
 HomePage2ptl0.style.whiteSpace = "nowrap";
 HomePage2ptl0.style.height = "70px";
-HomePage2ptl0.style.width = "100%";
-HomePage2ptl0.style.maxWidth = "1037px";
+HomePage2ptl0.style.maxWidth = "100%";
 HomePage2ptl0.style.overflow = "hidden";
 HomePage2ptl0.style.overflowX = "auto";
 HomePage2ptl0.style.justifyContent = "start";
@@ -1339,6 +1364,7 @@ HomePage2ptl0p0.style.zIndex = "777";
 HomePage2ptl0p0.style.transition = "1s";
 HomePage2ptl0p0.style.opacity = "1";
 HomePage2ptl0.appendChild(HomePage2ptl0p0);
+
 
 function vibrateElement(element) {
   element.style.transition = "0.1s"; // Применяем продолжительность анимации 0.2 секунды
@@ -1463,7 +1489,7 @@ HomePage2ptl0p1.style.textAlign = "center";
 HomePage2ptl0p1.style.fontSize = "20px";
 HomePage2ptl0p1.textContent = "iOS Developers";
 HomePage2ptl0p1.style.height = "100%";
-HomePage2ptl0p1.style.fontFamily = "Gilroy";
+HomePage2ptl0p1.style.fontFamily = Font2;
 HomePage2ptl0p1.style.color = "white";
 HomePage2ptl0p1.style.zIndex = "999";
 HomePage2ptl0p1.style.transition = "1s";
@@ -1506,7 +1532,7 @@ HomePage2ptl0p2.style.textAlign = "center";
 HomePage2ptl0p2.style.fontSize = "20px";
 HomePage2ptl0p2.textContent = "WEB Developrs";
 HomePage2ptl0p2.style.height = "100%";
-HomePage2ptl0p2.style.fontFamily = "Gilroy";
+HomePage2ptl0p2.style.fontFamily = Font2;
 HomePage2ptl0p2.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p2.style.zIndex = "999";
 HomePage2ptl0p2.style.transition = "1s";
@@ -1548,7 +1574,7 @@ HomePage2ptl0p3.style.textAlign = "center";
 HomePage2ptl0p3.style.fontSize = "20px";
 HomePage2ptl0p3.textContent = "Scripters";
 HomePage2ptl0p3.style.height = "100%";
-HomePage2ptl0p3.style.fontFamily = "Gilroy";
+HomePage2ptl0p3.style.fontFamily = Font2;
 HomePage2ptl0p3.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p3.style.zIndex = "999";
 HomePage2ptl0p3.style.transition = "1s";
@@ -1590,7 +1616,7 @@ HomePage2ptl0p4.style.textAlign = "center";
 HomePage2ptl0p4.style.fontSize = "20px";
 HomePage2ptl0p4.textContent = "Designers";
 HomePage2ptl0p4.style.height = "100%";
-HomePage2ptl0p4.style.fontFamily = "Gilroy";
+HomePage2ptl0p4.style.fontFamily = Font2;
 HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p4.style.zIndex = "999";
 HomePage2ptl0p4.style.transition = "1s";
@@ -1633,7 +1659,7 @@ HomePage2ptl0p5.style.textAlign = "center";
 HomePage2ptl0p5.style.fontSize = "20px";
 HomePage2ptl0p5.textContent = "3D Specialists";
 HomePage2ptl0p5.style.height = "100%";
-HomePage2ptl0p5.style.fontFamily = "Gilroy";
+HomePage2ptl0p5.style.fontFamily = Font2;
 HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p5.style.zIndex = "999";
 HomePage2ptl0p5.style.transition = "1s";
@@ -1675,7 +1701,7 @@ HomePage2ptl0p6.style.textAlign = "center";
 HomePage2ptl0p6.style.fontSize = "20px";
 HomePage2ptl0p6.textContent = "Beginners";
 HomePage2ptl0p6.style.height = "100%";
-HomePage2ptl0p6.style.fontFamily = "Gilroy";
+HomePage2ptl0p6.style.fontFamily = Font2;
 HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p6.style.zIndex = "999";
 HomePage2ptl0p6.style.transition = "1s";
@@ -1723,40 +1749,57 @@ HomePage2pt.appendChild(HomePage2ptl0С1);
 const HomePage2ptl0С1T1 = document.createElement("div");
 HomePage2ptl0С1T1.style.display = "flex";
 HomePage2ptl0С1T1.style.fontSize = "80px";
-HomePage2ptl0С1T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С1T1.style.fontFamily = Font1;
 HomePage2ptl0С1T1.style.color = "rgba(0, 0, 0, 0)";
 HomePage2ptl0С1T1.style.marginTop = "40px";
 HomePage2ptl0С1T1.style.marginLeft = "auto";
 HomePage2ptl0С1T1.style.marginRight = "auto";
 HomePage2ptl0С1T1.textContent = "iOS Developers";
-HomePage2ptl0С1T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
-HomePage2ptl0С1T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С1T1.style.background = "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.43601190476190477) 50%, rgba(255,255,255,1) 100%)";
+HomePage2ptl0С1T1.style.backgroundClip = "text";
+HomePage2ptl0С1T1.style.WebkitBackgroundClip = "text";  // Обратите внимание на большую "W"
 HomePage2ptl0С1.appendChild(HomePage2ptl0С1T1);
 
 
 // Функция для анимации фона
 function animateBackground(element) {
-  let hue = 0;
 
-  // Запускаем анимацию
-  function animate() {
-    hue = (hue + 1) % 360; // Изменяем цветовой тон
+    // Проверяем, использует ли пользователь Safari и его версию
+    const safariMatch = navigator.userAgent.match(/Version\/(\d+).+Safari/);
 
-    // Применяем анимированный градиентный фон к элементу
-    element.style.background = `linear-gradient(45deg, hsl(${hue}, 100%, 50%), hsl(${(hue + 90) % 360}, 100%, 50%), hsl(${(hue + 180) % 360}, 100%, 50%), hsl(${(hue + 270) % 360}, 100%, 50%))`;
+    if (navigator.userAgent.indexOf("Safari") !== -1 && navigator.userAgent.indexOf("Chrome") === -1 && safariMatch && parseInt(safariMatch[1], 10) >= 16) {
 
-    requestAnimationFrame(animate);
-  }
+        let hue = 0;
 
-  animate();
+        // Запускаем анимацию
+        function animate() {
+            hue = (hue + 1) % 360; // Изменяем цветовой тон
+
+            // Применяем анимированный градиентный фон к элементу
+            element.style.background = `linear-gradient(45deg, hsl(${hue}, 100%, 50%), hsl(${(hue + 90) % 360}, 100%, 50%), hsl(${(hue + 180) % 360}, 100%, 50%), hsl(${(hue + 270) % 360}, 100%, 50%))`;
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+    } else {
+        element.style.background = 'linear-gradient(45deg, red, yellow, green, lightblue)';
+        element.style.backgroundClip = "text";
+        element.style.WebkitBackgroundClip = "text";  // Обратите внимание на большую "W"
+    }
+
 }
 
-animateBackground(HomePage2ptl0С1T1);
+// animateBackground(HomePage2ptl0С1T1);
+shimmerEffect(HomePage2ptl0С1T1);
+
+
 
 const HomePage2ptl0С1T2 = document.createElement("div");
 HomePage2ptl0С1T2.style.display = "flex";
 HomePage2ptl0С1T2.style.fontSize = "30px";
-HomePage2ptl0С1T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С1T2.style.fontFamily = Font2;
 HomePage2ptl0С1T2.style.color = "rgba(255, 255, 255, 1)";
 HomePage2ptl0С1T2.style.marginTop = "40px";
 HomePage2ptl0С1T2.style.marginLeft = "auto";
@@ -1784,23 +1827,24 @@ HomePage2pt.appendChild(HomePage2ptl0С2);
 const HomePage2ptl0С2T1 = document.createElement("div");
 HomePage2ptl0С2T1.style.display = "flex";
 HomePage2ptl0С2T1.style.fontSize = "80px";
-HomePage2ptl0С2T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С2T1.style.fontFamily = Font1;
 HomePage2ptl0С2T1.style.color = "rgba(0, 0, 0, 0)";
 HomePage2ptl0С2T1.style.marginTop = "40px";
 HomePage2ptl0С2T1.style.marginLeft = "auto";
 HomePage2ptl0С2T1.style.marginRight = "auto";
+HomePage2ptl0С2T1.style.background = "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.43601190476190477) 50%, rgba(255,255,255,1) 100%)";
 HomePage2ptl0С2T1.textContent = "WEB Developers";
 HomePage2ptl0С2T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
 HomePage2ptl0С2T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
 HomePage2ptl0С2.appendChild(HomePage2ptl0С2T1);
 
 
-animateBackground(HomePage2ptl0С2T1);
+shimmerEffect(HomePage2ptl0С2T1);
 
 const HomePage2ptl0С2T2 = document.createElement("div");
 HomePage2ptl0С2T2.style.display = "flex";
 HomePage2ptl0С2T2.style.fontSize = "30px";
-HomePage2ptl0С2T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С2T2.style.fontFamily = Font2;
 HomePage2ptl0С2T2.style.color = "rgba(255, 255, 255, 1)";
 HomePage2ptl0С2T2.style.marginTop = "40px";
 HomePage2ptl0С2T2.style.marginLeft = "auto";
@@ -1826,23 +1870,24 @@ HomePage2pt.appendChild(HomePage2ptl0С3);
 const HomePage2ptl0С3T1 = document.createElement("div");
 HomePage2ptl0С3T1.style.display = "flex";
 HomePage2ptl0С3T1.style.fontSize = "80px";
-HomePage2ptl0С3T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С3T1.style.fontFamily = Font1;
 HomePage2ptl0С3T1.style.color = "rgba(0, 0, 0, 0)";
 HomePage2ptl0С3T1.style.marginTop = "40px";
 HomePage2ptl0С3T1.style.marginLeft = "auto";
 HomePage2ptl0С3T1.style.marginRight = "auto";
+HomePage2ptl0С3T1.style.background = "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.43601190476190477) 50%, rgba(255,255,255,1) 100%)";
 HomePage2ptl0С3T1.textContent = "Scripters";
 HomePage2ptl0С3T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
 HomePage2ptl0С3T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
 HomePage2ptl0С3.appendChild(HomePage2ptl0С3T1);
 
 
-animateBackground(HomePage2ptl0С3T1);
+shimmerEffect(HomePage2ptl0С3T1);
 
 const HomePage2ptl0С3T2 = document.createElement("div");
 HomePage2ptl0С3T2.style.display = "flex";
 HomePage2ptl0С3T2.style.fontSize = "30px";
-HomePage2ptl0С3T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С3T2.style.fontFamily = Font2;
 HomePage2ptl0С3T2.style.color = "rgba(255, 255, 255, 1)";
 HomePage2ptl0С3T2.style.marginTop = "40px";
 HomePage2ptl0С3T2.style.marginLeft = "auto";
@@ -1868,23 +1913,24 @@ HomePage2pt.appendChild(HomePage2ptl0С4);
 const HomePage2ptl0С4T1 = document.createElement("div");
 HomePage2ptl0С4T1.style.display = "flex";
 HomePage2ptl0С4T1.style.fontSize = "80px";
-HomePage2ptl0С4T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С4T1.style.fontFamily = Font1;
 HomePage2ptl0С4T1.style.color = "rgba(0, 0, 0, 0)";
 HomePage2ptl0С4T1.style.marginTop = "40px";
 HomePage2ptl0С4T1.style.marginLeft = "auto";
 HomePage2ptl0С4T1.style.marginRight = "auto";
+HomePage2ptl0С4T1.style.background = "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.43601190476190477) 50%, rgba(255,255,255,1) 100%)";
 HomePage2ptl0С4T1.textContent = "Designers";
 HomePage2ptl0С4T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
 HomePage2ptl0С4T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
 HomePage2ptl0С4.appendChild(HomePage2ptl0С4T1);
 
 
-animateBackground(HomePage2ptl0С4T1);
+shimmerEffect(HomePage2ptl0С4T1);
 
 const HomePage2ptl0С4T2 = document.createElement("div");
 HomePage2ptl0С4T2.style.display = "flex";
 HomePage2ptl0С4T2.style.fontSize = "30px";
-HomePage2ptl0С4T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С4T2.style.fontFamily = Font2;
 HomePage2ptl0С4T2.style.color = "rgba(255, 255, 255, 1)";
 HomePage2ptl0С4T2.style.marginTop = "40px";
 HomePage2ptl0С4T2.style.marginLeft = "auto";
@@ -1910,23 +1956,24 @@ HomePage2pt.appendChild(HomePage2ptl0С5);
 const HomePage2ptl0С5T1 = document.createElement("div");
 HomePage2ptl0С5T1.style.display = "flex";
 HomePage2ptl0С5T1.style.fontSize = "80px";
-HomePage2ptl0С5T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С5T1.style.fontFamily = Font1;
 HomePage2ptl0С5T1.style.color = "rgba(0, 0, 0, 0)";
 HomePage2ptl0С5T1.style.marginTop = "40px";
 HomePage2ptl0С5T1.style.marginLeft = "auto";
 HomePage2ptl0С5T1.style.marginRight = "auto";
+HomePage2ptl0С5T1.style.background = "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.43601190476190477) 50%, rgba(255,255,255,1) 100%)";
 HomePage2ptl0С5T1.textContent = "3D Specialists";
 HomePage2ptl0С5T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
 HomePage2ptl0С5T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
 HomePage2ptl0С5.appendChild(HomePage2ptl0С5T1);
 
 
-animateBackground(HomePage2ptl0С5T1);
+shimmerEffect(HomePage2ptl0С5T1);
 
 const HomePage2ptl0С5T2 = document.createElement("div");
 HomePage2ptl0С5T2.style.display = "flex";
 HomePage2ptl0С5T2.style.fontSize = "30px";
-HomePage2ptl0С5T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С5T2.style.fontFamily = Font2;
 HomePage2ptl0С5T2.style.color = "rgba(255, 255, 255, 1)";
 HomePage2ptl0С5T2.style.marginTop = "40px";
 HomePage2ptl0С5T2.style.marginLeft = "auto";
@@ -1952,23 +1999,25 @@ HomePage2pt.appendChild(HomePage2ptl0С6);
 const HomePage2ptl0С6T1 = document.createElement("div");
 HomePage2ptl0С6T1.style.display = "flex";
 HomePage2ptl0С6T1.style.fontSize = "80px";
-HomePage2ptl0С6T1.style.fontFamily = "Gilroy";
+HomePage2ptl0С6T1.style.fontFamily = Font1;
 HomePage2ptl0С6T1.style.color = "rgba(0, 0, 0, 0)";
 HomePage2ptl0С6T1.style.marginTop = "40px";
 HomePage2ptl0С6T1.style.marginLeft = "auto";
 HomePage2ptl0С6T1.style.marginRight = "auto";
+HomePage2ptl0С6T1.style.background = "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.43601190476190477) 50%, rgba(255,255,255,1) 100%)";
 HomePage2ptl0С6T1.textContent = "Beginners";
 HomePage2ptl0С6T1.style.backgroundClip = "text"; // Применяем градиентный фон только к тексту
 HomePage2ptl0С6T1.style.webkitBackgroundClip = "text"; // Для поддержки в Safari
+HomePage2ptl0С6T1.style.backgroundClip = "text"; // Для поддержки в Safari
 HomePage2ptl0С6.appendChild(HomePage2ptl0С6T1);
 
 
-animateBackground(HomePage2ptl0С6T1);
+shimmerEffect(HomePage2ptl0С6T1);
 
 const HomePage2ptl0С6T2 = document.createElement("div");
 HomePage2ptl0С6T2.style.display = "flex";
 HomePage2ptl0С6T2.style.fontSize = "30px";
-HomePage2ptl0С6T2.style.fontFamily = "Gilroy";
+HomePage2ptl0С6T2.style.fontFamily = Font2;
 HomePage2ptl0С6T2.style.color = "rgba(255, 255, 255, 1)";
 HomePage2ptl0С6T2.style.marginTop = "40px";
 HomePage2ptl0С6T2.style.marginLeft = "auto";
@@ -2003,8 +2052,8 @@ HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
 
-HomePage2ptl0p0.style.width = "202px";
-HomePage2ptl0p0.style.left = "0px";
+HomePage2ptl0p0.style.width = HomePage2ptl0p1.offsetWidth + "px";
+HomePage2ptl0p0.style.left = 0 + "px";
 
 HomePage2ptl0С1.style.display = "flex";
 setTimeout(function() {
@@ -2068,8 +2117,8 @@ HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
 
-HomePage2ptl0p0.style.width = "200px";
-HomePage2ptl0p0.style.left = "202px";
+HomePage2ptl0p0.style.width = HomePage2ptl0p2.offsetWidth + "px";
+HomePage2ptl0p0.style.left = HomePage2ptl0p1.offsetWidth + 0 + "px";
 
 HomePage2ptl0С1.style.display = "none";
 setTimeout(function() {
@@ -2133,8 +2182,9 @@ HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
 
-HomePage2ptl0p0.style.width = "142px";
-HomePage2ptl0p0.style.left = "402px";
+HomePage2ptl0p0.style.width = HomePage2ptl0p3.offsetWidth + "px";
+HomePage2ptl0p0.style.left = HomePage2ptl0p1.offsetWidth + HomePage2ptl0p2.offsetWidth + 0 + "px";
+
 
 HomePage2ptl0С1.style.display = "none";
 setTimeout(function() {
@@ -2199,8 +2249,9 @@ HomePage2ptl0p4.style.color = "white";
 HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
 
-HomePage2ptl0p0.style.width = "151px";
-HomePage2ptl0p0.style.left = "544px";
+HomePage2ptl0p0.style.width = HomePage2ptl0p4.offsetWidth + "px";
+HomePage2ptl0p0.style.left = HomePage2ptl0p1.offsetWidth + HomePage2ptl0p2.offsetWidth + HomePage2ptl0p3.offsetWidth + 1 + "px";
+
 
 HomePage2ptl0С1.style.display = "none";
 setTimeout(function() {
@@ -2264,8 +2315,9 @@ HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p5.style.color = "white";
 HomePage2ptl0p6.style.color = "rgba(134, 134, 139, 1)";
 
-HomePage2ptl0p0.style.width = "189px";
-HomePage2ptl0p0.style.left = "696px";
+HomePage2ptl0p0.style.width = HomePage2ptl0p5.offsetWidth + "px";
+HomePage2ptl0p0.style.left = HomePage2ptl0p1.offsetWidth + HomePage2ptl0p2.offsetWidth + HomePage2ptl0p3.offsetWidth +  HomePage2ptl0p4.offsetWidth + 1 + "px";
+
 
 HomePage2ptl0С1.style.display = "none";
 setTimeout(function() {
@@ -2331,8 +2383,12 @@ HomePage2ptl0p4.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p5.style.color = "rgba(134, 134, 139, 1)";
 HomePage2ptl0p6.style.color = "white";
 
-HomePage2ptl0p0.style.width = "152px";
-HomePage2ptl0p0.style.left = "885px";
+// HomePage2ptl0p0.style.width = "152px";
+// HomePage2ptl0p0.style.left = "885px";
+
+HomePage2ptl0p0.style.width = HomePage2ptl0p6.offsetWidth + "px";
+HomePage2ptl0p0.style.left = HomePage2ptl0p1.offsetWidth + HomePage2ptl0p2.offsetWidth + HomePage2ptl0p3.offsetWidth +  HomePage2ptl0p4.offsetWidth + HomePage2ptl0p5.offsetWidth + 1 + "px";
+
 
 HomePage2ptl0С1.style.display = "none";
 setTimeout(function() {
@@ -2374,7 +2430,7 @@ HomePage2ptl0С6.style.opacity = "1";
 
 });
 
-
+HomePage2ptl0.style.width = HomePage2ptl0p1.offsetWidth + HomePage2ptl0p2.offsetWidth + HomePage2ptl0p3.offsetWidth +  HomePage2ptl0p4.offsetWidth + HomePage2ptl0p5.offsetWidth + HomePage2ptl0p6.offsetWidth + "4px" + "px";
 
 
 
@@ -3122,7 +3178,8 @@ function createTagContainer(tags, showAll) {
           leftBar.style.borderColor = product.accentcolor2;
           HomePage1.style.display = 'none';
 
-          var newURL = window.location.origin + "/admin-store" + '/?product=' + encodeURIComponent(product.название);
+          // var newURL = window.location.origin + "/admin-store" + '/?product=' + encodeURIComponent(product.название);
+          var newURL = window.location.origin + '/?product=' + encodeURIComponent(product.название);
           history.pushState(null, null, newURL);
         }
       });
@@ -3183,27 +3240,31 @@ function findProductByTag(tag) {
 // ... остальной код ...
 
 
+function smoothScrollToTop(duration = 500) {
+    const targetPosition = 0;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
 
-onload = function () {
-//
-versioncontainer.style.right = "10px";
-
-versioncontainer.style.bottom = "10px";
-
-
-    // console.log("1")
-  var productName = getURLParameter('product');
-  if (productName) {
-    var product = findProductByTag(productName);
-    if (product) {
-      renderProductMenu(product);
-      smoothScrollTo('topscroll0');
-      leftBar.style.borderColor = product.accentcolor2;
-      HomePage1.style.display = 'none';
-      window.scrollTo(0, 0); // Прокручиваем страницу вверх
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
     }
-  }
-};
+
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+}
+
+
 
 
 

@@ -29,7 +29,7 @@ leftBarLogoC.style.marginTop = "33px";
 leftBar.appendChild(leftBarLogoC);
 
 const leftBarLogo1 = document.createElement("div");
-leftBarLogo1.style.fontFamily = "Arial Bold";
+leftBarLogo1.style.fontFamily = "Roboto-Bold";
 leftBarLogo1.textContent = "A";
 leftBarLogo1.style.fontSize = "20px";
 leftBarLogo1.style.color = "white";
@@ -38,7 +38,7 @@ leftBarLogo1.style.left = "0px";
 leftBarLogo1.style.top = "-3.5px";
 
 const leftBarLogo2 = document.createElement("div");
-leftBarLogo2.style.fontFamily = "Arial Bold";
+leftBarLogo2.style.fontFamily = "Roboto-Bold";
 leftBarLogo2.textContent = "S";
 leftBarLogo2.style.fontSize = "20px";
 leftBarLogo2.style.color = "white";
@@ -56,33 +56,48 @@ leftBarLogoC.appendChild(leftBarLogo2);
 
 
 
+
 const leftBarC = document.createElement("div");
-leftBarC.style.display = "flex";
+// leftBarC.style.display = "flex";
 leftBarC.style.flexDirection = "column";
 leftBarC.style.overflowY = "auto";
 leftBarC.style.overflowX = "hidden";
-leftBarC.style.height = "50%";
-// leftBarC.style.background = "red";
+// leftBarC.style.maxHeight = "50%";
+leftBarC.style.height = "55%";
+leftBarC.style.background = "rgba(0,0,0,0)";
 leftBarC.style.position = "relative";
 leftBarC.style.marginLeft = "10px";
 leftBarC.style.marginRight = "10px";
 leftBarC.style.marginTop = "62px";
 leftBarC.style.paddingTop = "20px";
-// leftBarC.style.paddingBottom = "20px";
+leftBarC.style.maskImage = 'linear-gradient(to bottom, transparent 0%, white 10%, white 90%, transparent 100%)';
+leftBarC.style.paddingBottom = "10%";
+leftBarC.style.paddingTop = "10%";
 leftBar.appendChild(leftBarC);
 
-const leftBarCgr = document.createElement("div");
-leftBarCgr.style.height = "20px";
-leftBarCgr.style.width = "52px";
-leftBarCgr.style.background = "linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)";
-leftBarCgr.style.position = "fixed";
-leftBarCgr.style.left = "22px";
-leftBarCgr.style.top = "128px";
-leftBarCgr.style.zIndex = "9999999999";
-leftBarC.appendChild(leftBarCgr);
+// const leftBarCgr = document.createElement("div");
+// leftBarCgr.style.height = "20px";
+// leftBarCgr.style.width = "52px";
+// leftBarCgr.style.background = "linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)";
+// leftBarCgr.style.position = "fixed";
+// leftBarCgr.style.left = "22px";
+// leftBarCgr.style.top = "128px";
+// leftBarCgr.style.zIndex = "9999999999";
+// leftBarC.appendChild(leftBarCgr);
 
 
 
+const leftBarCselector = document.createElement("div");
+leftBarCselector.style.width = "22px";
+leftBarCselector.style.height = "22px";
+leftBarCselector.style.background = "white";
+leftBarCselector.style.borderRadius = "5px";
+leftBarCselector.style.position = "absolute";
+leftBarCselector.style.transition = "1s";
+leftBarCselector.style.zIndex = "99";
+leftBarCselector.style.top = "57px";
+leftBarCselector.style.left = "15px";
+leftBarC.appendChild(leftBarCselector);
 
 
 
@@ -90,11 +105,14 @@ const leftBarC0 = document.createElement("div");
 leftBarC0.style.display = "flex";
 leftBarC0.style.flexDirection = "column";
 leftBarC0.style.height = "22px";
+// leftBarC0.style.background = "gray";
 leftBarC0.style.width = "22px";
-leftBarC0.style.position = "absolute";
+leftBarC0.style.position = "relative";
 leftBarC0.style.marginLeft = "15px";
-leftBarC0.style.marginTop = "0px";
+leftBarC0.style.marginTop = "50px";
 leftBarC0.style.borderRadius = "3px";
+leftBarC0.style.zIndex = "999";
+leftBarC0.style.mixBlendMode = 'difference';
 leftBarC.appendChild(leftBarC0);
 
 
@@ -114,14 +132,113 @@ svglogoelement.style.marginTop = '2px';
 svglogoelement.style.width = '22px';
 svglogoelement.style.height = '17px';
 svglogoelement.style.position = 'absolute';
-// svglogoelement.style.mixBlendMode = 'difference';
+svglogoelement.style.fill = 'white';
 
 // Добавляем созданный элемент <svg> в контейнер
 leftBarC0.appendChild(svglogoc);
 
 
 
+const leftBarC6 = document.createElement("div");
+leftBarC6.style.display = "flex";
+leftBarC6.style.flexDirection = "column";
+leftBarC6.style.height = "22px";
+leftBarC6.style.width = "22px";
+leftBarC6.style.position = "relative";
+leftBarC6.style.marginLeft = "15px";
+leftBarC6.style.marginTop = "50px";
+leftBarC6.style.borderRadius = "3px";
+leftBarC6.style.transition = "0.5s";
+leftBarC6.style.zIndex = "999";
+leftBarC6.style.mixBlendMode = 'difference';
 
+leftBarC.appendChild(leftBarC6);
+
+
+
+const svglogo6 = `
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_305_13)">
+<rect x="37.0107" y="4" width="57.6509" height="57.6509" rx="28.8255" stroke="white" stroke-width="8"/>
+<path d="M5.43826 96.4715C2.23578 93.269 2.23577 88.0767 5.43826 84.8742L43.574 46.7385L55.1712 58.3357L17.0355 96.4715C13.833 99.674 8.64075 99.6739 5.43826 96.4715V96.4715Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_305_13">
+<rect width="100" height="100" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+`;
+
+const svglogoc6 = document.createElement('div');
+svglogoc6.style.transition = "5s";
+svglogoc6.innerHTML = svglogo6;
+
+const svglogoelement6 = svglogoc6.querySelector('svg');
+svglogoelement6.style.marginLeft = '0px';
+svglogoelement6.style.marginTop = '4px';
+svglogoelement6.style.width = '22px';
+svglogoelement6.style.height = '14px';
+svglogoelement6.style.position = 'absolute';
+svglogoelement6.style.transition = '0.5s';
+// svglogoelement5.style.mixBlendMode = 'difference';
+// leftBarC6.style.background = "black";
+svglogoelement6.style.fill = 'white';
+// Добавляем созданный элемент <svg> в контейнер
+leftBarC6.appendChild(svglogoc6);
+
+
+
+    leftBarC6.addEventListener("mouseenter", function() {
+leftBarp0.style.opacity = "1";
+leftBarp0.style.top = "178px";
+leftBarC6.style.cursor = "pointer";
+leftBarC6.style.opacity = "0.7";
+
+    });
+
+    leftBarC6.addEventListener("mouseleave", function() {
+leftBarp0.style.opacity = "0";
+leftBarp0.style.top = "160px";
+leftBarC6.style.cursor = "normal";
+leftBarC6.style.opacity = "1";
+
+    });
+
+
+
+
+const isMacOS = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+
+const leftBarp0 = document.createElement("div");
+leftBarp0.style.display = "flex";
+leftBarp0.style.flexDirection = "row";
+leftBarp0.style.opacity = "0";
+leftBarp0.style.background = "black";
+leftBarp0.style.textAlign = "center";
+leftBarp0.style.justifyContent = "center";
+leftBarp0.style.alignItems = "center";
+leftBarp0.style.fontFamily = "Roboto-Bold";
+leftBarp0.style.fontSize = "17px";
+leftBarp0.style.width = "80px";
+leftBarp0.style.height = "34px";
+leftBarp0.style.position = "absolute";
+leftBarp0.style.top = "160px";
+// leftBarp0.style.top = "178px";
+leftBarp0.style.transition = "0.4s";
+leftBarp0.style.left = "60px";
+leftBarp0.style.borderRadius = "5px";
+leftBarp0.style.border = "3px solid white";
+
+// Определяем текст подсказки в зависимости от операционной системы
+if (isMacOS) {
+  leftBarp0.textContent = "CMD + K";
+} else {
+  leftBarp0.textContent = "CTRL + K";
+}
+
+leftBarC6.appendChild(leftBarp0);
 
 
 const leftBarC1 = document.createElement("div");
@@ -129,11 +246,13 @@ leftBarC1.style.display = "flex";
 leftBarC1.style.flexDirection = "column";
 leftBarC1.style.height = "22px";
 leftBarC1.style.width = "22px";
-leftBarC1.style.position = "absolute";
+leftBarC1.style.position = "relative";
 leftBarC1.style.marginLeft = "15px";
-leftBarC1.style.marginTop = "100px";
+leftBarC1.style.marginTop = "50px";
 leftBarC1.style.borderRadius = "3px";
-leftBarC1.style.background = "black";
+// leftBarC1.style.background = "black";
+leftBarC1.style.zIndex = "999";
+leftBarC1.style.mixBlendMode = 'difference';
 leftBarC.appendChild(leftBarC1);
 
 
@@ -179,10 +298,12 @@ leftBarC2.style.display = "flex";
 leftBarC2.style.flexDirection = "column";
 leftBarC2.style.height = "22px";
 leftBarC2.style.width = "22px";
-leftBarC2.style.position = "absolute";
+leftBarC2.style.position = "relative";
 leftBarC2.style.marginLeft = "15px";
-leftBarC2.style.marginTop = "150px";
+leftBarC2.style.marginTop = "50px";
 leftBarC2.style.borderRadius = "3px";
+leftBarC2.style.zIndex = "999";
+leftBarC2.style.mixBlendMode = 'difference';
 leftBarC.appendChild(leftBarC2);
 
 
@@ -204,6 +325,7 @@ svglogoelement2.style.width = '22px';
 svglogoelement2.style.height = '14px';
 svglogoelement2.style.position = 'absolute';
 svglogoc2.style.mixBlendMode = 'difference';
+svglogoc2.style.fill = 'white';
 
 // Добавляем созданный элемент <svg> в контейнер
 leftBarC2.appendChild(svglogoc2);
@@ -218,10 +340,12 @@ leftBarC3.style.display = "flex";
 leftBarC3.style.flexDirection = "column";
 leftBarC3.style.height = "22px";
 leftBarC3.style.width = "22px";
-leftBarC3.style.position = "absolute";
+leftBarC3.style.position = "relative";
 leftBarC3.style.marginLeft = "15px";
-leftBarC3.style.marginTop = "200px";
+leftBarC3.style.marginTop = "50px";
 leftBarC3.style.borderRadius = "3px";
+leftBarC3.style.zIndex = "999";
+leftBarC3.style.mixBlendMode = 'difference';
 leftBarC.appendChild(leftBarC3);
 
 
@@ -243,6 +367,7 @@ svglogoelement3.style.width = '22px';
 svglogoelement3.style.height = '14px';
 svglogoelement3.style.position = 'absolute';
 // svglogoelement3.style.mixBlendMode = 'difference';
+svglogoelement3.style.fill = 'white';
 
 // Добавляем созданный элемент <svg> в контейнер
 leftBarC3.appendChild(svglogoc3);
@@ -259,10 +384,12 @@ leftBarC4.style.display = "flex";
 leftBarC4.style.flexDirection = "column";
 leftBarC4.style.height = "22px";
 leftBarC4.style.width = "22px";
-leftBarC4.style.position = "absolute";
+leftBarC4.style.position = "relative";
 leftBarC4.style.marginLeft = "15px";
-leftBarC4.style.marginTop = "250px";
+leftBarC4.style.marginTop = "50px";
 leftBarC4.style.borderRadius = "3px";
+leftBarC4.style.zIndex = "999";
+leftBarC4.style.mixBlendMode = 'difference';
 leftBarC.appendChild(leftBarC4);
 
 
@@ -285,9 +412,11 @@ svglogoelement4.style.width = '22px';
 svglogoelement4.style.height = '14px';
 svglogoelement4.style.position = 'absolute';
 // svglogoelement4.style.mixBlendMode = 'difference';
+svglogoelement4.style.fill = 'white';
 
 // Добавляем созданный элемент <svg> в контейнер
 leftBarC4.appendChild(svglogoc4);
+
 
 
 const leftBarC5 = document.createElement("div");
@@ -295,12 +424,15 @@ leftBarC5.style.display = "flex";
 leftBarC5.style.flexDirection = "column";
 leftBarC5.style.height = "22px";
 leftBarC5.style.width = "22px";
-leftBarC5.style.position = "absolute";
+leftBarC5.style.position = "relative";
 leftBarC5.style.marginLeft = "15px";
-leftBarC5.style.marginTop = "300px";
+leftBarC5.style.marginTop = "50px";
+leftBarC5.style.marginBottom = "50px";
 leftBarC5.style.borderRadius = "3px";
 leftBarC5.style.transition = "0.5s";
+leftBarC5.style.zIndex = "999";
 
+leftBarC5.style.mixBlendMode = 'difference';
 leftBarC.appendChild(leftBarC5);
 
 
@@ -323,7 +455,7 @@ svglogoelement5.style.height = '14px';
 svglogoelement5.style.position = 'absolute';
 svglogoelement5.style.transition = '0.5s';
 // svglogoelement5.style.mixBlendMode = 'difference';
-leftBarC5.style.background = "black";
+// leftBarC5.style.background = "black";
 svglogoelement5.style.fill = 'white';
 // Добавляем созданный элемент <svg> в контейнер
 leftBarC5.appendChild(svglogoc5);
@@ -331,52 +463,8 @@ leftBarC5.appendChild(svglogoc5);
 
 
 
-const leftBarC6 = document.createElement("div");
-leftBarC6.style.display = "flex";
-leftBarC6.style.flexDirection = "column";
-leftBarC6.style.height = "22px";
-leftBarC6.style.width = "22px";
-leftBarC6.style.position = "absolute";
-leftBarC6.style.marginLeft = "15px";
-leftBarC6.style.marginTop = "50px";
-leftBarC6.style.borderRadius = "3px";
-leftBarC6.style.transition = "0.5s";
-
-leftBarC.appendChild(leftBarC6);
 
 
-
-const svglogo6 = `
-<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_305_13)">
-<rect x="37.0107" y="4" width="57.6509" height="57.6509" rx="28.8255" stroke="white" stroke-width="8"/>
-<path d="M5.43826 96.4715C2.23578 93.269 2.23577 88.0767 5.43826 84.8742L43.574 46.7385L55.1712 58.3357L17.0355 96.4715C13.833 99.674 8.64075 99.6739 5.43826 96.4715V96.4715Z" fill="white"/>
-</g>
-<defs>
-<clipPath id="clip0_305_13">
-<rect width="100" height="100" fill="white"/>
-</clipPath>
-</defs>
-</svg>
-
-`;
-
-const svglogoc6 = document.createElement('div');
-svglogoc6.style.transition = "5s";
-svglogoc6.innerHTML = svglogo6;
-
-const svglogoelement6 = svglogoc6.querySelector('svg');
-svglogoelement6.style.marginLeft = '0px';
-svglogoelement6.style.marginTop = '4px';
-svglogoelement6.style.width = '22px';
-svglogoelement6.style.height = '14px';
-svglogoelement6.style.position = 'absolute';
-svglogoelement6.style.transition = '0.5s';
-// svglogoelement5.style.mixBlendMode = 'difference';
-leftBarC6.style.background = "black";
-svglogoelement6.style.fill = 'white';
-// Добавляем созданный элемент <svg> в контейнер
-leftBarC6.appendChild(svglogoc6);
 
 
 
@@ -441,7 +529,75 @@ svglogopath6.style.transition = "1s";
 
 
 
+function changepage() {
 
+function checkAndSetOpacity(element) {
+    if (ContainerForContent1.contains(element)) {
+        element.style.opacity = "0";
+        
+        // Ждем небольшую задержку перед удалением для гладкости анимации
+        setTimeout(function() {
+            if (ContainerForContent1.contains(element)) {
+                ContainerForContent1.removeChild(element);
+            }
+        }, 500);  // 300 мс задержка, можно корректировать
+    }
+}
+
+
+function ensurePresenceAndOpacity(element) {
+    if (!ContainerForContent1.contains(element)) {
+        ContainerForContent1.appendChild(element);
+    }
+    
+    if (element.style.opacity !== "1") {
+        element.style.opacity = "1";
+    }
+}
+
+if (ActivePage === "Home"){
+ensurePresenceAndOpacity(HomePage1);
+checkAndSetOpacity(pccmc);
+checkAndSetOpacity(profilepage1);
+checkAndSetOpacity(settingspage1);
+checkAndSetOpacity(informationpage1);
+leftBarCselector.style.top = "57px";
+} else if (ActivePage === "Projects"){
+  checkAndSetOpacity(HomePage1);
+ensurePresenceAndOpacity(pccmc);
+checkAndSetOpacity(profilepage1);
+checkAndSetOpacity(settingspage1);
+checkAndSetOpacity(informationpage1);
+leftBarCselector.style.top = "200px";
+} else if (ActivePage === "Profile"){
+checkAndSetOpacity(HomePage1);
+checkAndSetOpacity(pccmc);
+ensurePresenceAndOpacity(profilepage1);
+checkAndSetOpacity(settingspage1);
+checkAndSetOpacity(informationpage1);
+leftBarCselector.style.top = "273px";
+} else if (ActivePage === "Settings"){
+checkAndSetOpacity(HomePage1);
+checkAndSetOpacity(pccmc);
+checkAndSetOpacity(profilepage1);
+ensurePresenceAndOpacity(settingspage1);
+checkAndSetOpacity(informationpage1);
+leftBarCselector.style.top = "344.5px";
+} else if (ActivePage === "Information"){
+checkAndSetOpacity(HomePage1);
+checkAndSetOpacity(pccmc);
+checkAndSetOpacity(profilepage1);
+checkAndSetOpacity(settingspage1);
+ensurePresenceAndOpacity(informationpage1);
+leftBarCselector.style.top = "416.5px";
+} else {
+  ActivePage = "Home";
+leftBarCselector.style.top = "57px";
+}
+
+}
+
+// setInterval(changepage, 100);
 
 // if (DevMode === "on"){
 // leftBarMNote.style.display = "flex";
@@ -452,84 +608,199 @@ svglogopath6.style.transition = "1s";
 
 // Обработчик события для клика на leftBarC1
 // Обработчик события для клика на leftBarC1
-leftBarC1.addEventListener("click", function() {
-  if (leftBarC1.style.background === "black") {
-    ActivePage = "Home0";
-    leftBarC1.style.background = "white";
-    svglogoelement1.style.fill = "black";
-    svglogoelement1.querySelector("rect").setAttribute("stroke", "black"); // Обновляем цвет рамки
-    svglogoelement1.querySelectorAll("rect")[2].setAttribute("stroke", "black"); // Обновляем цвет рамки у второго rect
-    svglogoelement1.querySelectorAll("rect")[2].setAttribute("transition", "2s"); // Обновляем цвет рамки у второго rect
-  } else {
-    ActivePage = "Home";
-    leftBarC1.style.background = "black";
-    svglogoelement1.style.fill = "white";
-    svglogoelement1.querySelector("rect").setAttribute("stroke", "white"); // Обновляем цвет рамки
-    svglogoelement1.querySelectorAll("rect")[2].setAttribute("stroke", "white"); // Обновляем цвет рамки у второго rect
-  }
-});
-
-
-
-
-
-
-
-
-
-
-
 
 leftBarLogoC.addEventListener("click", function() {
 ActivePage = "Home";
+// console.log("Home")
+changepage()
+smoothScrollToTop(500);
+
+//     ContainerForContent1.appendChild(HomePage1);
+// ContainerForContent1.removeChild(pccmc);
+// ContainerForContent1.removeChild(settingspage1);
 });
 
 leftBarC0.addEventListener("click", function() {
 ActivePage = "Home";
+// console.log("Home");
+changepage()
+smoothScrollToTop(500);
 });
 
+
+
+leftBarC1.addEventListener("click", function() {
+ActivePage = "Projects";
+// console.log("Projects")
+changepage()
+smoothScrollToTop(500);
+});
 
 leftBarC2.addEventListener("click", function() {
-loginFormTitle0.textContent = "Sign In";
-
-loginFormTitle1.textContent = "Sign In";
-profc.style.transition = '1s';
-
-    if (ProfileActive === "y"){
-ProfileActive = "n";
-loginFormTitle0.textContent = "Sign In";
-
-loginFormTitle1.textContent = "Sign In";
-profc.style.opacity = '0';
-
-  setTimeout(function() {
-loginFormTitle0.textContent = "Sign In";
-
-loginFormTitle1.textContent = "Sign In";
-profc.style.display = 'none';
-}, 1000); 
-
-
-
-}else {
-ProfileActive = "y";
-loginFormTitle0.textContent = "Sign In";
-
-loginFormTitle1.textContent = "Sign In";
-profc.style.display = 'flex';
-
-  setTimeout(function() {
-loginFormTitle0.textContent = "Sign In";
-
-loginFormTitle1.textContent = "Sign In";
-profc.style.opacity = '1';
-}, 100); 
-
-
-
-}
-
+ActivePage = "Profile";
+// console.log("Profile")
+changepage()
+smoothScrollToTop(500);
 });
+
+leftBarC3.addEventListener("click", function() {
+ActivePage = "Settings";
+// console.log("Settings")
+changepage()
+smoothScrollToTop(500);
+});
+
+leftBarC4.addEventListener("click", function() {
+ActivePage = "Information";
+// console.log("Information")
+changepage()
+smoothScrollToTop(500);
+});
+
+
+
+
+
+
+  // if (leftBarC1.style.background === "black") {
+//     ActivePage = "Home0";
+//     // leftBarC1.style.background = "white";
+//     // svglogoelement1.style.fill = "black";
+//     // svglogoelement1.querySelector("rect").setAttribute("stroke", "black"); // Обновляем цвет рамки
+//     // svglogoelement1.querySelectorAll("rect")[2].setAttribute("stroke", "black"); // Обновляем цвет рамки у второго rect
+//     // svglogoelement1.querySelectorAll("rect")[2].setAttribute("transition", "2s"); // Обновляем цвет рамки у второго rect
+//     console.log("1");
+// ContainerForContent1.removeChild(HomePage1);
+// ContainerForContent1.appendChild(pccmc);
+// smoothScrollToTop(500);
+//   } else {
+//     ContainerForContent1.appendChild(HomePage1);
+// ContainerForContent1.removeChild(pccmc);
+//     ActivePage = "Home";
+//     // leftBarC1.style.background = "black";
+//     // svglogoelement1.style.fill = "white";
+//     // svglogoelement1.querySelector("rect").setAttribute("stroke", "white"); // Обновляем цвет рамки
+//     // svglogoelement1.querySelectorAll("rect")[2].setAttribute("stroke", "white"); // Обновляем цвет рамки у второго rect
+//     smoothScrollToTop(500);
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// leftBarC0.addEventListener("click", function() {
+// ActivePage = "Home";
+//     ContainerForContent1.appendChild(HomePage1);
+// ContainerForContent1.removeChild(pccmc);
+// ContainerForContent1.removeChild(settingspage1);
+// });
+
+
+// leftBarC2.addEventListener("click", function() {
+// loginFormTitle0.textContent = "Sign In";
+
+// loginFormTitle1.textContent = "Sign In";
+// profc.style.transition = '1s';
+
+//     if (ProfileActive === "y"){
+// ProfileActive = "n";
+// loginFormTitle0.textContent = "Sign In";
+
+// loginFormTitle1.textContent = "Sign In";
+// profc.style.opacity = '0';
+
+//   setTimeout(function() {
+// loginFormTitle0.textContent = "Sign In";
+
+// loginFormTitle1.textContent = "Sign In";
+// profc.style.display = 'none';
+// }, 1000); 
+
+
+
+// }else {
+// ProfileActive = "y";
+// loginFormTitle0.textContent = "Sign In";
+
+// loginFormTitle1.textContent = "Sign In";
+// profc.style.display = 'flex';
+
+//   setTimeout(function() {
+// loginFormTitle0.textContent = "Sign In";
+
+// loginFormTitle1.textContent = "Sign In";
+// profc.style.opacity = '1';
+// }, 100); 
+
+
+
+// }
+
+// });
+
+// Go Settings
+// leftBarC3.addEventListener("click", function() {
+
+// if(ActivePage === "Home"){
+//   try{
+// HomePage1.style.opacity = "0";
+// pccmc.style.opacity = "0";
+
+
+// ContainerForContent1.appendChild(settingspage1);
+//   setTimeout(function() {
+// settingspage1.style.opacity = "1";
+// }, 500); 
+// ActivePage = "Settings";
+//   }catch{
+
+//   }
+// }else if (ActivePage === "Projects"){
+//   try{
+
+//   }catch{
+
+//   }
+// }else if(ActivePage === "Profile"){
+//     try{
+
+//   }catch{
+
+//   }
+// }else if(ActivePage === "Settings"){
+//    try{
+
+//   }catch{
+
+//   }
+// }else if(ActivePage === "Information"){
+//   try{
+
+//   }catch{
+
+//   }
+// }
+
+
+
+// smoothScrollToTop(500);
+
+// ActivePage = "Settings";
+// ContainerForContent1.appendChild(settingspage1);
+//     ContainerForContent1.removeChild(HomePage1);
+// ContainerForContent1.removeChild(pccmc);
+//   console.log("settings");
+// });
 
 
 leftBarC5.addEventListener("click", function() {
@@ -646,6 +917,10 @@ setTimeout(function() {
 
 
 
+// leftBarC1.addEventListener("click", function() {
+
+
+// });
 
 
 
@@ -708,72 +983,52 @@ setTimeout(function() {
 
 
 
-function myFunction() {
-  if (ActivePage === "Home"){
+// function myFunction() {
+//   if (ActivePage === "Home"){
 
-leftBarC0.style.transition = "0.5s";
-leftBarC0.style.background = "white";
-svglogoelement.style.transition = '0.5s';
-svglogoelement.style.fill = 'black';
-
-leftBarC1.style.transition = "0.5s";
-leftBarC1.style.background = "black";
-
-
-leftBarC2.style.transition = "0.5s";
-leftBarC2.style.background = "black";
-svglogoelement2.style.transition = '0.5s';
-svglogoelement2.style.fill = 'white';
-
-leftBarC3.style.transition = "0.5s";
-leftBarC3.style.background = "black";
-svglogoelement3.style.transition = '0.5s';
-svglogoelement3.style.fill = 'white';
-
-leftBarC4.style.transition = "0.5s";
-leftBarC4.style.background = "black";
-svglogoelement4.style.transition = '0.5s';
-svglogoelement4.style.fill = 'white';
-
-} else {
 // leftBarC0.style.transition = "0.5s";
-
+// leftBarC0.style.background = "white";
 // svglogoelement.style.transition = '0.5s';
 
-// leftBarC0.style.background = "black";
-// svglogoelement.style.fill = 'white';
-
-}
+// leftBarC1.style.transition = "0.5s";
+// leftBarC1.style.background = "black";
 
 
-  if (ProfileActive === "y"){
+// leftBarC2.style.transition = "0.5s";
+// leftBarC2.style.background = "black";
+// svglogoelement2.style.transition = '0.5s';
+// svglogoelement2.style.fill = 'white';
 
-leftBarC2.style.background = "white";
-svglogoelement2.style.fill = 'black';
+// leftBarC3.style.transition = "0.5s";
+// leftBarC3.style.background = "black";
+// svglogoelement3.style.transition = '0.5s';
+// svglogoelement3.style.fill = 'white';
 
-}else {
-leftBarC2.style.background = "black";
-svglogoelement2.style.fill = 'white';
-}
+// leftBarC4.style.transition = "0.5s";
+// leftBarC4.style.background = "black";
+// svglogoelement4.style.transition = '0.5s';
+// svglogoelement4.style.fill = 'white';
 
+// } else {
+// // leftBarC0.style.transition = "0.5s";
 
+// // svglogoelement.style.transition = '0.5s';
 
+// // leftBarC0.style.background = "black";
+// // svglogoelement.style.fill = 'white';
 
-
-
-
-
-
-
-}
-
-setInterval(myFunction, 100); // Вызов функции каждую секунду
-
-
-
-
+// }
 
 
+//   if (ProfileActive === "y"){
+
+// leftBarC2.style.background = "white";
+// svglogoelement2.style.fill = 'black';
+
+// }else {
+// leftBarC2.style.background = "black";
+// svglogoelement2.style.fill = 'white';
+// }
 
 
 
@@ -783,6 +1038,165 @@ setInterval(myFunction, 100); // Вызов функции каждую секу
 
 
 
+
+// }
+
+// setInterval(myFunction, 100); // Вызов функции каждую секунду
+
+
+
+    leftBarC0.addEventListener("mouseenter", function() {
+leftBarC0.style.cursor = "pointer";
+leftBarC0.style.opacity = "0.7";
+
+    });
+
+    leftBarC0.addEventListener("mouseleave", function() {
+leftBarC0.style.cursor = "normal";
+leftBarC0.style.opacity = "1";
+
+    });
+
+            leftBarC1.addEventListener("mouseenter", function() {
+leftBarC1.style.cursor = "pointer";
+leftBarC1.style.opacity = "0.7";
+
+    });
+
+    leftBarC1.addEventListener("mouseleave", function() {
+leftBarC1.style.cursor = "normal";
+leftBarC1.style.opacity = "1";
+
+    });
+
+        leftBarC2.addEventListener("mouseenter", function() {
+leftBarC2.style.cursor = "pointer";
+leftBarC2.style.opacity = "0.7";
+
+    });
+
+    leftBarC2.addEventListener("mouseleave", function() {
+leftBarC2.style.cursor = "normal";
+leftBarC2.style.opacity = "1";
+
+    });
+
+            leftBarC3.addEventListener("mouseenter", function() {
+leftBarC3.style.cursor = "pointer";
+leftBarC3.style.opacity = "0.7";
+
+    });
+
+    leftBarC3.addEventListener("mouseleave", function() {
+leftBarC3.style.cursor = "normal";
+leftBarC3.style.opacity = "1";
+
+    });
+
+            leftBarC4.addEventListener("mouseenter", function() {
+leftBarC4.style.cursor = "pointer";
+leftBarC4.style.opacity = "0.7";
+
+    });
+
+    leftBarC4.addEventListener("mouseleave", function() {
+leftBarC4.style.cursor = "normal";
+leftBarC4.style.opacity = "1";
+
+    });
+
+                leftBarC5.addEventListener("mouseenter", function() {
+leftBarC5.style.cursor = "pointer";
+leftBarC5.style.opacity = "0.7";
+
+    });
+
+    leftBarC5.addEventListener("mouseleave", function() {
+leftBarC5.style.cursor = "normal";
+leftBarC5.style.opacity = "1";
+
+    });
+
+
+
+
+leftBarC5.addEventListener("mousedown", function() {
+leftBarC5.style.cursor = "pointer";
+leftBarC5.style.opacity = "0.3";
+leftBarC5.style.transition = "0.5s";
+});
+
+leftBarC5.addEventListener("mouseup", function() {
+leftBarC5.style.cursor = "normal";
+leftBarC5.style.opacity = "1";
+leftBarC5.style.transition = "0.5s";
+});
+
+leftBarC4.addEventListener("mousedown", function() {
+leftBarC4.style.cursor = "pointer";
+leftBarC4.style.opacity = "0.3";
+leftBarC4.style.transition = "0.5s";
+});
+
+leftBarC4.addEventListener("mouseup", function() {
+leftBarC4.style.cursor = "normal";
+leftBarC4.style.opacity = "1";
+leftBarC4.style.transition = "0.5s";
+});
+
+leftBarC3.addEventListener("mousedown", function() {
+leftBarC3.style.cursor = "pointer";
+leftBarC3.style.opacity = "0.3";
+leftBarC3.style.transition = "0.5s";
+});
+
+leftBarC3.addEventListener("mouseup", function() {
+leftBarC3.style.cursor = "normal";
+leftBarC3.style.opacity = "1";
+leftBarC3.style.transition = "0.5s";
+});
+
+leftBarC2.addEventListener("mousedown", function() {
+leftBarC2.style.cursor = "pointer";
+leftBarC2.style.opacity = "0.3";
+leftBarC2.style.transition = "0.5s";
+});
+
+leftBarC2.addEventListener("mouseup", function() {
+leftBarC2.style.cursor = "normal";
+leftBarC2.style.opacity = "1";
+leftBarC2.style.transition = "0.5s";
+});
+
+leftBarC1.addEventListener("mousedown", function() {
+leftBarC1.style.cursor = "pointer";
+leftBarC1.style.opacity = "0.3";
+leftBarC1.style.transition = "0.5s";
+});
+
+leftBarC1.addEventListener("mouseup", function() {
+leftBarC1.style.cursor = "normal";
+leftBarC1.style.opacity = "1";
+leftBarC1.style.transition = "0.5s";
+});
+
+leftBarC0.addEventListener("mousedown", function() {
+leftBarC0.style.cursor = "pointer";
+leftBarC0.style.opacity = "0.3";
+leftBarC0.style.transition = "0.5s";
+});
+
+leftBarC0.addEventListener("mouseup", function() {
+leftBarC0.style.cursor = "normal";
+leftBarC0.style.opacity = "1";
+leftBarC0.style.transition = "0.5s";
+});
+
+
+
+
+
+document.body.appendChild(leftBar);
 
 
 

@@ -1,3 +1,6 @@
+
+
+
 // ваша конфигурация Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyD-USrCylp7uUTkrkz1TwklMCKemficO74",
@@ -18,12 +21,13 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } f
 // const provider = new OAuthProvider('apple.com');
 // const apiurl = "AIzaSyD-USrCylp7uUTkrkz1TwklMCKemficO74";
 // Initialize Firebase
+
+
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 // Use Firebase auth within the same <script> tag
 const auth = getAuth();
-
 
 
 // Регистрация нового пользователя
@@ -37,7 +41,7 @@ createUserWithEmailAndPassword(auth, email, password)
     // Ошибка регистрации
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log(errorMessage);
+    console.error(errorMessage);
   });
 
 // Вход существующего пользователя
@@ -51,7 +55,7 @@ signInWithEmailAndPassword(auth, email, password)
     // Ошибка входа
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log(errorMessage);
+    console.error(errorMessage);
   });
 
 // Обработчик события успешной регистрации
@@ -74,7 +78,7 @@ registerForm.addEventListener("submit", (e) => {
       // Ошибка регистрации
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.log(errorMessage);
+      console.error(errorMessage);
     });
 });
 
@@ -99,3 +103,5 @@ loginForm.addEventListener("submit", (e) => {
       // console.log(errorMessage);
     });
 });
+
+

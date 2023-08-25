@@ -1,5 +1,5 @@
 let ThemeWeb = "dark";
-let DevMode = "off";
+let DevMode = "1";
 let InterfaceMode = "Left Bumble";
 let Player = "XPhone lite";
 let PhoneColor = "White";
@@ -26,4 +26,18 @@ let password = localStorage.getItem("password") || "";
 let ProfileActive = "n";
 let PlayerActive = "n";
 let MusicQuality = "High"; 
+let Font1 = "Roboto-Bold"; 
+let Font2 = "Noto Sans SemiBold"; 
+let lscreen = 1;
+let sitevers = "Developer Beta V1.3"; 
+let isonserver = 1; 
+let BASE_URL = "https://administrati0n.github.io/data-one/";
+function isonservercheck() {
+if(isonserver === 1){
+let BASE_URL = "https://administrati0n.github.io/data-one/";
+}else if (isonserver === 0) {
+let BASE_URL = "";
+}
+}
+isonservercheck()
 // let  = ""; 

@@ -57,8 +57,10 @@ body.style.margin = '0px';
 // body.style.maxWidth = '1000px';
 body.style.display = 'flex';
 body.style.color = 'white';
+body.style.borderRadius = '0px';
 // var htmlElement = document.querySelector('html');
 // htmlElement.setAttribute('id', 'htmlpage');
+document.documentElement.style.background = 'black';
 
 
 
@@ -72,24 +74,26 @@ stylescrollbar.innerHTML = `
   ::-webkit-scrollbar-track {
     opacity: 1;
     // background: black; 
+    translation: 1s; 
     border-radius: 0% 0% 0% 0%;
   }
 
   ::-webkit-scrollbar-thumb {
     background: black; 
-    border: solid;
-    border-radius: 1px;
+    border: 2px solid;
+    // border-radius: 1px;
     border-color: white;
-    border-radius: 0% 0% 0% 0%;
+    border-radius: 999px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: black; 
+    background: rgb(48, 48, 48); 
   }
 `;
 
 document.head.appendChild(stylescrollbar);
 
+// WebkitScrollbar.style.width = "99px";
 
 
 
