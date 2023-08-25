@@ -30,6 +30,5 @@ let Font1 = "Roboto-Bold";
 let Font2 = "Noto Sans SemiBold"; 
 let lscreen = 1;
 let sitevers = "Developer Beta V1.3"; 
-let isonserver = 1; 
 
 // let  = ""; 
