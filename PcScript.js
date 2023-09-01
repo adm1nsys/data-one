@@ -17,11 +17,11 @@ function loadScript(name, location = 'body', container = null, onLoadCallback = 
     }
 
     if (container) {
-  setTimeout(function() {
+  // setTimeout(function() {
 
         container.appendChild(scriptElement);
-}, 1600); 
-      
+// }, 1600); 
+
     } else {
         document[location].appendChild(scriptElement);
     }
@@ -77,7 +77,7 @@ loadScript('data1');
 loadScript('player');
 
 // Content
-loadScript('content');
+loadScript('Content');
 
 // Theme
 loadScript('Theme');
