@@ -150,7 +150,7 @@ Container1.appendChild(ContainerForContent1);
   } catch (error) {
     // console.error("Произошла ошибка:", error.message);
     function restartPage() {
-  location.reload();
+  // location.reload();
 }
 
 // Вызываем функцию для перезапуска страницы
