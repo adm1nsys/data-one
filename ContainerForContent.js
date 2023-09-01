@@ -199,6 +199,11 @@ const HomePage = document.createElement("script");
 HomePage.src = "https://administrati0n.github.io/data-one/HomePage.js";
 Container1.appendChild(HomePage);
 
+// Pinned
+const Pinned = document.createElement("script");
+Pinned.src = "https://administrati0n.github.io/data-one/Pin.js";
+Container1.appendChild(Pinned);
+
 // Projects Change Category
 const projchangecat = document.createElement("script");
 projchangecat.src = "https://administrati0n.github.io/data-one/projchangecat.js";
