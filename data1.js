@@ -1,3 +1,14 @@
+
+  function date1url(){
+    if (isonserver === 1){
+      const pathPrefix = "https://administrati0n.github.io/data-one/";
+    } else if (isonserver === 0) {
+      const pathPrefix = "";
+    } else {
+      const pathPrefix = "";
+    }
+  }
+date1url()
 var products1 = [
   { 
   название: "tovar 1", 
