@@ -1,4 +1,4 @@
-let isonserver = 0;
+let isonserver = 1;
 
 function loadScript(name, location = 'body', container = null, onLoadCallback = null) {
     const scriptElement = document.createElement("script");
