@@ -132,22 +132,22 @@ function renderTopNewProducts() {
 
   var topNewProducts = sortedProducts.slice(0, 3);
 
-  try {
+//   try {
 
 
 
-  HomePage1ptC0P1title.textContent = "";
-  HomePage1ptC0P2title.textContent = "";
-  HomePage1ptC0P3title.textContent = "";
+//   HomePage1ptC0P1title.textContent = "";
+//   HomePage1ptC0P2title.textContent = "";
+//   HomePage1ptC0P3title.textContent = "";
 
-  } catch (error) {
-    function restartPage2() {
-  // location.reload();
-}
+//   } catch (error) {
+//     function restartPage2() {
+//   // location.reload();
+// }
 
 // Вызываем функцию для перезапуска страницы
-restartPage2();
-}
+// restartPage2();
+// }
   
 
   topNewProducts.forEach(function(product, index) {
