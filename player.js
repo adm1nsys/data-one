@@ -4028,7 +4028,7 @@ svgscreen.appendChild(frame01);
 
 const frame02 = document.createElement('div');
 frame02.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-frame02.style.backgroundImage = 'url("asl0.png")';
+// frame02.style.backgroundImage = 'url("asl0.png")';
 loadImage('asl0.png', frame02);
 frame02.style.height = '100%';
 frame02.style.width = '100%';
