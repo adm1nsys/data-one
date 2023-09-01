@@ -1,3 +1,7 @@
+const pathPrefix = isonserver 
+  ? "https://administrati0n.github.io/data-one/"
+  : "";
+
 const fontsRoboto = [
   "Bold", "BoldItalic", "Italic", "Light", "LightItalic", "Medium", "MediumItalic", 
   "Regular", "Thin", "ThinItalic", "Black", "BlackItalic"
@@ -16,7 +20,7 @@ fontsRoboto.forEach(font => {
   fontStyles += `
 @font-face {
   font-family: "Roboto-${font}";
-  src: url('All Fonts/Roboto/Roboto-${font}.ttf');
+  src: url('${pathPrefix}All Fonts/Roboto/Roboto-${font}.ttf');
 }
   `;
 });
@@ -26,7 +30,7 @@ fontsNotoSans.forEach(font => {
   fontStyles += `
 @font-face {
   font-family: "Noto Sans ${font}";
-  src: url('All Fonts/Noto_Sans/NotoSans-${font}.ttf');
+  src: url('${pathPrefix}All Fonts/Noto_Sans/NotoSans-${font}.ttf');
 }
   `;
 });

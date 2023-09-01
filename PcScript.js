@@ -17,6 +17,19 @@ if (isonserver === 1){
     }
 }
 
+function loadImage(name, element, property = 'backgroundImage', onLoadCallback = null) {
+    const imageUrl = (isonserver === 1)
+        ? `https://administrati0n.github.io/data-one/${name}`
+        : `${name}`;
+    element.style[property] = `url('${imageUrl}')`;
+
+    if (onLoadCallback) {
+        const img = new Image();
+        img.src = imageUrl;
+        img.onload = onLoadCallback;
+    }
+}
+
 var body = document.body;
 
 // Загрузка скрипта Stuff1

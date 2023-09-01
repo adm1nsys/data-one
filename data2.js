@@ -142,7 +142,7 @@ function renderTopNewProducts() {
 
   } catch (error) {
     function restartPage2() {
-  // location.reload();
+  location.reload();
 }
 
 // Вызываем функцию для перезапуска страницы
