@@ -46,32 +46,32 @@ loadScript('fonts', 'head');
 // Загрузка скрипта iconLinks
 loadScript('iconLinks', 'head');
 
-// Загрузка скрипта Device
-loadScript('Device', 'body');
+// // Загрузка скрипта Device
+// loadScript('Device', 'body');
 
-// // Загрузка скрипта data1
-// loadScript('data1', 'body');
+// Загрузка скрипта data1
+loadScript('data1', 'body');
 
-// // Загрузка скрипта player
-// loadScript('player', 'body');
+// Загрузка скрипта player
+loadScript('player', 'body');
 
-// // Загрузка скрипта consoledev
-// loadScript('consoledev', 'body');
+// Загрузка скрипта consoledev
+loadScript('consoledev', 'body');
 
-// // Загрузка скрипта Container0
-// loadScript('Container0', 'body');
+// Загрузка скрипта Container0
+loadScript('Container0', 'body');
 
-// // Загрузка скрипта Container1
-// loadScript('Container1', 'body');
+// Загрузка скрипта Container1
+loadScript('Container1', 'body');
 
-// // Загрузка скрипта ContainerForContent
-// loadScript('ContainerForContent', 'body');
+// Загрузка скрипта ContainerForContent
+loadScript('ContainerForContent', 'body');
 
-// // Загрузка скрипта Theme
-// loadScript('Theme', 'body');
+// Загрузка скрипта Theme
+loadScript('Theme', 'body');
 
-// // Загрузка скрипта WorkScripts
-// loadScript('WorkScripts', 'body');
+// Загрузка скрипта WorkScripts
+loadScript('WorkScripts', 'body');
 
 
 
