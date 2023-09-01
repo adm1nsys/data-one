@@ -1,4 +1,4 @@
-let isonserver = 1;
+let isonserver = 0;
 
 function loadScript(name, location = 'body', container = null, onLoadCallback = null) {
     const scriptElement = document.createElement("script");
@@ -47,7 +47,7 @@ loadScript('fonts', 'head');
 loadScript('iconLinks', 'head');
 
 // Загрузка скрипта Device
-loadScript('Device', 'body');
+// loadScript('Device', 'body');
 
 // Загрузка скрипта data1
 loadScript('data1', 'body');
