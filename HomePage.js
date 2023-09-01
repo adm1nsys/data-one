@@ -274,7 +274,8 @@ prevButton.style.backgroundPosition = "center";
 prevButton.style.backgroundRepeat = "no-repeat";
 prevButton.style.opacity = "0";
 prevButton.style.transition = "0.5s";
-prevButton.style.backgroundImage = "url('Frame 5.png')";
+// prevButton.style.backgroundImage = "url('Frame 5.png')";
+loadImage('Frame 5.png.png', prevButton);
 prevButton.addEventListener("click", showPreviousSlide);
 HomePageSlides1.appendChild(prevButton);
 
@@ -294,7 +295,8 @@ nextButton.style.backgroundPosition = "center";
 nextButton.style.backgroundRepeat = "no-repeat";
 nextButton.style.opacity = "0";
 nextButton.style.transition = "0.5s";
-nextButton.style.backgroundImage = "url('Frame 6.png')";
+// nextButton.style.backgroundImage = "url('Frame 6.png')";
+loadImage('Frame 6.png.png', nextButton);
 nextButton.addEventListener("click", showNextSlide);
 HomePageSlides1.appendChild(nextButton);
 
