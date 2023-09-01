@@ -204,7 +204,7 @@ loadScript('projchangecat', 'body', Container1);
 loadScript('settingspage', 'body', Container1);
 loadScript('profilepage');
 loadScript('informationpage');
-// loadScript('data2');
+loadScript('data2');
 
 // // Profile Page
 // loadScript('profilepage', 'body', Container1);

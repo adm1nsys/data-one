@@ -50,7 +50,7 @@ loadScript('iconLinks', 'head');
 loadScript('Device', 'body');
 
 // Загрузка скрипта data1
-// loadScript('data1', 'body');
+loadScript('data1', 'body');
 
 // Загрузка скрипта player
 loadScript('player', 'body');
