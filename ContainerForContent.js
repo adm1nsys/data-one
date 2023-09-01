@@ -194,30 +194,18 @@ function shimmerEffect(element) {
 // loadScript('projchangecat', 'body', Container1);
 // loadScript('settingspage', 'body', Container1);
 
-// Home Page
-const HomePage = document.createElement("script");
-HomePage.src = "https://administrati0n.github.io/data-one/HomePage.js";
-Container1.appendChild(HomePage);
 
-// Pinned
-const Pinned = document.createElement("script");
-Pinned.src = "https://administrati0n.github.io/data-one/Pin.js";
-Container1.appendChild(Pinned);
 
-// Projects Change Category
-const projchangecat = document.createElement("script");
-projchangecat.src = "https://administrati0n.github.io/data-one/projchangecat.js";
-Container1.appendChild(projchangecat);
 
-// Settings Page
-const settingspage = document.createElement("script");
-settingspage.src = "https://administrati0n.github.io/data-one/settingspage.js";
-Container1.appendChild(settingspage);
 
-// data2
-const data2 = document.createElement("script");
-data2.src = "https://administrati0n.github.io/data-one/data2.js";
-document.body.appendChild(data2);
+loadScript('HomePage', 'body', Container1);
+loadScript('Pin', 'body', Container1);
+loadScript('projchangecat', 'body', Container1);
+loadScript('settingspage', 'body', Container1);
+loadScript('profilepage');
+loadScript('informationpage');
+loadScript('data2');
+
 // // Profile Page
 // loadScript('profilepage', 'body', Container1);
 
