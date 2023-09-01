@@ -43,11 +43,11 @@ loadScript('loadscren', 'head');
 // Загрузка скрипта fonts
 loadScript('fonts', 'head');
 
-// // Загрузка скрипта iconLinks
-// loadScript('iconLinks', 'head');
+// Загрузка скрипта iconLinks
+loadScript('iconLinks', 'head');
 
-// // Загрузка скрипта Device
-// loadScript('Device', 'body');
+// Загрузка скрипта Device
+loadScript('Device', 'body');
 
 // // Загрузка скрипта data1
 // loadScript('data1', 'body');
