@@ -1,38 +1,16 @@
 // Libreries
-// function loadScript(name, location = 'body', container = null, onLoadCallback = null) {
-//     const scriptElement = document.createElement("script");
-    
-//     // // fetch(`https://administrati0n.github.io/data-one/${name}.js`)
-//     // fetch(`${name}.js`)
-//     //     .then(response => {
-//     //         if (!response.ok) { throw Error(response.statusText); }
-//             scriptElement.src = `${name}.js`;
-//         // })
-//         // .catch(error => {
-//         //     scriptElement.src = `https://administrati0n.github.io/data-one/${name}.js`;
-//         // });
-
-//     if (onLoadCallback) {
-//         scriptElement.onload = onLoadCallback;
-//     }
-
-//     if (container) {
-//         container.appendChild(scriptElement);
-//     } else {
-//         document[location].appendChild(scriptElement);
-//     }
-// }
-
-
-
 function loadScript(name, location = 'body', container = null, onLoadCallback = null) {
     const scriptElement = document.createElement("script");
     
-    scriptElement.src = `${name}.js`;
-    
-    scriptElement.onerror = function() {
-        scriptElement.src = `https://administrati0n.github.io/data-one/${name}.js`;
-    };
+    // // fetch(`https://administrati0n.github.io/data-one/${name}.js`)
+    // fetch(`${name}.js`)
+    //     .then(response => {
+    //         if (!response.ok) { throw Error(response.statusText); }
+            scriptElement.src = `https://administrati0n.github.io/data-one/${name}.js`;
+        // })
+        // .catch(error => {
+        //     scriptElement.src = `https://administrati0n.github.io/data-one/${name}.js`;
+        // });
 
     if (onLoadCallback) {
         scriptElement.onload = onLoadCallback;
@@ -44,6 +22,28 @@ function loadScript(name, location = 'body', container = null, onLoadCallback = 
         document[location].appendChild(scriptElement);
     }
 }
+
+
+
+// function loadScript(name, location = 'body', container = null, onLoadCallback = null) {
+//     const scriptElement = document.createElement("script");
+    
+//     scriptElement.src = `${name}.js`;
+    
+//     scriptElement.onerror = function() {
+//         scriptElement.src = `https://administrati0n.github.io/data-one/${name}.js`;
+//     };
+
+//     if (onLoadCallback) {
+//         scriptElement.onload = onLoadCallback;
+//     }
+
+//     if (container) {
+//         container.appendChild(scriptElement);
+//     } else {
+//         document[location].appendChild(scriptElement);
+//     }
+// }
 var body = document.body;
 
 // Lib
