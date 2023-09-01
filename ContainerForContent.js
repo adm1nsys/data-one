@@ -187,7 +187,10 @@ function shimmerEffect(element) {
 }
 
 
-loadScript('HomePage', 'body', Container1);
+// loadScript('HomePage', 'body', Container1);
+const hpage = document.createElement("script");
+hpage.src = "https://administrati0n.github.io/data-one/HomePage.js";
+Container1.appendChild(hpage);
 loadScript('projchangecat', 'body', Container1);
 loadScript('settingspage', 'body', Container1);
 
