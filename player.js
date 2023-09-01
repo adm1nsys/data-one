@@ -4007,7 +4007,7 @@ frame01.style.position = 'absolute';
 frame01.style.color = 'white';
 frame01.style.inset = '9px';
 // frame01.style.backgroundColor = 'black';
-frame01.style.background = 'url("Bitmap.png")';
+frame01.style.background = 'url("https://administrati0n.github.io/data-one/Bitmap.png")';
 
 frame01.style.backgroundSize = 'cover';
 frame01.style.backgroundPosition = 'center';
