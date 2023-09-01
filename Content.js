@@ -1,14 +1,22 @@
-loadScript('consoledev');
-loadScript('Container0');
-const container01 = document.createElement("script");
+// consoledev.js
+const consoledev = document.createElement("script");
+consoledev.src = "https://administrati0n.github.io/data-one/consoledev.js";
+document.body.appendChild(consoledev);
 
-container01.src = "https://administrati0n.github.io/data-one/Container1.js";
+// Container0.js
+const Container00 = document.createElement("script");
+Container00.src = "https://administrati0n.github.io/data-one/Container0.js";
+document.body.appendChild(Container00);
 
-document.body.appendChild(container01);
+// Container1.js
+const Container11 = document.createElement("script");
+Container11.src = "https://administrati0n.github.io/data-one/Container1.js";
+document.body.appendChild(Container11);
 
-// loadScript('Container1');
-loadScript('ContainerForContent');
-
+// ContainerForContent.js
+const ContainerForContent = document.createElement("script");
+ContainerForContent.src = "https://administrati0n.github.io/data-one/ContainerForContent.js";
+document.body.appendChild(ContainerForContent);
 
 
 

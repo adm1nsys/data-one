@@ -154,7 +154,7 @@ Container1.appendChild(ContainerForContent1);
 }
 
 // Вызываем функцию для перезапуска страницы
-restartPage();
+// restartPage();
   }
 
 function shimmerEffect(element) {
@@ -188,25 +188,42 @@ function shimmerEffect(element) {
 
 
 // loadScript('HomePage', 'body', Container1);
-const hpage = document.createElement("script");
-hpage.src = "https://administrati0n.github.io/data-one/HomePage.js";
-Container1.appendChild(hpage);
-loadScript('projchangecat', 'body', Container1);
-loadScript('settingspage', 'body', Container1);
+// const hpage = document.createElement("script");
+// hpage.src = "https://administrati0n.github.io/data-one/HomePage.js";
+// Container1.appendChild(hpage);
+// loadScript('projchangecat', 'body', Container1);
+// loadScript('settingspage', 'body', Container1);
 
+// Home Page
+const HomePage = document.createElement("script");
+HomePage.src = "https://administrati0n.github.io/data-one/HomePage.js";
+Container1.appendChild(HomePage);
 
+// Projects Change Category
+const projchangecat = document.createElement("script");
+projchangecat.src = "https://administrati0n.github.io/data-one/projchangecat.js";
+Container1.appendChild(projchangecat);
 
-// Profile Page
-loadScript('profilepage', 'body', Container1);
-
-// Information Page
-loadScript('informationpage', 'body', Container1);
-
-// Pinned
-loadScript('Pin');
+// Settings Page
+const settingspage = document.createElement("script");
+settingspage.src = "https://administrati0n.github.io/data-one/settingspage.js";
+Container1.appendChild(settingspage);
 
 // data2
-loadScript('data2');
+const data2 = document.createElement("script");
+data2.src = "https://administrati0n.github.io/data-one/data2.js";
+document.body.appendChild(data2);
+// // Profile Page
+// loadScript('profilepage', 'body', Container1);
+
+// // Information Page
+// loadScript('informationpage', 'body', Container1);
+
+// // Pinned
+// loadScript('Pin');
+
+// // data2
+// loadScript('data2');
 
 
 // // firebase
