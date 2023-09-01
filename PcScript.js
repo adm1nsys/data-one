@@ -17,7 +17,11 @@ function loadScript(name, location = 'body', container = null, onLoadCallback = 
     }
 
     if (container) {
+  setTimeout(function() {
+
         container.appendChild(scriptElement);
+}, 1600); 
+      
     } else {
         document[location].appendChild(scriptElement);
     }
