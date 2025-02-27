@@ -1,7 +1,7 @@
 
   function date1url(){
     if (isonserver === 1){
-      const pathPrefix = "https://administrati0n.github.io/data-one/";
+      const pathPrefix = "https://adm1nsys.github.io/data-one/";
     } else if (isonserver === 0) {
       const pathPrefix = "";
     } else {
