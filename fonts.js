@@ -1,5 +1,5 @@
 const pathPrefix = isonserver 
-  ? "https://administrati0n.github.io/data-one/"
+  ? "https://adm1nsys.github.io/data-one/"
   : "";
 
 const fontsRoboto = [
