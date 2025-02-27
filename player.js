@@ -2589,7 +2589,7 @@ phrcamera1.appendChild(phrcamera2title);
 // playerBack0.style.top = "415px";
 // playerBack0.style.transition = "0.2s";
 // playerBack0.style.backgroundColor = "rgba(255, 255, 255, 0)";
-// // playerBack0.style.backgroundImage = "url('https://administrati0n.github.io/data-one/player/img/controls/back/back.png')";
+// // playerBack0.style.backgroundImage = "url('https://adm1nsys.github.io/data-one/player/img/controls/back/back.png')";
 // playerBack0.style.backgroundSize = "36px";
 // playerBack0.style.borderRadius = "999px";
 // playerBack0.style.backgroundPosition = "center";
@@ -2751,7 +2751,7 @@ playerPlay0.style.top = "55px";
 playerPlay0.style.left = "30px";
 playerPlay0.style.transition = "0.3s";
 playerPlay0.style.backgroundColor = "rgba(255, 255, 255, 0)";
-// playerPlay0.style.backgroundImage = "url('https://administrati0n.github.io/data-one/player/img/controls/play/play.png')";
+// playerPlay0.style.backgroundImage = "url('https://adm1nsys.github.io/data-one/player/img/controls/play/play.png')";
 playerPlay0.style.backgroundSize = "45px";
 playerPlay0.style.backgroundPosition = "center";
 playerPlay0.style.width = "45px";
@@ -2865,7 +2865,7 @@ playerPlay0.appendChild(playerPlay05)
 // playerNex0t.style.top = "415px";
 // playerNex0t.style.transition = "0.2s";
 // playerNex0t.style.backgroundColor = "rgba(255, 255, 255, 0)";
-// // playerNex0t.style.backgroundImage = "url('https://administrati0n.github.io/data-one/player/img/controls/next/next.png')";
+// // playerNex0t.style.backgroundImage = "url('https://adm1nsys.github.io/data-one/player/img/controls/next/next.png')";
 // playerNex0t.style.backgroundSize = "36px";
 // playerNex0t.style.backgroundPosition = "center";
 // playerNex0t.style.width = "45px";
@@ -4058,8 +4058,8 @@ bgColor.style.height = '600px';
 bgBlack.style.width = '600px';
 bgBlack.style.height = '600px';
 
-bgColor.src = 'https://administrati0n.github.io/data-one/player/img/logo/Pure Imagination.jpeg';
-bgBlack.src = 'https://administrati0n.github.io/data-one/player/img/logo/Pure Imagination.jpeg';
+bgColor.src = 'https://adm1nsys.github.io/data-one/player/img/logo/Pure Imagination.jpeg';
+bgBlack.src = 'https://adm1nsys.github.io/data-one/player/img/logo/Pure Imagination.jpeg';
 
 // frameBg.style.background = "black";
 frameBg.style.display = "flex";
@@ -4125,7 +4125,7 @@ imageContainer.className = 'image';
 frameHeader.appendChild(imageContainer);
 
 const image = document.createElement('img');
-// image.src = 'https://administrati0n.github.io/data-one/player/img/logo/Experience.jpg';
+// image.src = 'https://adm1nsys.github.io/data-one/player/img/logo/Experience.jpg';
 image.style.width = '50px';
 image.style.borderRadius = '0.5em';
 image.style.boxShadow = '0 3px 30px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.4)';
@@ -4502,7 +4502,7 @@ playerBack.style.left = "40px";
 playerBack.style.top = "415px";
 playerBack.style.transition = "0.2s";
 playerBack.style.backgroundColor = "rgba(255, 255, 255, 0)";
-// playerBack.style.backgroundImage = "url('https://administrati0n.github.io/data-one/player/img/controls/back/back.png')";
+// playerBack.style.backgroundImage = "url('https://adm1nsys.github.io/data-one/player/img/controls/back/back.png')";
 playerBack.style.backgroundSize = "36px";
 playerBack.style.borderRadius = "999px";
 playerBack.style.backgroundPosition = "center";
@@ -4664,7 +4664,7 @@ playerPlay.style.top = "415px";
 playerPlay.style.left = "110px";
 playerPlay.style.transition = "0.3s";
 playerPlay.style.backgroundColor = "rgba(255, 255, 255, 0)";
-// playerPlay.style.backgroundImage = "url('https://administrati0n.github.io/data-one/player/img/controls/play/play.png')";
+// playerPlay.style.backgroundImage = "url('https://adm1nsys.github.io/data-one/player/img/controls/play/play.png')";
 playerPlay.style.backgroundSize = "45px";
 playerPlay.style.backgroundPosition = "center";
 playerPlay.style.width = "45px";
@@ -4766,7 +4766,7 @@ playerNext.style.right = "40px";
 playerNext.style.top = "415px";
 playerNext.style.transition = "0.2s";
 playerNext.style.backgroundColor = "rgba(255, 255, 255, 0)";
-// playerNext.style.backgroundImage = "url('https://administrati0n.github.io/data-one/player/img/controls/next/next.png')";
+// playerNext.style.backgroundImage = "url('https://adm1nsys.github.io/data-one/player/img/controls/next/next.png')";
 playerNext.style.backgroundSize = "36px";
 playerNext.style.backgroundPosition = "center";
 playerNext.style.width = "45px";
@@ -5128,25 +5128,25 @@ playerBack.addEventListener("mouseleave", function() {
 playerPlay.addEventListener("mouseenter", function() {
   playerPlay.style.transition = "0.4s";
   playerPlay.style.background = "rgba(255, 255, 255, 0.25";
-  // playerPlay.style.backgroundImage = "url('https://administrati0n.github.io/data-one/player/img/controls/play/play_hover.png')";
+  // playerPlay.style.backgroundImage = "url('https://adm1nsys.github.io/data-one/player/img/controls/play/play_hover.png')";
 });
 
 playerPlay.addEventListener("mouseleave", function() {
   playerPlay.style.transition = "0.4s";
   playerPlay.style.background = "rgba(255, 255, 255, 0";
-  // playerPlay.style.backgroundImage = "url('https://administrati0n.github.io/data-one/player/img/controls/play/play.png')";
+  // playerPlay.style.backgroundImage = "url('https://adm1nsys.github.io/data-one/player/img/controls/play/play.png')";
 });
 
 playerPlay0.addEventListener("mouseenter", function() {
   playerPlay0.style.transition = "0.4s";
   playerPlay0.style.background = "rgba(255, 255, 255, 0.25";
-  // playerPlay.style.backgroundImage = "url('https://administrati0n.github.io/data-one/player/img/controls/play/play_hover.png')";
+  // playerPlay.style.backgroundImage = "url('https://adm1nsys.github.io/data-one/player/img/controls/play/play_hover.png')";
 });
 
 playerPlay0.addEventListener("mouseleave", function() {
   playerPlay0.style.transition = "0.4s";
   playerPlay0.style.background = "rgba(255, 255, 255, 0";
-  // playerPlay.style.backgroundImage = "url('https://administrati0n.github.io/data-one/player/img/controls/play/play.png')";
+  // playerPlay.style.backgroundImage = "url('https://adm1nsys.github.io/data-one/player/img/controls/play/play.png')";
 });
 
 
@@ -5211,9 +5211,9 @@ const tracks = [
     duration1: "-5:15",
     duration2: "17",
     artist: "Ludovico Einaudi, Daniel Hope & I Virtuosi Italiani",
-    image: "https://administrati0n.github.io/data-one/player/Experience.jpg",
-    image2: "https://administrati0n.github.io/data-one/player/Experience.jpg",
-    audio: "https://administrati0n.github.io/data-one/player/Experience.mp3",
+    image: "https://adm1nsys.github.io/data-one/player/Experience.jpg",
+    image2: "https://adm1nsys.github.io/data-one/player/Experience.jpg",
+    audio: "https://adm1nsys.github.io/data-one/player/Experience.mp3",
     playing: false
   },
   {
@@ -5221,9 +5221,9 @@ const tracks = [
     duration1: "-2:45",
     duration2: "45",
     artist: "Maxence Cyrin",
-    image: "https://administrati0n.github.io/data-one/player/Where Is My Mind.jpeg",
-    image2: "https://administrati0n.github.io/data-one/player/Where Is My Mind.jpeg",
-    audio: "https://administrati0n.github.io/data-one/player/Where Is My Mind.mp3",
+    image: "https://adm1nsys.github.io/data-one/player/Where Is My Mind.jpeg",
+    image2: "https://adm1nsys.github.io/data-one/player/Where Is My Mind.jpeg",
+    audio: "https://adm1nsys.github.io/data-one/player/Where Is My Mind.mp3",
     playing: false
   },
   {
@@ -5231,9 +5231,9 @@ const tracks = [
     duration1: "-1:04",
     duration2: "04",
     artist: "Shiloh",
-    image: "https://administrati0n.github.io/data-one/player/Pure Imagination.jpeg",
-    image2: "https://administrati0n.github.io/data-one/player/Pure Imagination.jpeg",
-    audio: "https://administrati0n.github.io/data-one/player/Pure Imagination.mp3",
+    image: "https://adm1nsys.github.io/data-one/player/Pure Imagination.jpeg",
+    image2: "https://adm1nsys.github.io/data-one/player/Pure Imagination.jpeg",
+    audio: "https://adm1nsys.github.io/data-one/player/Pure Imagination.mp3",
     playing: false
   },
   {
@@ -5241,9 +5241,9 @@ const tracks = [
     duration1: "-4:24",
     duration2: "24",
     artist: "mxpheebz",
-    image: "https://administrati0n.github.io/data-one/player/The Beach.jpg",
-    image2: "https://administrati0n.github.io/data-one/player/The Beach.jpg",
-    audio: "https://administrati0n.github.io/data-one/player/The Beach.mp3",
+    image: "https://adm1nsys.github.io/data-one/player/The Beach.jpg",
+    image2: "https://adm1nsys.github.io/data-one/player/The Beach.jpg",
+    audio: "https://adm1nsys.github.io/data-one/player/The Beach.mp3",
     playing: false
   }
 ];
@@ -6767,7 +6767,7 @@ phonebtnpower1.style.transform = 'translateZ(-15px) translateY(160px) translateX
 // phlockscreennew3d.style.backgroundSize = "315px";
 // phlockscreennew3d.style.transition = "0.0s";
 // phlockscreennew3d.style.backgroundPosition = "0px -40px";
-// phlockscreennew3d.style.backgroundImage = "url('https://administrati0n.github.io/data-one/iOS17lw.png')";
+// phlockscreennew3d.style.backgroundImage = "url('https://adm1nsys.github.io/data-one/iOS17lw.png')";
 // phlockscreennew3d.style.position = "relative";
 // phlockscreennew3d.style.zIndex = "99";
 // phlockscreennew3d.style.bottom = "0px";
