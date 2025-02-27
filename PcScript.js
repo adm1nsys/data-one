@@ -3,7 +3,7 @@ let isonserver = 1;
 function loadScript(name, location = 'body', container = null, onLoadCallback = null) {
     const scriptElement = document.createElement("script");
 if (isonserver === 1){
-            scriptElement.src = `https://administrati0n.github.io/data-one/${name}.js`;
+            scriptElement.src = `https://adm1nsys.github.io/data-one/${name}.js`;
           } else if (isonserver === 0){
             scriptElement.src = `${name}.js`;
           }
@@ -19,7 +19,7 @@ if (isonserver === 1){
 
 function loadImage(name, element, property = 'backgroundImage', onLoadCallback = null) {
     const imageUrl = (isonserver === 1)
-        ? `https://administrati0n.github.io/data-one/${name}`
+        ? `https://adm1nsys.github.io/data-one/${name}`
         : `${name}`;
     element.style[property] = `url('${imageUrl}')`;
 
