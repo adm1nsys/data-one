@@ -189,7 +189,7 @@ function shimmerEffect(element) {
 
 // loadScript('HomePage', 'body', Container1);
 // const hpage = document.createElement("script");
-// hpage.src = "https://administrati0n.github.io/data-one/HomePage.js";
+// hpage.src = "https://adm1nsys.github.io/data-one/HomePage.js";
 // Container1.appendChild(hpage);
 // loadScript('projchangecat', 'body', Container1);
 // loadScript('settingspage', 'body', Container1);
@@ -308,7 +308,7 @@ copyrightText.textContent = `© Copyright By `; // Замените "Назва�
 copyrightc0.appendChild(copyrightText);
 
 const copyrightText1 = document.createElement("a");
-copyrightText1.href = "http://administrati0n.github.io/main/";  // Замените на URL вашей компании, если есть
+copyrightText1.href = "http://adm1nsys.github.io/main/";  // Замените на URL вашей компании, если есть
 copyrightText1.textContent = "Admin inc.";
 copyrightText1.style.color = "white";  // Цвет ссылки. Вы можете изменить его, если хотите
 copyrightText1.style.textDecoration = "none"; 
